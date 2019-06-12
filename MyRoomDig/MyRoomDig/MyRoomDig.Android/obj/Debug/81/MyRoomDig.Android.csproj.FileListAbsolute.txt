@@ -3,7 +3,9 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.A
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\bin\Debug\com.companyname.apk
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\bin\Debug\com.companyname-Signed.apk
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\bin\Debug\MyRoomDig.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\bin\Debug\MyRoomDig.Domain.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\bin\Debug\MyRoomDig.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\bin\Debug\MyRoomDig.Domain.pdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\MyRoomDig.Android.nuget.stamp
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\MyRoomDig.Android.csprojAssemblyReference.cache
@@ -115,10 +117,13 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.A
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\linksrc\GalaSoft.MvvmLight.Platform.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\linksrc\MyRoomDig.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\linksrc\MyRoomDig.Domain.dll.mdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\bin\Debug\MyRoomDig.Domain.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\GalaSoft.MvvmLight.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\GalaSoft.MvvmLight.Extras.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\GalaSoft.MvvmLight.Platform.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\MyRoomDig.dll.mdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\MyRoomDig.Domain.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\Plugin.Connectivity.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\FormsViewGroup.pdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\Mono.Android.pdb
@@ -148,3 +153,4 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.A
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\linksrc\GalaSoft.MvvmLight.Platform.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\linksrc\MyRoomDig.dll.mdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\linksrc\MyRoomDig.Domain.dll.mdb

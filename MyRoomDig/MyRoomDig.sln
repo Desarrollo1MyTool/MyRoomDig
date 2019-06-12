@@ -5,7 +5,10 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRoomDig.Android", "MyRoomDig\MyRoomDig.Android\MyRoomDig.Android.csproj", "{A9AD42FB-35C2-44D1-8B42-DB33E1D76CD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRoomDig", "MyRoomDig\MyRoomDig\MyRoomDig.csproj", "{59C16987-8943-4254-8D43-C2D0E058C3C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRoomDig", "MyRoomDig\MyRoomDig\MyRoomDig.csproj", "{59C16987-8943-4254-8D43-C2D0E058C3C6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7C137C54-AF06-4C30-90B3-E6129106CB01} = {7C137C54-AF06-4C30-90B3-E6129106CB01}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRoomDig.API", "MyRoomDig.API\MyRoomDig.API.csproj", "{F55FBE96-FA16-4CA1-B0DD-CAC35E876374}"
 EndProject

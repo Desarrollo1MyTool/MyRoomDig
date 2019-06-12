@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyRoomDig.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace MyRoomDig
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new TakePicturePage();
         }
 
         protected override void OnStart()

@@ -10,6 +10,7 @@
       "MyRoomDig/1.0.0": {
         "dependencies": {
           "MvvmLightLibs": "5.4.1.1",
+          "MyRoomDig.Domain": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
           "Plugin.Permissions": "3.0.0.12",
@@ -168,6 +169,11 @@
             "fileVersion": "2.0.0.0"
           }
         }
+      },
+      "MyRoomDig.Domain/1.0.0": {
+        "runtime": {
+          "MyRoomDig.Domain.dll": {}
+        }
       }
     }
   },
@@ -267,6 +273,11 @@
       "sha512": "sha512-036/h8HtzRFgTrfhY57IeHoYRsPTO2XTA6uUFdmZzw2QR1sdszfofhI9HrCJTRx6fCzmjPg5Cxk5chYrjKarNw==",
       "path": "xamarin.forms/3.4.0.1008975",
       "hashPath": "xamarin.forms.3.4.0.1008975.nupkg.sha512"
+    },
+    "MyRoomDig.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

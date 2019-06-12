@@ -43,6 +43,7 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
+MyRoomDig.Domain
 System.Resources.ResourceManager
 System.ComponentModel
 System.Reflection.Extensions

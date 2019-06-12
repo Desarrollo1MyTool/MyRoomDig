@@ -73,6 +73,7 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.A
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\System.Resources.ResourceManager.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\System.ComponentModel.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\System.Globalization.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\MyRoomDig.Domain.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\System.Runtime.Extensions.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\System.Text.Encoding.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig.Android\obj\Debug\81\android\assets\Mono.Security.dll
