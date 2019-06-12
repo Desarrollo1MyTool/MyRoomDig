@@ -1,0 +1,12 @@
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\MyRoomDig.deps.json
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\MyRoomDig.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\MyRoomDig.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.csprojAssemblyReference.cache
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.csproj.CoreCompileInputs.cache
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.AssemblyInfoInputs.cache
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.AssemblyInfo.cs
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.pdb
