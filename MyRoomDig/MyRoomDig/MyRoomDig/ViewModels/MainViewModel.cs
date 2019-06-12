@@ -12,7 +12,7 @@
         public MainViewModel()
         {
             instance = this;
-            this.TakePictureviewModel = new TakePictureViewModel();
+            this.TakePictureViewModel = new TakePictureViewModel();
         }
         #endregion
         #region Singleton
@@ -28,7 +28,7 @@
         }
         #endregion
         #region ViewModels
-        public TakePictureViewModel TakePictureviewModel { get; set; }
+        public TakePictureViewModel TakePictureViewModel { get; set; }
         #endregion
     }
 }

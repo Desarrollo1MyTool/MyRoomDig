@@ -1,12 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
              x:Class="MyRoomDig.Views.TakePicturePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView BindingContext="{Binding TakePictureViewModel}">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="6*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <!--Espacio Datos-->
+                    <Grid>
+
+                    </Grid>
+                    <!--Espacio Datos-->
+                    <!--Espacio Imágen-->
+                    <Grid Grid.Row="1">
+                        <Label FontSize="Small"
+                               HorizontalOptions="Center"
+                               Text="Para cambiar la imágen debe tocarla"
+                               VerticalOptions="Center"/>
+                        <Image Aspect="AspectFill"
+                               Grid.Row="1"
+                               HeightRequest="200"
+                               HorizontalOptions="FillAndExpand"
+                               Source="{Binding Imagen}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TakePictureCommand}" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <!--Espacio Imágen-->
+                    <!--Espacio Botones-->
+                    <Grid Grid.Row="2">
+
+                    </Grid>
+                    <!--Espacio Botones-->
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
