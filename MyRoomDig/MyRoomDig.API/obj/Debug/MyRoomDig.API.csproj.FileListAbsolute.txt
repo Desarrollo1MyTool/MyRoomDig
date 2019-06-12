@@ -96,3 +96,7 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\obj\Deb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\obj\Debug\MyRoomDig.API.csproj.CopyComplete
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\obj\Debug\MyRoomDig.API.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\obj\Debug\MyRoomDig.API.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\EntityFramework.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\EntityFramework.SqlServer.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\EntityFramework.xml
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\EntityFramework.SqlServer.xml

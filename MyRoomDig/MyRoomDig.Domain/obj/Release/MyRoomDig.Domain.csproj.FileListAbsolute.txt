@@ -1,0 +1,6 @@
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\bin\Release\MyRoomDig.Domain.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\bin\Release\MyRoomDig.Domain.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\obj\Release\MyRoomDig.Domain.csprojAssemblyReference.cache
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\obj\Release\MyRoomDig.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\obj\Release\MyRoomDig.Domain.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\obj\Release\MyRoomDig.Domain.pdb
