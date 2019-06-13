@@ -124,16 +124,16 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/MyRoomDig.API.dll">
-      <publishTime>06/12/2019 16:52:53</publishTime>
+      <publishTime>06/13/2019 13:20:36</publishTime>
     </File>
     <File Include="bin/MyRoomDig.API.pdb">
-      <publishTime>06/12/2019 16:52:53</publishTime>
+      <publishTime>06/13/2019 13:20:36</publishTime>
     </File>
     <File Include="bin/MyRoomDig.Domain.dll">
-      <publishTime>06/12/2019 16:35:17</publishTime>
+      <publishTime>06/13/2019 13:20:36</publishTime>
     </File>
     <File Include="bin/MyRoomDig.Domain.pdb">
-      <publishTime>06/12/2019 16:35:17</publishTime>
+      <publishTime>06/13/2019 13:20:36</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>02/18/2018 09:44:54</publishTime>

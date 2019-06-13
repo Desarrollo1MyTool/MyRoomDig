@@ -4,21 +4,68 @@
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              x:Class="MyRoomDig.Views.TakePicturePage">
     <ContentPage.Content>
-        <ScrollView BindingContext="{Binding TakePictureViewModel}">
-            <StackLayout>
+        <!--<ScrollView >-->
+            <StackLayout BindingContext="{Binding TakePictureViewModel}" 
+                         Padding="3">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="3.5*"/>
                         <RowDefinition Height="6*"/>
-                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="0.5*"/>
                     </Grid.RowDefinitions>
                     <!--Espacio Datos-->
                     <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.7*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Column="0" Grid.ColumnSpan="2"
+                               Text="DATOS EVIDENCIA"/>
+                        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.85*"/>
+                                <ColumnDefinition Width="0.15*"/>
+                            </Grid.ColumnDefinitions>
+                            <Entry Placeholder="Identificación Cliente"
+                                   Text="{Binding Identificacion}"/>
+                            <Button Grid.Column="1"
+                                    Command="{Binding}"/>
+                        </Grid>
+                        <Entry Grid.Row="2" 
+                               Placeholder="Código Tipo Evidencia"
+                               Text="{Binding Identificacion}"/>
+                        <Entry Grid.Row="3" 
+                               Placeholder="IdIdentifica"
+                               Text="{Binding Identificacion}"/>
+                        <Entry Grid.Row="2" Grid.Column="1"
+                               Placeholder="Código Carpeta"
+                               Text="{Binding }"/>
+                        <Entry Grid.Row="3" Grid.Column="1"
+                               Placeholder="Id Serial Número"
+                               Text="{Binding Identificacion}"/>
+                        <Entry Grid.Row="4" Grid.ColumnSpan="2"
+                               Placeholder="Nombre del archivo"
+                               Text="{Binding FileName}"/>
+                        <Entry Grid.Row="5" Grid.ColumnSpan="2"
+                               Placeholder="Descripción"
+                               Text="{Binding Identificacion}"/>
 
                     </Grid>
                     <!--Espacio Datos-->
                     <!--Espacio Imágen-->
                     <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="9*"/>
+                        </Grid.RowDefinitions>
                         <Label FontSize="Small"
                                HorizontalOptions="Center"
                                Text="Para cambiar la imágen debe tocarla"
@@ -36,11 +83,26 @@
                     <!--Espacio Imágen-->
                     <!--Espacio Botones-->
                     <Grid Grid.Row="2">
-
+                        <!--<Grid.RowDefinitions>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <!--<Entry Grid.ColumnSpan="2"
+                               Placeholder="Nombre del archivo"
+                               Text="{Binding FileName}"/>-->
+                        <Button Command="{Binding SavePictureCommand}"
+                                Grid.Row="0"
+                                Text="GUARDAR"/>
+                        <Button Grid.Row="0" Grid.Column="1"
+                                Text="CANCELAR"/>
                     </Grid>
                     <!--Espacio Botones-->
                 </Grid>
             </StackLayout>
-        </ScrollView>
+        <!--</ScrollView>-->
     </ContentPage.Content>
 </ContentPage>

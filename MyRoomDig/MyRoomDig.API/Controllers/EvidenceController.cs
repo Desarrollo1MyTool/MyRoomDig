@@ -87,15 +87,15 @@
                     {
                         db.evidencias.Add(new API.Models.evidencia
                         {
-                            codeTipoEvid = evidenciasModel.codeTipoEvid,
-                            codeCarpeta = evidenciasModel.codeCarpeta,
-                            idIdentifica = evidenciasModel.idIdentifica,
-                            idSerialNum = evidenciasModel.idSerialNum,
-                            evidencia1 = evidenciasModel.evidencia1,
-                            descripcion = evidenciasModel.descripcion,
-                            fileName = evidenciasModel.fileName,
-                            fecha = evidenciasModel.fecha,
-                            usuario = evidenciasModel.usuario
+                            codeTipoEvid = evidenciasModel.codeTipoEvid ??"",
+                            codeCarpeta = evidenciasModel.codeCarpeta ?? "",
+                            idIdentifica = evidenciasModel.idIdentifica == null ? 0 : evidenciasModel.idIdentifica,
+                            idSerialNum = evidenciasModel.idSerialNum == null ? 0 : evidenciasModel.idSerialNum,
+                            evidencia1 = evidenciasModel.evidencia1 == null ? new byte[0] : evidenciasModel.evidencia1,
+                            descripcion = evidenciasModel.descripcion ?? "",
+                            fileName = evidenciasModel.fileName ?? "",
+                            fecha = evidenciasModel.fecha == null ? DateTime.Now : evidenciasModel.fecha,
+                            usuario = evidenciasModel.usuario ?? ""
                         });
                         db.SaveChanges();
                         dbContextTransaction.Commit();

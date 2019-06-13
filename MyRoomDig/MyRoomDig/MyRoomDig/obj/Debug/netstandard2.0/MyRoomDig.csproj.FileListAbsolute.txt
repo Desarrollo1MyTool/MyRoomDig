@@ -13,3 +13,6 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\o
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.csproj.CopyComplete
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\Mono.Android.xml

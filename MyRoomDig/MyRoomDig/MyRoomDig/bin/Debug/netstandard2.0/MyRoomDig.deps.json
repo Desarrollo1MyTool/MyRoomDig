@@ -18,7 +18,8 @@
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "3.4.0.1008975",
-          "sqlite-net-pcl": "1.5.231"
+          "sqlite-net-pcl": "1.5.231",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "MyRoomDig.dll": {}
@@ -174,6 +175,14 @@
         "runtime": {
           "MyRoomDig.Domain.dll": {}
         }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
       }
     }
   },
@@ -276,6 +285,11 @@
     },
     "MyRoomDig.Domain/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
