@@ -1,8 +1,11 @@
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\MyRoomDig.deps.json
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\MyRoomDig.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\MyRoomDig.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\Mono.Android.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\MyRoomDig.Domain.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\MyRoomDig.Domain.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.csprojAssemblyReference.cache
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\Views\TakePicturePage.xaml.g.cs
@@ -13,6 +16,3 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\o
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.csproj.CopyComplete
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\obj\Debug\netstandard2.0\MyRoomDig.pdb
-C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\Mono.Android.dll
-C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\Mono.Android.pdb
-C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig\MyRoomDig\bin\Debug\netstandard2.0\Mono.Android.xml

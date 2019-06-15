@@ -8,42 +8,75 @@
     using Plugin.Media;
     using Plugin.Media.Abstractions;
     using System;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
     using System.IO;
+    using System.Threading.Tasks;
     using System.Windows.Input;
     using Xamarin.Forms;
     public class TakePictureViewModel: BaseViewModel
     {
         #region Attribues
+        private bool isProcessing;
+        private int _idIdentifica;
+        private string _Identificacion;
+        private string _nameClient;
+        private string _descripcion;
+        private KeyValue _typeDocSelected;
+        private EvidenciasModel _Evidencia;
+        private ObservableCollection<EvidenciasModel> _Evidences;
+        private ObservableCollection<KeyValue> _TypesDoc;
+        private ImageSource _Imagen;
         MediaFile file;
-        public ImageSource _Imagen;
-        public EvidenciasModel _Evidencia;
-        public string _Identificacion; 
-        public string _FileName;
-        public bool isProcessing;
         #endregion
 
         #region Properties
-        public ImageSource Imagen
+        public int IdIdentifica
         {
-            get { return this._Imagen; }
-            set { SetValue(ref this._Imagen, value); }
-        }
-        public EvidenciasModel EvidenceSave
-        {
-            get { return this._Evidencia; }
-            set { SetValue(ref this._Evidencia, value); }
-        }
-        public string FileName
-        {
-            get { return this._FileName; }
-            set { SetValue(ref this._FileName, value); }
+            get { return this._idIdentifica; }
+            set { SetValue(ref this._idIdentifica, value); }
         }
         public string Identificacion
         {
             get { return this._Identificacion; }
             set { SetValue(ref this._Identificacion, value); }
         }
+        public string NameClient
+        {
+            get { return this._nameClient; }
+            set { SetValue(ref this._nameClient, value); }
+        }
+        public string Descripcion
+        {
+            get { return this._descripcion; }
+            set { SetValue(ref this._descripcion, value); }
+        }
+        public KeyValue TypeDocSelected
+        {
+            get { return this._typeDocSelected; }
+            set { SetValue(ref this._typeDocSelected, value); }
+        }
         public byte[] imgByte { get; set; }
+        public EvidenciasModel EvidenceSave
+        {
+            get { return this._Evidencia; }
+            set { SetValue(ref this._Evidencia, value); }
+        }
+        public ObservableCollection<EvidenciasModel> Evidences 
+        {
+            get { return this._Evidences; }
+            set { SetValue(ref this._Evidences, value); }
+        }
+        public ObservableCollection<KeyValue> TypesDoc
+        {
+            get { return this._TypesDoc; }
+            set { SetValue(ref this._TypesDoc, value); }
+        }
+        public ImageSource Imagen
+        {
+            get { return this._Imagen; }
+            set { SetValue(ref this._Imagen, value); }
+        }
         #endregion
         
         #region Services
@@ -70,10 +103,74 @@
             {
                 apiService = new ApiServices();
                 this.Imagen = "ic_nodispon";
+                this.IdIdentifica = 0;
+                this.NameClient = "";
+                this.imgByte = null;
+                this.Descripcion = "";
+                this.Identificacion = "";
+                TypesDoc = new ObservableCollection<KeyValue>();
+                GetTypeDoc();
+                Evidences = new ObservableCollection<EvidenciasModel>();
                 EvidenceSave = new EvidenciasModel();
             }
             catch (Exception ex)
             {
+                await Application.Current.MainPage.DisplayAlert("TakePicture Instance", ex.ToString(), "Ok");
+            }
+        }
+        public async void GetTypeDoc()
+        {
+            await Task.Delay(2000);
+            var apiRoom = Application.Current.Resources["APISecurity"].ToString();
+            var response = await this.apiService.GetList<KeyValue>(apiRoom, "api/GetTypeDoc", "");
+            if (!response.IsSuccess)
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error A-TypeDoc",
+                    response.Message,
+                    "Ok");
+                return;
+            }
+            foreach(var item in (List<KeyValue>)response.Result)
+            {
+                TypesDoc.Add(new KeyValue
+                {
+                    id = item.id,
+                    name = item.name
+                });
+            }
+            
+        }
+        public async void SearchData()
+        {
+            try
+            {
+
+                var apiRoom = Application.Current.Resources["APISecurity"].ToString();
+                var response = await this.apiService.GetList<EvidenciasModel>(apiRoom, "api/GetClients?identification=" + Identificacion + TypeDocSelected.id, "");
+                if (!response.IsSuccess)
+                {
+                    await Application.Current.MainPage.DisplayAlert(
+                        "Error A-Clients",
+                        response.Message,
+                        "Ok");
+                    return;
+                }
+                foreach (var item in (List<EvidenciasModel>)response.Result)
+                {
+                    Evidences.Add(new EvidenciasModel
+                    {
+                        idClient = item.idClient,
+                        numIdenti = item.numIdenti,
+                        nameClient = item.nameClient                        
+                    });
+                    this.IdIdentifica = item.numIdenti??0;
+                    this.NameClient = item.nameClient;
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("TakePicture SearchData", ex.Message, "Ok");
             }
         }
         public async void TakePicture()
@@ -88,7 +185,7 @@
                 this.file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
                 {
                     Directory = "Sample",
-                    Name = this.FileName + ".jpg",
+                    Name = this.Identificacion + ".jpg",
                     PhotoSize = Plugin.Media.Abstractions.PhotoSize.Small
                 });
 
@@ -99,12 +196,14 @@
                         MemoryStream stream = (MemoryStream)file.GetStream();
                         return stream;
                     });
-                    
                     imgByte = ConvertPictureBytes(file.Path);
+                    Imagen = file.Path;
                 }
+                if (file == null) Imagen = "ic_nodispon";
             }
             catch (Exception ex)
             {
+                await Application.Current.MainPage.DisplayAlert("TakePicture TakePicture", ex.Message, "Ok");
             }
 
         }
@@ -114,7 +213,7 @@
             {
                 if(!isProcessing)
                 {
-                    var resultado = await Application.Current.MainPage.DisplayAlert("Guardar", "Desea guradar la evidencia: " + this.FileName + ".jpg" + " ?", "Si", "No");
+                    var resultado = await Application.Current.MainPage.DisplayAlert("Guardar", "Desea guradar la evidencia: " + this.Identificacion + ".jpg" + " ?", "Si", "No");
                     if(resultado)
                     {
                         isProcessing = true;
@@ -124,15 +223,17 @@
                             isProcessing = false;
                             return;
                         }
-                        //EvidenceSave.codeTipoEvid = ;
-                        //EvidenceSave.codeCarpeta = ;
-                        //EvidenceSave.idIdentifica = ;
-                        //EvidenceSave.idSerialNum = ;
+                        if (this.TypeDocSelected == null)
+                        {
+                            await Application.Current.MainPage.DisplayAlert("", "Seleccione un tipo de documento", "Ok");
+                            isProcessing = false;
+                            return;
+                        }
+                        EvidenceSave.numIdenti = this.IdIdentifica;  
                         EvidenceSave.evidencia1 = this.imgByte;
-                        //EvidenceSave.descripcion = ;
-                        EvidenceSave.fileName = this.FileName + ".jpg";
-                        EvidenceSave.fecha = DateTime.Now;
-                        //EvidenceSave.usuario = ;
+                        EvidenceSave.descripcion = this.Descripcion;
+                        EvidenceSave.fileName = this.Identificacion + ".jpg";
+
                         var apiS = Application.Current.Resources["APISecurity"].ToString();
 
                         var response = await this.apiService.PostBool(
@@ -147,28 +248,22 @@
                                "Error AP-Evidence",
                                response.Message,
                                "Ok");
-                            await Application.Current.MainPage.Navigation.PopModalAsync();
                             return;
                         }
                         else
                         {
                             await Application.Current.MainPage.DisplayAlert("Guardado", "Guardado correctamente", "Ok");
-                            KeyValue temp = JsonConvert.DeserializeObject<KeyValue>(response.Result.ToString());
+                            Instance();
                         }
                     }
-                    isProcessing = false;
                 }
             }
             catch (Exception ex)
             {
-                
+                await Application.Current.MainPage.DisplayAlert("TakePicture SavePicture", ex.Message, "Ok");
             }
+            isProcessing = false;
         }
-        public async void SearchData()
-        {
-
-        }
-
         public static byte[] ConvertPictureBytes(string imagen)
         {
             string sTemp = System.IO.Path.GetTempFileName();
@@ -177,7 +272,6 @@
             fs.Read(bytes, 0, Convert.ToInt32(fs.Length));
             return bytes;
         }
-
         #endregion
     }
 }

@@ -175,943 +175,943 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\accesorio.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\acomodacion.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\activo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\AjustaGralScrPos.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\AjustaScrPos.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ALERTA.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\alimentacione.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\alquiler.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\alquilerPre.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\alquilerTrConcepto.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\alquiler_alimentacion.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\alquiler_personas.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\alquiler_puc.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\alquiler_rangos.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ANEXO.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\anul.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\area.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\areasAutom.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\auditoriaNocHabita.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\auditoriaNocturna.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Autoconver.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\banco.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\bitacora.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\bodega.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CABE_OC.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CABE_RI.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\camform.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cargo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Cargue.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cauanul.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CAUDISP.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\caumov.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\caumto.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cautimefree.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CENTROC.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cierreGeneral.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Ciudade.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CIUU.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\clas.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\clasepista.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\clase_pago.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\clase_porteria.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cliente.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\clientes_Desayuno.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\clientes_estadia.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\clsmedida.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\clsmto.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\comanda.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ComproPUC.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CONDICION.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ConfPuntosSuite.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\contrato_pedidos.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CONTRIB.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\controle.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\controlHerramienta.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\conver.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\conver_spec.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CON_Puc.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\correo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cotizacion_detalle.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cptoegre.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cptoingr.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\crespo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CtrlCama.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ctrlstock.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ctrmovi.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cuestionario_new.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DECOMAPA.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\detalle.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DETALLE_OC.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DETALLE_RI.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\detestado.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\detfactura.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\detivafact.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\detmedida.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\detmovin.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\detsalinv.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\det_serv.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\devuelto.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DISPOHORA.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\docCompra.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\dotacion.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\egreso.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EMAIL.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\empresa.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\errore.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\estado.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\estadosTransac.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ESTADOS_RI.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EstReserva.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\est_olvido.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\evalua.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\evidencia.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\factura.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\formula.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\frmpago.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\frmshow.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\funcione.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\FybParamTempo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\glosario.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\grpmto.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\grupocliente.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\grupos.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\htmlInforme.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\idioma.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\incluido.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\INCONSENSOR.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\indeseable.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\infoCambVersion.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ingreso.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Instancia.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\KPItrue.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Lista.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\lista_chequeo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\logReservasW.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\log_olvido.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\maquina.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\maquinaProducto.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Maqui_Zona.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\mecamovi.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\mecanismo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\memo1.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\memo2.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\memo3.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\mensaje.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\menuDiario.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\mesa.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\mesas_dotacion.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\mesero.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MonitorPedido.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\motidev.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\motivo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\movhab.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\movinven.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\movinventario.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\movturno.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\msg_institut.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\mtohab.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\mto_prv.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MyCashAuthorize.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MyCashHistory.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\MyDigModel.Context.cs">
+    <Compile Include="Models\MyRoomDigModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MyDigModel.Context.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\MyDigModel.cs">
+    <Compile Include="Models\MyRoomDigModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\MyDigModel.Designer.cs">
+    <Compile Include="Models\MyRoomDigModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MyDigModel.edmx</DependentUpon>
+      <DependentUpon>MyRoomDigModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\MyTecno.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\nacionalidad.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\net.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\nivel.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\novedad.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\novedadDetalle.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ocupacione.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\olvido.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OPCclient.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OPCconexion.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OPCdevice.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OrdenMesa.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\origen.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\pagoRegistro.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\pais.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\parametro.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\parametros2.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\parametros3.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\pedido.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PedidosPendDet.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PedidosPendMst.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\pedidos_auditoria.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PEDIDOS_COBROS.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\pedidos_detalle.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\pendiente.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\periodo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\periodos_informes.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\permiso.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\pista.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\placa.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PLANE.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\plantillaDet.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\plantillaMst.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PLANTILLA_DETRI.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\plantilla_inven.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\plantilla_prods.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PLANTILLA_RI.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\plantPLano.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\plantPlanoDet.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\plantPlanoEtapa.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\plantPlanoLog.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\plaporteria.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\pregunta.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\preguntas_new.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\premio.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PRIORIDAD_RI.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PRODUCCION.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\producto.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PRODUC_ELEMEN.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PRODUC_FORMULAS.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\prom.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\promMyTecno.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\promMyTecnoDetalle.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PROMOCIONAL.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Promocione.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\promsclase.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\promsfree.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\promsgrupo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\promsprod.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\promssecc.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\promsserv.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\promstime.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\proveedor.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\recupera_cartera.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\refer.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Regiman.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\REGIMENE.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\RepCamareria.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\reserva.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\reservas_abonos.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\reservas_huesped.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\reservas_soporte.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\reservas_Traza.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\respuesta.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SavePeriodo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\seccione.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sectore.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\secureSy.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\secureSysMenu.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\secureSysOpcion.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\secureSysSubMenu.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\segmento.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\seguro.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SENSOR.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SetupApp.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\setupMonitorPedido.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\setUpPos.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\setup_taxis.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sexo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\showconsec.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sinconver.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SOPTECNICO.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sostenibilidad.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\stock.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\stockMinimo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sugerencia.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\suite.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\suites_add.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\suites_fotos.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\suites_mecas.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\supervision.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\supervision_detalle.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tablatemporada.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TANQAGUA.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TANQAGUAINFO.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tarjetasDispo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\taxi.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\taxis_horario.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\taxis_visitas.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TbCIIU.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TbCptoRete.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TbRetencion.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tbTaxi.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\temp.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\test_OnOff.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\THFOREC.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TIEMPO_RI.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipdoc.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipiva.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipIvaHotel.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipoActivo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TIPOCAR.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipoEvid.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipoFactura.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipoGlosario.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TipoLabor.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TipOlvido.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipoMenuDiario.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipoProdDscto.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipoReserva.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tippago.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TipRegistro.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tipsex.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tip_Huesped.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tmpCargue.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tmpconsumo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tmpdispon.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tmpfactdisc.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tmpinven.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tmppago.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tmpProximo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tmpresuman.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TmpResumGral.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TmpResumVta.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tmp_informe2.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\toolb.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\toolFrmPago.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TRANSFORMA.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TRANSFORMA_ELEMEN.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\transporte.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\trfacontrol.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\trfanew.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\trfaprod.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\trfaprodsLista.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\trfaprodsListasBak.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\trfaserv.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\trfatempo.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\turnact.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\turninv.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Ubicacione.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\usuario.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\vece.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Voucher.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\W.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ZMOTMP.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\zona.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\zzTempoProd.cs">
-      <DependentUpon>MyDigModel.tt</DependentUpon>
+      <DependentUpon>MyRoomDigModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -1124,15 +1124,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\MyDigModel.Context.tt">
+    <Content Include="Models\MyRoomDigModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MyDigModel.edmx</DependentUpon>
-      <LastGenOutput>MyDigModel.Context.cs</LastGenOutput>
+      <DependentUpon>MyRoomDigModel.edmx</DependentUpon>
+      <LastGenOutput>MyRoomDigModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\MyDigModel.tt">
+    <Content Include="Models\MyRoomDigModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MyDigModel.edmx</DependentUpon>
-      <LastGenOutput>MyDigModel.cs</LastGenOutput>
+      <DependentUpon>MyRoomDigModel.edmx</DependentUpon>
+      <LastGenOutput>MyRoomDigModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1155,12 +1155,12 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="Models\MyDigModel.edmx">
+    <EntityDeploy Include="Models\MyRoomDigModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MyDigModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>MyRoomDigModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\MyDigModel.edmx.diagram">
-      <DependentUpon>MyDigModel.edmx</DependentUpon>
+    <Content Include="Models\MyRoomDigModel.edmx.diagram">
+      <DependentUpon>MyRoomDigModel.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />

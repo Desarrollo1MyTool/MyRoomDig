@@ -13,10 +13,10 @@ namespace MyRoomDig.API.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MyDigEntities : DbContext
+    public partial class MyRoomDigEntities : DbContext
     {
-        public MyDigEntities()
-            : base("name=MyDigEntities")
+        public MyRoomDigEntities()
+            : base("name=MyRoomDigEntities")
         {
         }
     

@@ -4,10 +4,14 @@
     public class EvidenciasModel
     {
         public System.Guid id { get; set; }
-        public string codeTipoEvid { get; set; }
-        public string codeCarpeta { get; set; }
-        public int idIdentifica { get; set; }
         public int idSerialNum { get; set; }
+        public int? numIdenti { get; set; }
+        public int? typeDoc { get; set; }
+        public string name { get; set; }
+        public string idClient { get; set; }
+        public string codeTipoEvid { get; set; }
+        public string nameClient { get; set; }
+        public string codeCarpeta { get; set; }
         public byte[] evidencia1 { get; set; }
         public string descripcion { get; set; }
         public string fileName { get; set; }

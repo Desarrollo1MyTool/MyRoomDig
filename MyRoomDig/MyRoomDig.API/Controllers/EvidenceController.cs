@@ -12,63 +12,68 @@
     public class EvidenceController: ApiController
     {
         #region Attributes
-        MyDigEntities db = new MyDigEntities();
+        MyRoomDigEntities db = new MyRoomDigEntities();
         #endregion
         #region GET´s
         [Route("api/GetClients")]
-        public IQueryable<EvidenciasModel> GetClients(string identification)
+        public IQueryable<EvidenciasModel> GetClients(string identification, KeyValue idTypeDoc)
         {
+           List<EvidenciasModel> CsReturn = new List<EvidenciasModel>();
             try
             {
-                List<EvidenciasModel> CsReturn = new List<EvidenciasModel>();
-                using (MyDigEntities dbContext = new MyDigEntities())
+                using (MyRoomDigEntities dbContext = new MyRoomDigEntities())
                 {
                     var lsTemp = (from C in db.clientes
-                                  join E in db.evidencias
-                                  on C.idtercero equals E.idIdentifica into EvidenciasNull
-                                  from ENL in EvidenciasNull.DefaultIfEmpty()
-                                  where C.id == identification && ENL.idIdentifica == C.idtercero
+                                  where C.id == identification && C.tipodoc == idTypeDoc.id
                                   select new
                                   {
-                                      IdClient = C.numint,
                                       NumIdenti = C.idtercero,
-                                      TypeDoc = C.tipodoc,
+                                      IdClient = C.id,
                                       Name = C.name,
-                                      FileName = ENL.fileName,
-                                      Picture = ENL.evidencia1,
-                                      Date = ENL.fecha,
-                                      User = ENL.usuario,
-                                      Description = ENL.descripcion,
-                                      CodeTypeEvi = ENL.codeTipoEvid,
-                                      CodeFolder = ENL.codeCarpeta,
-                                      IdSerialNum = ENL.idSerialNum
 
                                   }).ToList();
+
                     foreach (var item in lsTemp)
                     {
                         CsReturn.Add(new EvidenciasModel
                         {
-                            codeTipoEvid = item.CodeTypeEvi,
-                            codeCarpeta = item.CodeFolder,
-                            idIdentifica = item.NumIdenti ?? 0,
-                            idSerialNum = item.IdSerialNum,
-                            evidencia1 = item.Picture,
-                            descripcion = item.Description,
-                            fileName = item.FileName,
-                            fecha = item.Date,
-                            usuario = item.User
+                            numIdenti = item.NumIdenti,
+                            idClient = item.IdClient,
+                            nameClient = item.Name,
                         });
                     }
                 }
-                return CsReturn.AsQueryable();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
             }
+          return CsReturn.AsQueryable();
         }
-
+        [Route("api/GetTypeDoc")]
+        public IQueryable<KeyValue> GetTypeDoc()
+        {
+            List<KeyValue> CsReturn = new List<KeyValue>();
+            try
+            {
+                using (MyRoomDigEntities dbContext = new MyRoomDigEntities())
+                {
+                    var lsTemp = (from TD in db.tipdocs
+                                  select TD).ToList();
+                    foreach(var item in lsTemp)
+                    {
+                        CsReturn.Add(new KeyValue
+                        {
+                            id = item.id,
+                            name = item.name
+                        });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+            return CsReturn.AsQueryable();
+        }
         #endregion
         #region POST´s
         [ResponseType(typeof(EvidenciasModel))]
@@ -77,7 +82,7 @@
         {
             try
             {
-                if(!ModelState.IsValid || evidenciasModel == null)
+                if (!ModelState.IsValid || evidenciasModel == null)
                 {
                     return false;
                 }
@@ -85,20 +90,46 @@
                 {
                     try
                     {
-                        db.evidencias.Add(new API.Models.evidencia
+                        evidenciasModel.codeTipoEvid = "DOCUMENTO";
+                        evidenciasModel.codeCarpeta = "Soporte";
+                        List<evidencia> lsTemp = db.evidencias.Where(x => x.idIdentifica == evidenciasModel.numIdenti).ToList();
+                        if (lsTemp.Count == 0)
                         {
-                            codeTipoEvid = evidenciasModel.codeTipoEvid ??"",
-                            codeCarpeta = evidenciasModel.codeCarpeta ?? "",
-                            idIdentifica = evidenciasModel.idIdentifica == null ? 0 : evidenciasModel.idIdentifica,
-                            idSerialNum = evidenciasModel.idSerialNum == null ? 0 : evidenciasModel.idSerialNum,
-                            evidencia1 = evidenciasModel.evidencia1 == null ? new byte[0] : evidenciasModel.evidencia1,
-                            descripcion = evidenciasModel.descripcion ?? "",
-                            fileName = evidenciasModel.fileName ?? "",
-                            fecha = evidenciasModel.fecha == null ? DateTime.Now : evidenciasModel.fecha,
-                            usuario = evidenciasModel.usuario ?? ""
-                        });
-                        db.SaveChanges();
-                        dbContextTransaction.Commit();
+                            db.evidencias.Add(new API.Models.evidencia
+                            {
+                                id = Guid.NewGuid(),
+                                codeTipoEvid = evidenciasModel.codeTipoEvid,
+                                codeCarpeta = evidenciasModel.codeCarpeta,
+                                idSerialNum = 1,
+                                idIdentifica = evidenciasModel.numIdenti ?? 0,
+                                evidencia1 = evidenciasModel.evidencia1,
+                                descripcion = evidenciasModel.descripcion ?? "",
+                                fileName = evidenciasModel.fileName ?? "",
+                                fecha = DateTime.Now,
+                                usuario = evidenciasModel.usuario ?? ""
+                            });
+                            db.SaveChanges();
+                            dbContextTransaction.Commit();
+                        }
+                        else
+                        {
+                            evidencia evidence = lsTemp.Last();
+                                db.evidencias.Add(new API.Models.evidencia
+                                {
+                                    id = Guid.NewGuid(),
+                                    codeTipoEvid = evidenciasModel.codeTipoEvid,
+                                    codeCarpeta = evidenciasModel.codeCarpeta,
+                                    idSerialNum = evidence.idSerialNum + 1,
+                                    idIdentifica = evidenciasModel.numIdenti ?? 0,
+                                    evidencia1 = evidenciasModel.evidencia1,
+                                    descripcion = evidenciasModel.descripcion ?? "",
+                                    fileName = evidenciasModel.fileName ?? "",
+                                    fecha = DateTime.Now,
+                                    usuario = evidenciasModel.usuario ?? ""
+                                });
+                                db.SaveChanges();
+                                dbContextTransaction.Commit();
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -115,5 +146,6 @@
 
         }
         #endregion
+
     }
 }

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1df051a402c04717817007732699608b" Name="Diagram1">
+        <EntityTypeShape EntityType="MyRoomDigModel.accesorio" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.acomodacion" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.activo" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.AjustaGralScrPos" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.AjustaScrPos" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ALERTA" Width="1.5" PointX="2.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.alimentacione" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.alquiler" Width="1.5" PointX="10.25" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.alquiler_alimentacion" Width="1.5" PointX="2.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.alquiler_personas" Width="1.5" PointX="19.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.alquiler_puc" Width="1.5" PointX="17.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.alquiler_rangos" Width="1.5" PointX="19.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.alquilerTrConcepto" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ANEXO" Width="1.5" PointX="20.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.anul" Width="1.5" PointX="18" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.area" Width="1.5" PointX="8" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.areasAutom" Width="1.5" PointX="4.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.auditoriaNocHabita" Width="1.5" PointX="20.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.auditoriaNocturna" Width="1.5" PointX="21.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Autoconver" Width="1.5" PointX="9.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.banco" Width="1.5" PointX="15.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.bitacora" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.bodega" Width="1.5" PointX="8" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.CABE_OC" Width="1.5" PointX="21.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.CABE_RI" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.camform" Width="1.5" PointX="22.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.cargo" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Cargue" Width="1.5" PointX="19.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.cauanul" Width="1.5" PointX="15.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.CAUDISP" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.caumov" Width="1.5" PointX="22.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.caumto" Width="1.5" PointX="21.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.cautimefree" Width="1.5" PointX="0.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.CENTROC" Width="1.5" PointX="2.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.cierreGeneral" Width="1.5" PointX="4.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Ciudade" Width="1.5" PointX="23.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.CIUU" Width="1.5" PointX="23.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.clase_pago" Width="1.5" PointX="16.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.clase_porteria" Width="1.5" PointX="23.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.clasepista" Width="1.5" PointX="23.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.clas" Width="1.5" PointX="5.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.cliente" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.clientes_Desayuno" Width="1.5" PointX="25.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.clientes_estadia" Width="1.5" PointX="25.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.clsmedida" Width="1.5" PointX="5.75" PointY="36.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.clsmto" Width="1.5" PointX="25.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.comanda" Width="1.5" PointX="10.25" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ComproPUC" Width="1.5" PointX="21.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.CON_Puc" Width="1.5" PointX="25.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.CONDICION" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.contrato_pedidos" Width="1.5" PointX="27.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.CONTRIB" Width="1.5" PointX="27.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.controle" Width="1.5" PointX="27.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.controlHerramienta" Width="1.5" PointX="27.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.conver_spec" Width="1.5" PointX="27.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.conver" Width="1.5" PointX="10.25" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.correo" Width="1.5" PointX="18.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.cptoegre" Width="1.5" PointX="27.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.cptoingr" Width="1.5" PointX="15.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.crespo" Width="1.5" PointX="23.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.CtrlCama" Width="1.5" PointX="27.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ctrlstock" Width="1.5" PointX="20.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ctrmovi" Width="1.5" PointX="29.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.cuestionario_new" Width="1.5" PointX="29.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.DECOMAPA" Width="1.5" PointX="29.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.det_serv" Width="1.5" PointX="29.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.detalle" Width="1.5" PointX="13.25" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.DETALLE_OC" Width="1.5" PointX="29.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.DETALLE_RI" Width="1.5" PointX="29.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.detestado" Width="1.5" PointX="11" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.detfactura" Width="1.5" PointX="18.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.detivafact" Width="1.5" PointX="0.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.detmedida" Width="1.5" PointX="8" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.detmovin" Width="1.5" PointX="14" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.detsalinv" Width="1.5" PointX="2.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.devuelto" Width="1.5" PointX="4.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.DISPOHORA" Width="1.5" PointX="24.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.docCompra" Width="1.5" PointX="26.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.dotacion" Width="1.5" PointX="31.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.egreso" Width="1.5" PointX="13.25" PointY="52.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.EMAIL" Width="1.5" PointX="31.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.empresa" Width="1.5" PointX="31.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.errore" Width="1.5" PointX="31.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.est_olvido" Width="1.5" PointX="16.25" PointY="61.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.estado" Width="1.5" PointX="31.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ESTADOS_RI" Width="1.5" PointX="31.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.estadosTransac" Width="1.5" PointX="31.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.EstReserva" Width="1.5" PointX="21.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.evalua" Width="1.5" PointX="31.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.evidencia" Width="1.5" PointX="31.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.factura" Width="1.5" PointX="19.25" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.formula" Width="1.5" PointX="16.25" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.frmpago" Width="1.5" PointX="13" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.frmshow" Width="1.5" PointX="31.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.funcione" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.FybParamTempo" Width="1.5" PointX="33.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.glosario" Width="1.5" PointX="13" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.grpmto" Width="1.5" PointX="2.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.grupocliente" Width="1.5" PointX="33.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.grupos" Width="1.5" PointX="3.5" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.htmlInforme" Width="1.5" PointX="4.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.idioma" Width="1.5" PointX="33.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.incluido" Width="1.5" PointX="33.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.INCONSENSOR" Width="1.5" PointX="33.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.indeseable" Width="1.5" PointX="33.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.infoCambVersion" Width="1.5" PointX="33.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ingreso" Width="1.5" PointX="17.5" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Instancia" Width="1.5" PointX="33.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.KPItrue" Width="1.5" PointX="33.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.lista_chequeo" Width="1.5" PointX="26.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Lista" Width="1.5" PointX="33.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.log_olvido" Width="1.5" PointX="20.75" PointY="52.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.logReservasW" Width="1.5" PointX="33.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Maqui_Zona" Width="1.5" PointX="28.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.maquinaProducto" Width="1.5" PointX="30.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.maquina" Width="1.5" PointX="35.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.mecamovi" Width="1.5" PointX="35.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.mecanismo" Width="1.5" PointX="35.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.memo1" Width="1.5" PointX="35.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.memo2" Width="1.5" PointX="35.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.memo3" Width="1.5" PointX="35.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.mensaje" Width="1.5" PointX="35.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.mesa" Width="1.5" PointX="16.25" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.mesas_dotacion" Width="1.5" PointX="32.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.mesero" Width="1.5" PointX="11" PointY="50.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.MonitorPedido" Width="1.5" PointX="35.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.motidev" Width="1.5" PointX="0.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.motivo" Width="1.5" PointX="2.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.movhab" Width="1.5" PointX="24.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.movinven" Width="1.5" PointX="16.25" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.movinventario" Width="1.5" PointX="37.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.movturno" Width="1.5" PointX="37.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.msg_institut" Width="1.5" PointX="37.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.mto_prv" Width="1.5" PointX="37.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.mtohab" Width="1.5" PointX="37.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.MyCashAuthorize" Width="1.5" PointX="26.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.MyCashHistory" Width="1.5" PointX="28.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.MyTecno" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.nacionalidad" Width="1.5" PointX="37.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.net" Width="1.5" PointX="37.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.nivel" Width="1.5" PointX="5.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.novedad" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.novedadDetalle" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ocupacione" Width="1.5" PointX="30.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.olvido" Width="1.5" PointX="18.5" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.OPCclient" Width="1.5" PointX="32.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.OPCconexion" Width="1.5" PointX="39.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.OPCdevice" Width="1.5" PointX="0.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.OrdenMesa" Width="1.5" PointX="2.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.origen" Width="1.5" PointX="39.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.pagoRegistro" Width="1.5" PointX="4.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.pais" Width="1.5" PointX="39.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.parametro" Width="1.5" PointX="39.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.parametros2" Width="1.5" PointX="39.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.parametros3" Width="1.5" PointX="34.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.pedido" Width="1.5" PointX="13.25" PointY="57.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.pedidos_auditoria" Width="1.5" PointX="21.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PEDIDOS_COBROS" Width="1.5" PointX="26.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.pedidos_detalle" Width="1.5" PointX="41.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PedidosPendDet" Width="1.5" PointX="41.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PedidosPendMst" Width="1.5" PointX="41.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.pendiente" Width="1.5" PointX="41.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.periodo" Width="1.5" PointX="41.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.periodos_informes" Width="1.5" PointX="23.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.permiso" Width="1.5" PointX="41.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.pista" Width="1.5" PointX="41.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.placa" Width="1.5" PointX="28.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PLANE" Width="1.5" PointX="41.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PLANTILLA_DETRI" Width="1.5" PointX="41.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.plantilla_inven" Width="1.5" PointX="41.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.plantilla_prods" Width="1.5" PointX="41.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PLANTILLA_RI" Width="1.5" PointX="4.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.plantPLano" Width="1.5" PointX="30.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.plantPlanoDet" Width="1.5" PointX="43.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.plantPlanoEtapa" Width="1.5" PointX="0.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.plantPlanoLog" Width="1.5" PointX="43.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.plaporteria" Width="1.5" PointX="43.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.pregunta" Width="1.5" PointX="43.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.preguntas_new" Width="1.5" PointX="43.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.premio" Width="1.5" PointX="43.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PRIORIDAD_RI" Width="1.5" PointX="43.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PRODUC_ELEMEN" Width="1.5" PointX="43.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PRODUC_FORMULAS" Width="1.5" PointX="43.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PRODUCCION" Width="1.5" PointX="43.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.producto" Width="1.5" PointX="8" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.PROMOCIONAL" Width="1.5" PointX="43.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Promocione" Width="1.5" PointX="43.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.prom" Width="1.5" PointX="14" PointY="45.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.promsclase" Width="1.5" PointX="19.25" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.promsfree" Width="1.5" PointX="43.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.promsgrupo" Width="1.5" PointX="22.25" PointY="37.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.promsprod" Width="1.5" PointX="16.25" PointY="40" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.promssecc" Width="1.5" PointX="22.25" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.promsserv" Width="1.5" PointX="23.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.promstime" Width="1.5" PointX="16.25" PointY="66.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.proveedor" Width="1.5" PointX="25.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.recupera_cartera" Width="1.5" PointX="27.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.refer" Width="1.5" PointX="45.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Regiman" Width="1.5" PointX="2.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.REGIMENE" Width="1.5" PointX="45.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.RepCamareria" Width="1.5" PointX="4.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.reserva" Width="1.5" PointX="45.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.reservas_abonos" Width="1.5" PointX="6.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.reservas_huesped" Width="1.5" PointX="45.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.reservas_soporte" Width="1.5" PointX="45.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.reservas_Traza" Width="1.5" PointX="45.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.respuesta" Width="1.5" PointX="45.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.SavePeriodo" Width="1.5" PointX="45.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.seccione" Width="1.5" PointX="1.25" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.sectore" Width="1.5" PointX="45.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.secureSy" Width="1.5" PointX="36.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.secureSysMenu" Width="1.5" PointX="45.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.secureSysOpcion" Width="1.5" PointX="45.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.secureSysSubMenu" Width="1.5" PointX="45.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.segmento" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.SENSOR" Width="1.5" PointX="47.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.setup_taxis" Width="1.5" PointX="47.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.SetupApp" Width="1.5" PointX="47.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.setupMonitorPedido" Width="1.5" PointX="47.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.setUpPos" Width="1.5" PointX="47.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.sexo" Width="1.5" PointX="47.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.showconsec" Width="1.5" PointX="47.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.sinconver" Width="1.5" PointX="47.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.SOPTECNICO" Width="1.5" PointX="47.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.sostenibilidad" Width="1.5" PointX="47.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.stockMinimo" Width="1.5" PointX="47.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.stock" Width="1.5" PointX="10.25" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.sugerencia" Width="1.5" PointX="47.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.suite" Width="1.5" PointX="8" PointY="40" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.suites_add" Width="1.5" PointX="47.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.suites_fotos" Width="1.5" PointX="41.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.suites_mecas" Width="1.5" PointX="47.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.supervision" Width="1.5" PointX="47.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.supervision_detalle" Width="1.5" PointX="0.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tablatemporada" Width="1.5" PointX="6.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TANQAGUA" Width="1.5" PointX="27.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TANQAGUAINFO" Width="1.5" PointX="29.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tarjetasDispo" Width="1.5" PointX="31.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.taxi" Width="1.5" PointX="43.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.taxis_horario" Width="1.5" PointX="49.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.taxis_visitas" Width="1.5" PointX="2.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TbCIIU" Width="1.5" PointX="49.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TbCptoRete" Width="1.5" PointX="49.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TbRetencion" Width="1.5" PointX="49.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tbTaxi" Width="1.5" PointX="49.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.temp" Width="1.5" PointX="14" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.test_OnOff" Width="1.5" PointX="49.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.THFOREC" Width="1.5" PointX="49.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TIEMPO_RI" Width="1.5" PointX="21.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tip_Huesped" Width="1.5" PointX="49.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipdoc" Width="1.5" PointX="49.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipiva" Width="1.5" PointX="49.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipIvaHotel" Width="1.5" PointX="49.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipoActivo" Width="1.5" PointX="36.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TIPOCAR" Width="1.5" PointX="49.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipoEvid" Width="1.5" PointX="49.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipoFactura" Width="1.5" PointX="49.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipoGlosario" Width="1.5" PointX="10.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TipoLabor" Width="1.5" PointX="49.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TipOlvido" Width="1.5" PointX="16.25" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipoMenuDiario" Width="1.5" PointX="49.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipoProdDscto" Width="1.5" PointX="23.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipoReserva" Width="1.5" PointX="45.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tippago" Width="1.5" PointX="10.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TipRegistro" Width="1.5" PointX="51.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tipsex" Width="1.5" PointX="51.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tmp_informe2" Width="1.5" PointX="4.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tmpCargue" Width="1.5" PointX="51.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tmpconsumo" Width="1.5" PointX="6.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tmpdispon" Width="1.5" PointX="51.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tmpfactdisc" Width="1.5" PointX="51.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tmpinven" Width="1.5" PointX="51.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tmppago" Width="1.5" PointX="25.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tmpProximo" Width="1.5" PointX="51.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.tmpresuman" Width="1.5" PointX="51.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TmpResumGral" Width="1.5" PointX="31.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TmpResumVta" Width="1.5" PointX="51.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.toolb" Width="1.5" PointX="51.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.toolFrmPago" Width="1.5" PointX="15.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TRANSFORMA" Width="1.5" PointX="51.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.TRANSFORMA_ELEMEN" Width="1.5" PointX="51.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.transporte" Width="1.5" PointX="51.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.trfacontrol" Width="1.5" PointX="0.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.trfanew" Width="1.5" PointX="36.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.trfaprod" Width="1.5" PointX="19.25" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.trfaprodsLista" Width="1.5" PointX="38.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.trfaprodsListasBak" Width="1.5" PointX="40.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.trfaserv" Width="1.5" PointX="47.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.trfatempo" Width="1.5" PointX="49.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.turnact" Width="1.5" PointX="51.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.turninv" Width="1.5" PointX="53.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Ubicacione" Width="1.5" PointX="53.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.vece" Width="1.5" PointX="53.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.Voucher" Width="1.5" PointX="53.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.W" Width="1.5" PointX="53.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ZMOTMP" Width="1.5" PointX="53.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.zona" Width="1.5" PointX="10.25" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.zzTempoProd" Width="1.5" PointX="22.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.alquilerPre" Width="1.5" PointX="53.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.ConfPuntosSuite" Width="1.5" PointX="53.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.cotizacion_detalle" Width="1.5" PointX="53.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.menuDiario" Width="1.5" PointX="53.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.plantillaDet" Width="1.5" PointX="53.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.plantillaMst" Width="1.5" PointX="53.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.promMyTecno" Width="1.5" PointX="2.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.promMyTecnoDetalle" Width="1.5" PointX="27.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.seguro" Width="1.5" PointX="42.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyRoomDigModel.usuario" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="MyRoomDigModel.alquiler_id_servicios_productos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.alquiler_id_suites_suites_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.alquiler_id_temps_temps_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.alquiler_id_tipos_detmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.anuls_id_cauanuls_cauanuls_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.comandas_id_areas_areas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.zonas_id_area_areas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.detfacturas_id_bancos_bancos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.ingresos_id_bancos_bancos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK_bitacora_novedad" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.bodegas_id_nivels_nivels_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.comandas_id_bodegas_bodegas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.movinven_id_bodegas_bodegas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.stocks_id_bodegas_bodegas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.clases_id_grupo_grupos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.productos_id_clase_clases_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promsclase_id_clases_clases_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.detmedidas_id_clsmedidas_clsmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.productos_id_clsmedidas_clsmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.comandas_id_grupos_grupos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.convers_id_detmedidas_A_detmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.convers_id_detmedidas_B_detmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.cptoingr_id_frmpagos_frmpagos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.ingresos_id_cptoingr_cptoingr_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.detalle_id_detestados_detestados_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.detalle_id_detmedidas_detmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.detalle_id_meseros_meseros_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.detalle_id_productos_productos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.detalle_id_temps_temps_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.egresos_id_detestados_detestados_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.facturas_id_detestados_detestados_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.ingresos_id_detestados_detestados_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.pedidos_id_detestados_detestados_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.detfacturas_id_frmpagos_frmpagos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.formulas_id_detmedidas_detmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.movinven_id_detmedidas_detmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promsprod_id_detmedidas_detmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.stocks_id_detmedidas_detmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.trfaprods_id_detmedidas_detmedidas_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.movinven_id_detmovin_detmovin_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK_olvidos_est_olvido" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.facturas_id_meseros_meseros_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.formulas_id_productos_productos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__toolFrmPa__idFrm__326C5B6A" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__toolFrmPa__idFrm__3F7150CD" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__toolFrmPa__idFrm__463E49ED" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__toolFrmPa__idFrm__53633AE1" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__toolFrmPa__idFrm__7953D99F" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.frmpagos_id_tippagos_tippagos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.ingresos_id_frmpago_frmpagos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.usuarios_id_funciones_funciones_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.fk_Glosario" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.grupos_id_seccion_secciones_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promsgrupo_id_grupos_grupos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK_log_olvido_olvidos" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK_olvidos_mesas" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.mesas_id_mesero_meseros_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.mesas_id_suites_suites_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK_olvidos_meseros" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.movinven_id_productos_productos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.movinven_id_temps_temps_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.PK_MyTecno" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__20ECC9AD" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__21E0EDE6" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__22D5121F" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__23C93658" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__24BD5A91" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__25B17ECA" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__26A5A303" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__2799C73C" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__27EECCF7" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__288DEB75" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__29820FAE" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__2A7633E7" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__2B6A5820" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__3BC0BB7A" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__48E5AC6E" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK__novedadDe__idNov__6ED64B2C" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.FK_olvidos_TipOlvido" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promsprod_id_productos_productos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.stocks_id_productos_productos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.trfaprods_id_productos_productos_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promsclase_id_proms_proms_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promsgrupo_id_proms_proms_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promsprod_id_proms_proms_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promssecc_id_proms_proms_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promstime_id_proms_proms_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.promssecc_id_secciones_secciones_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MyRoomDigModel.trfaprods_id_tempo_temps_id" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="MyDigModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="MyRoomDigModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="accesorios">
           <Key>
             <PropertyRef Name="id" />
@@ -5800,7 +5800,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__novedadDe__idNov__70BE939E">
+        <Association Name="FK__novedadDe__idNov__6ED64B2C">
           <End Role="novedad" Type="Self.novedad" Multiplicity="0..1" />
           <End Role="novedadDetalle" Type="Self.novedadDetalle" Multiplicity="*" />
           <ReferentialConstraint>
@@ -5860,7 +5860,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__toolFrmPa__idFrm__7B3C2211">
+        <Association Name="FK__toolFrmPa__idFrm__7953D99F">
           <End Role="frmpagos" Type="Self.frmpagos" Multiplicity="0..1" />
           <End Role="toolFrmPagos" Type="Self.toolFrmPagos" Multiplicity="*" />
           <ReferentialConstraint>
@@ -6400,7 +6400,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="MyDigModelStoreContainer">
+        <EntityContainer Name="MyRoomDigModelStoreContainer">
           <EntitySet Name="accesorios" EntityType="Self.accesorios" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="acomodacion" EntityType="Self.acomodacion" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="activos" EntityType="Self.activos" Schema="dbo" store:Type="Tables" />
@@ -7007,7 +7007,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             <End Role="novedad" EntitySet="novedad" />
             <End Role="novedadDetalle" EntitySet="novedadDetalle" />
           </AssociationSet>
-          <AssociationSet Name="FK__novedadDe__idNov__70BE939E" Association="Self.FK__novedadDe__idNov__70BE939E">
+          <AssociationSet Name="FK__novedadDe__idNov__6ED64B2C" Association="Self.FK__novedadDe__idNov__6ED64B2C">
             <End Role="novedad" EntitySet="novedad" />
             <End Role="novedadDetalle" EntitySet="novedadDetalle" />
           </AssociationSet>
@@ -7027,7 +7027,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             <End Role="frmpagos" EntitySet="frmpagos" />
             <End Role="toolFrmPagos" EntitySet="toolFrmPagos" />
           </AssociationSet>
-          <AssociationSet Name="FK__toolFrmPa__idFrm__7B3C2211" Association="Self.FK__toolFrmPa__idFrm__7B3C2211">
+          <AssociationSet Name="FK__toolFrmPa__idFrm__7953D99F" Association="Self.FK__toolFrmPa__idFrm__7953D99F">
             <End Role="frmpagos" EntitySet="frmpagos" />
             <End Role="toolFrmPagos" EntitySet="toolFrmPagos" />
           </AssociationSet>
@@ -7212,7 +7212,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="MyDigModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="MyRoomDigModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="accesorio">
           <Key>
             <PropertyRef Name="id" />
@@ -8646,7 +8646,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
           <NavigationProperty Name="toolFrmPagos1" Relationship="Self.FK__toolFrmPa__idFrm__3F7150CD" FromRole="frmpagos" ToRole="toolFrmPagos" />
           <NavigationProperty Name="toolFrmPagos2" Relationship="Self.FK__toolFrmPa__idFrm__463E49ED" FromRole="frmpagos" ToRole="toolFrmPagos" />
           <NavigationProperty Name="toolFrmPagos3" Relationship="Self.FK__toolFrmPa__idFrm__53633AE1" FromRole="frmpagos" ToRole="toolFrmPagos" />
-          <NavigationProperty Name="toolFrmPagos4" Relationship="Self.FK__toolFrmPa__idFrm__7B3C2211" FromRole="frmpagos" ToRole="toolFrmPagos" />
+          <NavigationProperty Name="toolFrmPagos4" Relationship="Self.FK__toolFrmPa__idFrm__7953D99F" FromRole="frmpagos" ToRole="toolFrmPagos" />
           <NavigationProperty Name="tippago" Relationship="Self.frmpagos_id_tippagos_tippagos_id" FromRole="frmpagos" ToRole="tippagos" />
           <NavigationProperty Name="ingresos" Relationship="Self.ingresos_id_frmpago_frmpagos_id" FromRole="frmpagos" ToRole="ingresos" />
         </EntityType>
@@ -9467,7 +9467,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
           <NavigationProperty Name="novedadDetalles12" Relationship="Self.FK__novedadDe__idNov__2B6A5820" FromRole="novedad" ToRole="novedadDetalle" />
           <NavigationProperty Name="novedadDetalles13" Relationship="Self.FK__novedadDe__idNov__3BC0BB7A" FromRole="novedad" ToRole="novedadDetalle" />
           <NavigationProperty Name="novedadDetalles14" Relationship="Self.FK__novedadDe__idNov__48E5AC6E" FromRole="novedad" ToRole="novedadDetalle" />
-          <NavigationProperty Name="novedadDetalles15" Relationship="Self.FK__novedadDe__idNov__70BE939E" FromRole="novedad" ToRole="novedadDetalle" />
+          <NavigationProperty Name="novedadDetalles15" Relationship="Self.FK__novedadDe__idNov__6ED64B2C" FromRole="novedad" ToRole="novedadDetalle" />
         </EntityType>
         <EntityType Name="novedadDetalle">
           <Key>
@@ -9491,7 +9491,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
           <NavigationProperty Name="novedad12" Relationship="Self.FK__novedadDe__idNov__2B6A5820" FromRole="novedadDetalle" ToRole="novedad" />
           <NavigationProperty Name="novedad13" Relationship="Self.FK__novedadDe__idNov__3BC0BB7A" FromRole="novedadDetalle" ToRole="novedad" />
           <NavigationProperty Name="novedad14" Relationship="Self.FK__novedadDe__idNov__48E5AC6E" FromRole="novedadDetalle" ToRole="novedad" />
-          <NavigationProperty Name="novedad15" Relationship="Self.FK__novedadDe__idNov__70BE939E" FromRole="novedadDetalle" ToRole="novedad" />
+          <NavigationProperty Name="novedad15" Relationship="Self.FK__novedadDe__idNov__6ED64B2C" FromRole="novedadDetalle" ToRole="novedad" />
         </EntityType>
         <EntityType Name="ocupacione">
           <Key>
@@ -11605,7 +11605,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
           <NavigationProperty Name="frmpago1" Relationship="Self.FK__toolFrmPa__idFrm__3F7150CD" FromRole="toolFrmPagos" ToRole="frmpagos" />
           <NavigationProperty Name="frmpago2" Relationship="Self.FK__toolFrmPa__idFrm__463E49ED" FromRole="toolFrmPagos" ToRole="frmpagos" />
           <NavigationProperty Name="frmpago3" Relationship="Self.FK__toolFrmPa__idFrm__53633AE1" FromRole="toolFrmPagos" ToRole="frmpagos" />
-          <NavigationProperty Name="frmpago4" Relationship="Self.FK__toolFrmPa__idFrm__7B3C2211" FromRole="toolFrmPagos" ToRole="frmpagos" />
+          <NavigationProperty Name="frmpago4" Relationship="Self.FK__toolFrmPa__idFrm__7953D99F" FromRole="toolFrmPagos" ToRole="frmpagos" />
         </EntityType>
         <EntityType Name="TRANSFORMA">
           <Key>
@@ -12646,7 +12646,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__toolFrmPa__idFrm__7B3C2211">
+        <Association Name="FK__toolFrmPa__idFrm__7953D99F">
           <End Role="frmpagos" Type="Self.frmpago" Multiplicity="0..1" />
           <End Role="toolFrmPagos" Type="Self.toolFrmPago" Multiplicity="*" />
           <ReferentialConstraint>
@@ -13006,7 +13006,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__novedadDe__idNov__70BE939E">
+        <Association Name="FK__novedadDe__idNov__6ED64B2C">
           <End Role="novedad" Type="Self.novedad" Multiplicity="0..1" />
           <End Role="novedadDetalle" Type="Self.novedadDetalle" Multiplicity="*" />
           <ReferentialConstraint>
@@ -13150,7 +13150,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="MyDigEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="MyRoomDigEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="accesorios" EntityType="Self.accesorio" />
           <EntitySet Name="acomodacions" EntityType="Self.acomodacion" />
           <EntitySet Name="activos" EntityType="Self.activo" />
@@ -13647,7 +13647,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             <End Role="frmpagos" EntitySet="frmpagos" />
             <End Role="toolFrmPagos" EntitySet="toolFrmPagos" />
           </AssociationSet>
-          <AssociationSet Name="FK__toolFrmPa__idFrm__7B3C2211" Association="Self.FK__toolFrmPa__idFrm__7B3C2211">
+          <AssociationSet Name="FK__toolFrmPa__idFrm__7953D99F" Association="Self.FK__toolFrmPa__idFrm__7953D99F">
             <End Role="frmpagos" EntitySet="frmpagos" />
             <End Role="toolFrmPagos" EntitySet="toolFrmPagos" />
           </AssociationSet>
@@ -13767,7 +13767,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             <End Role="novedad" EntitySet="novedads" />
             <End Role="novedadDetalle" EntitySet="novedadDetalles" />
           </AssociationSet>
-          <AssociationSet Name="FK__novedadDe__idNov__70BE939E" Association="Self.FK__novedadDe__idNov__70BE939E">
+          <AssociationSet Name="FK__novedadDe__idNov__6ED64B2C" Association="Self.FK__novedadDe__idNov__6ED64B2C">
             <End Role="novedad" EntitySet="novedads" />
             <End Role="novedadDetalle" EntitySet="novedadDetalles" />
           </AssociationSet>
@@ -13821,9 +13821,9 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="MyDigModelStoreContainer" CdmEntityContainer="MyDigEntities">
+        <EntityContainerMapping StorageEntityContainer="MyRoomDigModelStoreContainer" CdmEntityContainer="MyRoomDigEntities">
           <EntitySetMapping Name="accesorios">
-            <EntityTypeMapping TypeName="MyDigModel.accesorio">
+            <EntityTypeMapping TypeName="MyRoomDigModel.accesorio">
               <MappingFragment StoreEntitySet="accesorios">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -13832,7 +13832,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="acomodacions">
-            <EntityTypeMapping TypeName="MyDigModel.acomodacion">
+            <EntityTypeMapping TypeName="MyRoomDigModel.acomodacion">
               <MappingFragment StoreEntitySet="acomodacion">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -13843,7 +13843,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="activos">
-            <EntityTypeMapping TypeName="MyDigModel.activo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.activo">
               <MappingFragment StoreEntitySet="activos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_activo" ColumnName="id_activo" />
@@ -13854,7 +13854,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="AjustaGralScrPos">
-            <EntityTypeMapping TypeName="MyDigModel.AjustaGralScrPos">
+            <EntityTypeMapping TypeName="MyRoomDigModel.AjustaGralScrPos">
               <MappingFragment StoreEntitySet="AjustaGralScrPos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="TipoPantalla" ColumnName="TipoPantalla" />
@@ -13867,7 +13867,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="AjustaScrPos">
-            <EntityTypeMapping TypeName="MyDigModel.AjustaScrPos">
+            <EntityTypeMapping TypeName="MyRoomDigModel.AjustaScrPos">
               <MappingFragment StoreEntitySet="AjustaScrPos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="PrdGrillaAncho" ColumnName="PrdGrillaAncho" />
@@ -13900,7 +13900,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ALERTAS">
-            <EntityTypeMapping TypeName="MyDigModel.ALERTA">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ALERTA">
               <MappingFragment StoreEntitySet="ALERTAS">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -13911,7 +13911,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alimentaciones">
-            <EntityTypeMapping TypeName="MyDigModel.alimentacione">
+            <EntityTypeMapping TypeName="MyRoomDigModel.alimentacione">
               <MappingFragment StoreEntitySet="alimentaciones">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -13920,7 +13920,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alquilers">
-            <EntityTypeMapping TypeName="MyDigModel.alquiler">
+            <EntityTypeMapping TypeName="MyRoomDigModel.alquiler">
               <MappingFragment StoreEntitySet="alquiler">
                 <ScalarProperty Name="id_temps" ColumnName="id_temps" />
                 <ScalarProperty Name="id_servicios" ColumnName="id_servicios" />
@@ -13971,7 +13971,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alquiler_alimentacion">
-            <EntityTypeMapping TypeName="MyDigModel.alquiler_alimentacion">
+            <EntityTypeMapping TypeName="MyRoomDigModel.alquiler_alimentacion">
               <MappingFragment StoreEntitySet="alquiler_alimentacion">
                 <ScalarProperty Name="id_alquiler" ColumnName="id_alquiler" />
                 <ScalarProperty Name="desayunoCant" ColumnName="desayunoCant" />
@@ -13989,7 +13989,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alquiler_personas">
-            <EntityTypeMapping TypeName="MyDigModel.alquiler_personas">
+            <EntityTypeMapping TypeName="MyRoomDigModel.alquiler_personas">
               <MappingFragment StoreEntitySet="alquiler_personas">
                 <ScalarProperty Name="id_Alquiler" ColumnName="id_Alquiler" />
                 <ScalarProperty Name="adultoCant" ColumnName="adultoCant" />
@@ -14002,7 +14002,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alquiler_puc">
-            <EntityTypeMapping TypeName="MyDigModel.alquiler_puc">
+            <EntityTypeMapping TypeName="MyRoomDigModel.alquiler_puc">
               <MappingFragment StoreEntitySet="alquiler_puc">
                 <ScalarProperty Name="id_Alquiler" ColumnName="id_Alquiler" />
                 <ScalarProperty Name="id_tipoPersona" ColumnName="id_tipoPersona" />
@@ -14018,7 +14018,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alquiler_rangos">
-            <EntityTypeMapping TypeName="MyDigModel.alquiler_rangos">
+            <EntityTypeMapping TypeName="MyRoomDigModel.alquiler_rangos">
               <MappingFragment StoreEntitySet="alquiler_rangos">
                 <ScalarProperty Name="id_Alquiler" ColumnName="id_Alquiler" />
                 <ScalarProperty Name="id_tipoPersona" ColumnName="id_tipoPersona" />
@@ -14029,7 +14029,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alquilerTrConceptoes">
-            <EntityTypeMapping TypeName="MyDigModel.alquilerTrConcepto">
+            <EntityTypeMapping TypeName="MyRoomDigModel.alquilerTrConcepto">
               <MappingFragment StoreEntitySet="alquilerTrConcepto">
                 <ScalarProperty Name="id_alquiler" ColumnName="id_alquiler" />
                 <ScalarProperty Name="id_productos" ColumnName="id_productos" />
@@ -14043,7 +14043,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ANEXOes">
-            <EntityTypeMapping TypeName="MyDigModel.ANEXO">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ANEXO">
               <MappingFragment StoreEntitySet="ANEXO">
                 <ScalarProperty Name="numeros" ColumnName="numeros" />
                 <ScalarProperty Name="letra" ColumnName="letra" />
@@ -14056,7 +14056,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="anuls">
-            <EntityTypeMapping TypeName="MyDigModel.anul">
+            <EntityTypeMapping TypeName="MyRoomDigModel.anul">
               <MappingFragment StoreEntitySet="anuls">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_pedidos" ColumnName="id_pedidos" />
@@ -14076,7 +14076,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="areas">
-            <EntityTypeMapping TypeName="MyDigModel.area">
+            <EntityTypeMapping TypeName="MyRoomDigModel.area">
               <MappingFragment StoreEntitySet="areas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14085,7 +14085,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="areasAutoms">
-            <EntityTypeMapping TypeName="MyDigModel.areasAutom">
+            <EntityTypeMapping TypeName="MyRoomDigModel.areasAutom">
               <MappingFragment StoreEntitySet="areasAutom">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="DiaSemana" ColumnName="DiaSemana" />
@@ -14097,7 +14097,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="auditoriaNocHabitas">
-            <EntityTypeMapping TypeName="MyDigModel.auditoriaNocHabita">
+            <EntityTypeMapping TypeName="MyRoomDigModel.auditoriaNocHabita">
               <MappingFragment StoreEntitySet="auditoriaNocHabita">
                 <ScalarProperty Name="numInt" ColumnName="numInt" />
                 <ScalarProperty Name="id_habita" ColumnName="id_habita" />
@@ -14111,7 +14111,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="auditoriaNocturnas">
-            <EntityTypeMapping TypeName="MyDigModel.auditoriaNocturna">
+            <EntityTypeMapping TypeName="MyRoomDigModel.auditoriaNocturna">
               <MappingFragment StoreEntitySet="auditoriaNocturna">
                 <ScalarProperty Name="numInt" ColumnName="numInt" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -14142,7 +14142,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Autoconvers">
-            <EntityTypeMapping TypeName="MyDigModel.Autoconver">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Autoconver">
               <MappingFragment StoreEntitySet="Autoconver">
                 <ScalarProperty Name="id_detmedidas" ColumnName="id_detmedidas" />
                 <ScalarProperty Name="como" ColumnName="como" />
@@ -14151,7 +14151,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="bancos">
-            <EntityTypeMapping TypeName="MyDigModel.banco">
+            <EntityTypeMapping TypeName="MyRoomDigModel.banco">
               <MappingFragment StoreEntitySet="bancos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14159,7 +14159,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="bitacoras">
-            <EntityTypeMapping TypeName="MyDigModel.bitacora">
+            <EntityTypeMapping TypeName="MyRoomDigModel.bitacora">
               <MappingFragment StoreEntitySet="bitacora">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -14175,7 +14175,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="bodegas">
-            <EntityTypeMapping TypeName="MyDigModel.bodega">
+            <EntityTypeMapping TypeName="MyRoomDigModel.bodega">
               <MappingFragment StoreEntitySet="bodegas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14186,7 +14186,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CABE_OC">
-            <EntityTypeMapping TypeName="MyDigModel.CABE_OC">
+            <EntityTypeMapping TypeName="MyRoomDigModel.CABE_OC">
               <MappingFragment StoreEntitySet="CABE_OC">
                 <ScalarProperty Name="ID_OC" ColumnName="ID_OC" />
                 <ScalarProperty Name="ID_PROVEEDOR" ColumnName="ID_PROVEEDOR" />
@@ -14198,7 +14198,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CABE_RI">
-            <EntityTypeMapping TypeName="MyDigModel.CABE_RI">
+            <EntityTypeMapping TypeName="MyRoomDigModel.CABE_RI">
               <MappingFragment StoreEntitySet="CABE_RI">
                 <ScalarProperty Name="ID_RI" ColumnName="ID_RI" />
                 <ScalarProperty Name="ID_CENTROC" ColumnName="ID_CENTROC" />
@@ -14214,7 +14214,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="camforms">
-            <EntityTypeMapping TypeName="MyDigModel.camform">
+            <EntityTypeMapping TypeName="MyRoomDigModel.camform">
               <MappingFragment StoreEntitySet="camform">
                 <ScalarProperty Name="id_platoprod" ColumnName="id_platoprod" />
                 <ScalarProperty Name="id_platomed" ColumnName="id_platomed" />
@@ -14227,7 +14227,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cargos">
-            <EntityTypeMapping TypeName="MyDigModel.cargo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.cargo">
               <MappingFragment StoreEntitySet="cargos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14235,7 +14235,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Cargues">
-            <EntityTypeMapping TypeName="MyDigModel.Cargue">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Cargue">
               <MappingFragment StoreEntitySet="Cargue">
                 <ScalarProperty Name="idCargue" ColumnName="idCargue" />
                 <ScalarProperty Name="idHab" ColumnName="idHab" />
@@ -14254,7 +14254,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cauanuls">
-            <EntityTypeMapping TypeName="MyDigModel.cauanul">
+            <EntityTypeMapping TypeName="MyRoomDigModel.cauanul">
               <MappingFragment StoreEntitySet="cauanuls">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14262,7 +14262,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CAUDISPs">
-            <EntityTypeMapping TypeName="MyDigModel.CAUDISP">
+            <EntityTypeMapping TypeName="MyRoomDigModel.CAUDISP">
               <MappingFragment StoreEntitySet="CAUDISP">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14272,7 +14272,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="caumovs">
-            <EntityTypeMapping TypeName="MyDigModel.caumov">
+            <EntityTypeMapping TypeName="MyRoomDigModel.caumov">
               <MappingFragment StoreEntitySet="caumov">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14280,7 +14280,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="caumtoes">
-            <EntityTypeMapping TypeName="MyDigModel.caumto">
+            <EntityTypeMapping TypeName="MyRoomDigModel.caumto">
               <MappingFragment StoreEntitySet="caumto">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14289,7 +14289,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cautimefrees">
-            <EntityTypeMapping TypeName="MyDigModel.cautimefree">
+            <EntityTypeMapping TypeName="MyRoomDigModel.cautimefree">
               <MappingFragment StoreEntitySet="cautimefree">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14297,7 +14297,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CENTROCs">
-            <EntityTypeMapping TypeName="MyDigModel.CENTROC">
+            <EntityTypeMapping TypeName="MyRoomDigModel.CENTROC">
               <MappingFragment StoreEntitySet="CENTROC">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -14308,7 +14308,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cierreGenerals">
-            <EntityTypeMapping TypeName="MyDigModel.cierreGeneral">
+            <EntityTypeMapping TypeName="MyRoomDigModel.cierreGeneral">
               <MappingFragment StoreEntitySet="cierreGeneral">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idMaquina" ColumnName="idMaquina" />
@@ -14318,7 +14318,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Ciudades">
-            <EntityTypeMapping TypeName="MyDigModel.Ciudade">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Ciudade">
               <MappingFragment StoreEntitySet="Ciudades">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14328,7 +14328,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CIUUs">
-            <EntityTypeMapping TypeName="MyDigModel.CIUU">
+            <EntityTypeMapping TypeName="MyRoomDigModel.CIUU">
               <MappingFragment StoreEntitySet="CIUU">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14336,7 +14336,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="clase_pago">
-            <EntityTypeMapping TypeName="MyDigModel.clase_pago">
+            <EntityTypeMapping TypeName="MyRoomDigModel.clase_pago">
               <MappingFragment StoreEntitySet="clase_pago">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14344,7 +14344,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="clase_porteria">
-            <EntityTypeMapping TypeName="MyDigModel.clase_porteria">
+            <EntityTypeMapping TypeName="MyRoomDigModel.clase_porteria">
               <MappingFragment StoreEntitySet="clase_porteria">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14357,7 +14357,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="clasepistas">
-            <EntityTypeMapping TypeName="MyDigModel.clasepista">
+            <EntityTypeMapping TypeName="MyRoomDigModel.clasepista">
               <MappingFragment StoreEntitySet="clasepista">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14370,7 +14370,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="clases">
-            <EntityTypeMapping TypeName="MyDigModel.clas">
+            <EntityTypeMapping TypeName="MyRoomDigModel.clas">
               <MappingFragment StoreEntitySet="clases">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14380,7 +14380,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="clientes">
-            <EntityTypeMapping TypeName="MyDigModel.cliente">
+            <EntityTypeMapping TypeName="MyRoomDigModel.cliente">
               <MappingFragment StoreEntitySet="clientes">
                 <ScalarProperty Name="numint" ColumnName="numint" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -14447,7 +14447,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="clientes_Desayuno">
-            <EntityTypeMapping TypeName="MyDigModel.clientes_Desayuno">
+            <EntityTypeMapping TypeName="MyRoomDigModel.clientes_Desayuno">
               <MappingFragment StoreEntitySet="clientes_Desayuno">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idTercero" ColumnName="idTercero" />
@@ -14458,7 +14458,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="clientes_estadia">
-            <EntityTypeMapping TypeName="MyDigModel.clientes_estadia">
+            <EntityTypeMapping TypeName="MyRoomDigModel.clientes_estadia">
               <MappingFragment StoreEntitySet="clientes_estadia">
                 <ScalarProperty Name="id_clientes" ColumnName="id_clientes" />
                 <ScalarProperty Name="id_pedidos" ColumnName="id_pedidos" />
@@ -14469,7 +14469,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="clsmedidas">
-            <EntityTypeMapping TypeName="MyDigModel.clsmedida">
+            <EntityTypeMapping TypeName="MyRoomDigModel.clsmedida">
               <MappingFragment StoreEntitySet="clsmedidas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14477,7 +14477,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="clsmtoes">
-            <EntityTypeMapping TypeName="MyDigModel.clsmto">
+            <EntityTypeMapping TypeName="MyRoomDigModel.clsmto">
               <MappingFragment StoreEntitySet="clsmto">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14486,7 +14486,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="comandas">
-            <EntityTypeMapping TypeName="MyDigModel.comanda">
+            <EntityTypeMapping TypeName="MyRoomDigModel.comanda">
               <MappingFragment StoreEntitySet="comandas">
                 <ScalarProperty Name="id_areas" ColumnName="id_areas" />
                 <ScalarProperty Name="id_grupos" ColumnName="id_grupos" />
@@ -14496,7 +14496,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ComproPUCs">
-            <EntityTypeMapping TypeName="MyDigModel.ComproPUC">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ComproPUC">
               <MappingFragment StoreEntitySet="ComproPUC">
                 <ScalarProperty Name="Auto" ColumnName="Auto" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -14506,7 +14506,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CON_Puc">
-            <EntityTypeMapping TypeName="MyDigModel.CON_Puc">
+            <EntityTypeMapping TypeName="MyRoomDigModel.CON_Puc">
               <MappingFragment StoreEntitySet="CON_Puc">
                 <ScalarProperty Name="compania" ColumnName="compania" />
                 <ScalarProperty Name="codigo" ColumnName="codigo" />
@@ -14520,7 +14520,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CONDICIONs">
-            <EntityTypeMapping TypeName="MyDigModel.CONDICION">
+            <EntityTypeMapping TypeName="MyRoomDigModel.CONDICION">
               <MappingFragment StoreEntitySet="CONDICION">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -14529,7 +14529,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="contrato_pedidos">
-            <EntityTypeMapping TypeName="MyDigModel.contrato_pedidos">
+            <EntityTypeMapping TypeName="MyRoomDigModel.contrato_pedidos">
               <MappingFragment StoreEntitySet="contrato_pedidos">
                 <ScalarProperty Name="idContrato" ColumnName="idContrato" />
                 <ScalarProperty Name="idPedido" ColumnName="idPedido" />
@@ -14537,7 +14537,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CONTRIBS">
-            <EntityTypeMapping TypeName="MyDigModel.CONTRIB">
+            <EntityTypeMapping TypeName="MyRoomDigModel.CONTRIB">
               <MappingFragment StoreEntitySet="CONTRIBS">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -14546,7 +14546,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="controles">
-            <EntityTypeMapping TypeName="MyDigModel.controle">
+            <EntityTypeMapping TypeName="MyRoomDigModel.controle">
               <MappingFragment StoreEntitySet="controles">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14554,7 +14554,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="controlHerramientas">
-            <EntityTypeMapping TypeName="MyDigModel.controlHerramienta">
+            <EntityTypeMapping TypeName="MyRoomDigModel.controlHerramienta">
               <MappingFragment StoreEntitySet="controlHerramienta">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idHerramienta" ColumnName="idHerramienta" />
@@ -14574,7 +14574,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="conver_spec">
-            <EntityTypeMapping TypeName="MyDigModel.conver_spec">
+            <EntityTypeMapping TypeName="MyRoomDigModel.conver_spec">
               <MappingFragment StoreEntitySet="conver_spec">
                 <ScalarProperty Name="id_productos_nec" ColumnName="id_productos_nec" />
                 <ScalarProperty Name="id_detmedidas_nec" ColumnName="id_detmedidas_nec" />
@@ -14587,7 +14587,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="convers">
-            <EntityTypeMapping TypeName="MyDigModel.conver">
+            <EntityTypeMapping TypeName="MyRoomDigModel.conver">
               <MappingFragment StoreEntitySet="convers">
                 <ScalarProperty Name="id_detmedidas_A" ColumnName="id_detmedidas_A" />
                 <ScalarProperty Name="id_detmedidas_B" ColumnName="id_detmedidas_B" />
@@ -14597,7 +14597,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="correos">
-            <EntityTypeMapping TypeName="MyDigModel.correo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.correo">
               <MappingFragment StoreEntitySet="correo">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="area" ColumnName="area" />
@@ -14610,7 +14610,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cptoegres">
-            <EntityTypeMapping TypeName="MyDigModel.cptoegre">
+            <EntityTypeMapping TypeName="MyRoomDigModel.cptoegre">
               <MappingFragment StoreEntitySet="cptoegre">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14626,7 +14626,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cptoingrs">
-            <EntityTypeMapping TypeName="MyDigModel.cptoingr">
+            <EntityTypeMapping TypeName="MyRoomDigModel.cptoingr">
               <MappingFragment StoreEntitySet="cptoingr">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14639,7 +14639,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="crespoes">
-            <EntityTypeMapping TypeName="MyDigModel.crespo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.crespo">
               <MappingFragment StoreEntitySet="crespo">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14647,7 +14647,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CtrlCamas">
-            <EntityTypeMapping TypeName="MyDigModel.CtrlCama">
+            <EntityTypeMapping TypeName="MyRoomDigModel.CtrlCama">
               <MappingFragment StoreEntitySet="CtrlCama">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="Id_Camarera" ColumnName="Id_Camarera" />
@@ -14666,7 +14666,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ctrlstocks">
-            <EntityTypeMapping TypeName="MyDigModel.ctrlstock">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ctrlstock">
               <MappingFragment StoreEntitySet="ctrlstocks">
                 <ScalarProperty Name="id_productos" ColumnName="id_productos" />
                 <ScalarProperty Name="id_detmedidas" ColumnName="id_detmedidas" />
@@ -14676,7 +14676,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ctrmovis">
-            <EntityTypeMapping TypeName="MyDigModel.ctrmovi">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ctrmovi">
               <MappingFragment StoreEntitySet="ctrmovi">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_pedidos" ColumnName="id_pedidos" />
@@ -14690,7 +14690,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cuestionario_new">
-            <EntityTypeMapping TypeName="MyDigModel.cuestionario_new">
+            <EntityTypeMapping TypeName="MyRoomDigModel.cuestionario_new">
               <MappingFragment StoreEntitySet="cuestionario_new">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_pregunta" ColumnName="id_pregunta" />
@@ -14702,7 +14702,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DECOMAPAs">
-            <EntityTypeMapping TypeName="MyDigModel.DECOMAPA">
+            <EntityTypeMapping TypeName="MyRoomDigModel.DECOMAPA">
               <MappingFragment StoreEntitySet="DECOMAPA">
                 <ScalarProperty Name="AUTOM" ColumnName="AUTOM" />
                 <ScalarProperty Name="MAQUINA" ColumnName="MAQUINA" />
@@ -14724,7 +14724,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="det_serv">
-            <EntityTypeMapping TypeName="MyDigModel.det_serv">
+            <EntityTypeMapping TypeName="MyRoomDigModel.det_serv">
               <MappingFragment StoreEntitySet="det_serv">
                 <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
                 <ScalarProperty Name="id_servicio" ColumnName="id_servicio" />
@@ -14787,7 +14787,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="detalles">
-            <EntityTypeMapping TypeName="MyDigModel.detalle">
+            <EntityTypeMapping TypeName="MyRoomDigModel.detalle">
               <MappingFragment StoreEntitySet="detalle">
                 <ScalarProperty Name="id_pedidos" ColumnName="id_pedidos" />
                 <ScalarProperty Name="id_consumos" ColumnName="id_consumos" />
@@ -14862,7 +14862,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DETALLE_OC">
-            <EntityTypeMapping TypeName="MyDigModel.DETALLE_OC">
+            <EntityTypeMapping TypeName="MyRoomDigModel.DETALLE_OC">
               <MappingFragment StoreEntitySet="DETALLE_OC">
                 <ScalarProperty Name="ID_CABE_OC" ColumnName="ID_CABE_OC" />
                 <ScalarProperty Name="ITEM" ColumnName="ITEM" />
@@ -14876,7 +14876,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DETALLE_RI">
-            <EntityTypeMapping TypeName="MyDigModel.DETALLE_RI">
+            <EntityTypeMapping TypeName="MyRoomDigModel.DETALLE_RI">
               <MappingFragment StoreEntitySet="DETALLE_RI">
                 <ScalarProperty Name="ID_CABE_RI" ColumnName="ID_CABE_RI" />
                 <ScalarProperty Name="ITEM" ColumnName="ITEM" />
@@ -14897,7 +14897,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="detestados">
-            <EntityTypeMapping TypeName="MyDigModel.detestado">
+            <EntityTypeMapping TypeName="MyRoomDigModel.detestado">
               <MappingFragment StoreEntitySet="detestados">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14905,7 +14905,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="detfacturas">
-            <EntityTypeMapping TypeName="MyDigModel.detfactura">
+            <EntityTypeMapping TypeName="MyRoomDigModel.detfactura">
               <MappingFragment StoreEntitySet="detfacturas">
                 <ScalarProperty Name="tipo" ColumnName="tipo" />
                 <ScalarProperty Name="prefijo" ColumnName="prefijo" />
@@ -14941,7 +14941,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="detivafacts">
-            <EntityTypeMapping TypeName="MyDigModel.detivafact">
+            <EntityTypeMapping TypeName="MyRoomDigModel.detivafact">
               <MappingFragment StoreEntitySet="detivafacts">
                 <ScalarProperty Name="prefijo" ColumnName="prefijo" />
                 <ScalarProperty Name="id_facturas" ColumnName="id_facturas" />
@@ -14957,7 +14957,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="detmedidas">
-            <EntityTypeMapping TypeName="MyDigModel.detmedida">
+            <EntityTypeMapping TypeName="MyRoomDigModel.detmedida">
               <MappingFragment StoreEntitySet="detmedidas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14966,7 +14966,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="detmovins">
-            <EntityTypeMapping TypeName="MyDigModel.detmovin">
+            <EntityTypeMapping TypeName="MyRoomDigModel.detmovin">
               <MappingFragment StoreEntitySet="detmovin">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14974,7 +14974,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="detsalinvs">
-            <EntityTypeMapping TypeName="MyDigModel.detsalinv">
+            <EntityTypeMapping TypeName="MyRoomDigModel.detsalinv">
               <MappingFragment StoreEntitySet="detsalinv">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -14982,7 +14982,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="devueltos">
-            <EntityTypeMapping TypeName="MyDigModel.devuelto">
+            <EntityTypeMapping TypeName="MyRoomDigModel.devuelto">
               <MappingFragment StoreEntitySet="devueltos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_motidev" ColumnName="id_motidev" />
@@ -14993,7 +14993,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DISPOHORAS">
-            <EntityTypeMapping TypeName="MyDigModel.DISPOHORA">
+            <EntityTypeMapping TypeName="MyRoomDigModel.DISPOHORA">
               <MappingFragment StoreEntitySet="DISPOHORAS">
                 <ScalarProperty Name="auto" ColumnName="auto" />
                 <ScalarProperty Name="dia" ColumnName="dia" />
@@ -15015,7 +15015,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="docCompras">
-            <EntityTypeMapping TypeName="MyDigModel.docCompra">
+            <EntityTypeMapping TypeName="MyRoomDigModel.docCompra">
               <MappingFragment StoreEntitySet="docCompra">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15023,7 +15023,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="dotacions">
-            <EntityTypeMapping TypeName="MyDigModel.dotacion">
+            <EntityTypeMapping TypeName="MyRoomDigModel.dotacion">
               <MappingFragment StoreEntitySet="dotacion">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15031,7 +15031,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="egresos">
-            <EntityTypeMapping TypeName="MyDigModel.egreso">
+            <EntityTypeMapping TypeName="MyRoomDigModel.egreso">
               <MappingFragment StoreEntitySet="egresos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_cptoegre" ColumnName="id_cptoegre" />
@@ -15055,7 +15055,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="EMAILS">
-            <EntityTypeMapping TypeName="MyDigModel.EMAIL">
+            <EntityTypeMapping TypeName="MyRoomDigModel.EMAIL">
               <MappingFragment StoreEntitySet="EMAILS">
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
                 <ScalarProperty Name="EMAIL1" ColumnName="EMAIL" />
@@ -15063,7 +15063,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="empresas">
-            <EntityTypeMapping TypeName="MyDigModel.empresa">
+            <EntityTypeMapping TypeName="MyRoomDigModel.empresa">
               <MappingFragment StoreEntitySet="empresas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15079,7 +15079,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="errores">
-            <EntityTypeMapping TypeName="MyDigModel.errore">
+            <EntityTypeMapping TypeName="MyRoomDigModel.errore">
               <MappingFragment StoreEntitySet="errores">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -15091,7 +15091,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="est_olvido">
-            <EntityTypeMapping TypeName="MyDigModel.est_olvido">
+            <EntityTypeMapping TypeName="MyRoomDigModel.est_olvido">
               <MappingFragment StoreEntitySet="est_olvido">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15099,7 +15099,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="estados">
-            <EntityTypeMapping TypeName="MyDigModel.estado">
+            <EntityTypeMapping TypeName="MyRoomDigModel.estado">
               <MappingFragment StoreEntitySet="estados">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15107,7 +15107,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ESTADOS_RI">
-            <EntityTypeMapping TypeName="MyDigModel.ESTADOS_RI">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ESTADOS_RI">
               <MappingFragment StoreEntitySet="ESTADOS_RI">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -15115,7 +15115,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="estadosTransacs">
-            <EntityTypeMapping TypeName="MyDigModel.estadosTransac">
+            <EntityTypeMapping TypeName="MyRoomDigModel.estadosTransac">
               <MappingFragment StoreEntitySet="estadosTransac">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15123,7 +15123,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="EstReservas">
-            <EntityTypeMapping TypeName="MyDigModel.EstReserva">
+            <EntityTypeMapping TypeName="MyRoomDigModel.EstReserva">
               <MappingFragment StoreEntitySet="EstReserva">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15132,7 +15132,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="evaluas">
-            <EntityTypeMapping TypeName="MyDigModel.evalua">
+            <EntityTypeMapping TypeName="MyRoomDigModel.evalua">
               <MappingFragment StoreEntitySet="evalua">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_pregunta" ColumnName="id_pregunta" />
@@ -15145,7 +15145,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="evidencias">
-            <EntityTypeMapping TypeName="MyDigModel.evidencia">
+            <EntityTypeMapping TypeName="MyRoomDigModel.evidencia">
               <MappingFragment StoreEntitySet="evidencias">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="codeTipoEvid" ColumnName="codeTipoEvid" />
@@ -15161,7 +15161,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="facturas">
-            <EntityTypeMapping TypeName="MyDigModel.factura">
+            <EntityTypeMapping TypeName="MyRoomDigModel.factura">
               <MappingFragment StoreEntitySet="facturas">
                 <ScalarProperty Name="tipo" ColumnName="tipo" />
                 <ScalarProperty Name="prefijo" ColumnName="prefijo" />
@@ -15208,7 +15208,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="formulas">
-            <EntityTypeMapping TypeName="MyDigModel.formula">
+            <EntityTypeMapping TypeName="MyRoomDigModel.formula">
               <MappingFragment StoreEntitySet="formulas">
                 <ScalarProperty Name="id_productos_ini" ColumnName="id_productos_ini" />
                 <ScalarProperty Name="id_detmedidas_ini" ColumnName="id_detmedidas_ini" />
@@ -15221,7 +15221,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="frmpagos">
-            <EntityTypeMapping TypeName="MyDigModel.frmpago">
+            <EntityTypeMapping TypeName="MyRoomDigModel.frmpago">
               <MappingFragment StoreEntitySet="frmpagos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15245,7 +15245,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="frmshows">
-            <EntityTypeMapping TypeName="MyDigModel.frmshow">
+            <EntityTypeMapping TypeName="MyRoomDigModel.frmshow">
               <MappingFragment StoreEntitySet="frmshow">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15260,7 +15260,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="funciones">
-            <EntityTypeMapping TypeName="MyDigModel.funcione">
+            <EntityTypeMapping TypeName="MyRoomDigModel.funcione">
               <MappingFragment StoreEntitySet="funciones">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15270,7 +15270,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FybParamTempoes">
-            <EntityTypeMapping TypeName="MyDigModel.FybParamTempo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.FybParamTempo">
               <MappingFragment StoreEntitySet="FybParamTempo">
                 <ScalarProperty Name="id_tempo" ColumnName="id_tempo" />
                 <ScalarProperty Name="secciones" ColumnName="secciones" />
@@ -15278,7 +15278,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="glosarios">
-            <EntityTypeMapping TypeName="MyDigModel.glosario">
+            <EntityTypeMapping TypeName="MyRoomDigModel.glosario">
               <MappingFragment StoreEntitySet="glosario">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idTipo" ColumnName="idTipo" />
@@ -15288,7 +15288,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="grpmtoes">
-            <EntityTypeMapping TypeName="MyDigModel.grpmto">
+            <EntityTypeMapping TypeName="MyRoomDigModel.grpmto">
               <MappingFragment StoreEntitySet="grpmto">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15296,7 +15296,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="grupoclientes">
-            <EntityTypeMapping TypeName="MyDigModel.grupocliente">
+            <EntityTypeMapping TypeName="MyRoomDigModel.grupocliente">
               <MappingFragment StoreEntitySet="grupocliente">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15304,7 +15304,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="grupos">
-            <EntityTypeMapping TypeName="MyDigModel.grupos">
+            <EntityTypeMapping TypeName="MyRoomDigModel.grupos">
               <MappingFragment StoreEntitySet="grupos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15314,7 +15314,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="htmlInformes">
-            <EntityTypeMapping TypeName="MyDigModel.htmlInforme">
+            <EntityTypeMapping TypeName="MyRoomDigModel.htmlInforme">
               <MappingFragment StoreEntitySet="htmlInformes">
                 <ScalarProperty Name="aut" ColumnName="aut" />
                 <ScalarProperty Name="INFORME" ColumnName="INFORME" />
@@ -15323,7 +15323,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="idiomas">
-            <EntityTypeMapping TypeName="MyDigModel.idioma">
+            <EntityTypeMapping TypeName="MyRoomDigModel.idioma">
               <MappingFragment StoreEntitySet="idiomas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15333,7 +15333,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="incluidoes">
-            <EntityTypeMapping TypeName="MyDigModel.incluido">
+            <EntityTypeMapping TypeName="MyRoomDigModel.incluido">
               <MappingFragment StoreEntitySet="incluido">
                 <ScalarProperty Name="id_productos" ColumnName="id_productos" />
                 <ScalarProperty Name="incluido1" ColumnName="incluido" />
@@ -15342,7 +15342,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="INCONSENSORs">
-            <EntityTypeMapping TypeName="MyDigModel.INCONSENSOR">
+            <EntityTypeMapping TypeName="MyRoomDigModel.INCONSENSOR">
               <MappingFragment StoreEntitySet="INCONSENSOR">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -15353,7 +15353,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="indeseables">
-            <EntityTypeMapping TypeName="MyDigModel.indeseable">
+            <EntityTypeMapping TypeName="MyRoomDigModel.indeseable">
               <MappingFragment StoreEntitySet="indeseables">
                 <ScalarProperty Name="identif" ColumnName="identif" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -15363,7 +15363,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="infoCambVersions">
-            <EntityTypeMapping TypeName="MyDigModel.infoCambVersion">
+            <EntityTypeMapping TypeName="MyRoomDigModel.infoCambVersion">
               <MappingFragment StoreEntitySet="infoCambVersion">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="FECHA" ColumnName="FECHA" />
@@ -15371,7 +15371,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ingresos">
-            <EntityTypeMapping TypeName="MyDigModel.ingreso">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ingreso">
               <MappingFragment StoreEntitySet="ingresos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_frmpago" ColumnName="id_frmpago" />
@@ -15390,7 +15390,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Instancias">
-            <EntityTypeMapping TypeName="MyDigModel.Instancia">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Instancia">
               <MappingFragment StoreEntitySet="Instancias">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="Hotel" ColumnName="Hotel" />
@@ -15403,7 +15403,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="KPItrues">
-            <EntityTypeMapping TypeName="MyDigModel.KPItrue">
+            <EntityTypeMapping TypeName="MyRoomDigModel.KPItrue">
               <MappingFragment StoreEntitySet="KPItrue">
                 <ScalarProperty Name="KPI" ColumnName="KPI" />
                 <ScalarProperty Name="LLAVE1" ColumnName="LLAVE1" />
@@ -15416,7 +15416,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="lista_chequeo">
-            <EntityTypeMapping TypeName="MyDigModel.lista_chequeo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.lista_chequeo">
               <MappingFragment StoreEntitySet="lista_chequeo">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15426,7 +15426,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Listas">
-            <EntityTypeMapping TypeName="MyDigModel.Lista">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Lista">
               <MappingFragment StoreEntitySet="Listas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15437,7 +15437,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="log_olvido">
-            <EntityTypeMapping TypeName="MyDigModel.log_olvido">
+            <EntityTypeMapping TypeName="MyRoomDigModel.log_olvido">
               <MappingFragment StoreEntitySet="log_olvido">
                 <ScalarProperty Name="id_olvido" ColumnName="id_olvido" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -15447,7 +15447,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="logReservasWS">
-            <EntityTypeMapping TypeName="MyDigModel.logReservasW">
+            <EntityTypeMapping TypeName="MyRoomDigModel.logReservasW">
               <MappingFragment StoreEntitySet="logReservasWS">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="fechaIn" ColumnName="fechaIn" />
@@ -15458,7 +15458,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Maqui_Zona">
-            <EntityTypeMapping TypeName="MyDigModel.Maqui_Zona">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Maqui_Zona">
               <MappingFragment StoreEntitySet="Maqui_Zona">
                 <ScalarProperty Name="Id_Maquina" ColumnName="Id_Maquina" />
                 <ScalarProperty Name="Id_Zona" ColumnName="Id_Zona" />
@@ -15466,7 +15466,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="maquinaProductos">
-            <EntityTypeMapping TypeName="MyDigModel.maquinaProducto">
+            <EntityTypeMapping TypeName="MyRoomDigModel.maquinaProducto">
               <MappingFragment StoreEntitySet="maquinaProductos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idMaquina" ColumnName="idMaquina" />
@@ -15475,7 +15475,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="maquinas">
-            <EntityTypeMapping TypeName="MyDigModel.maquina">
+            <EntityTypeMapping TypeName="MyRoomDigModel.maquina">
               <MappingFragment StoreEntitySet="maquinas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15519,7 +15519,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="mecamovis">
-            <EntityTypeMapping TypeName="MyDigModel.mecamovi">
+            <EntityTypeMapping TypeName="MyRoomDigModel.mecamovi">
               <MappingFragment StoreEntitySet="mecamovi">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_pedidos" ColumnName="id_pedidos" />
@@ -15537,7 +15537,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="mecanismos">
-            <EntityTypeMapping TypeName="MyDigModel.mecanismo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.mecanismo">
               <MappingFragment StoreEntitySet="mecanismos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15549,7 +15549,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="memo1">
-            <EntityTypeMapping TypeName="MyDigModel.memo1">
+            <EntityTypeMapping TypeName="MyRoomDigModel.memo1">
               <MappingFragment StoreEntitySet="memo1">
                 <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
                 <ScalarProperty Name="id_comdia" ColumnName="id_comdia" />
@@ -15569,7 +15569,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="memo2">
-            <EntityTypeMapping TypeName="MyDigModel.memo2">
+            <EntityTypeMapping TypeName="MyRoomDigModel.memo2">
               <MappingFragment StoreEntitySet="memo2">
                 <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
                 <ScalarProperty Name="id_comdia" ColumnName="id_comdia" />
@@ -15582,7 +15582,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="memo3">
-            <EntityTypeMapping TypeName="MyDigModel.memo3">
+            <EntityTypeMapping TypeName="MyRoomDigModel.memo3">
               <MappingFragment StoreEntitySet="memo3">
                 <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
                 <ScalarProperty Name="id_comdia" ColumnName="id_comdia" />
@@ -15594,7 +15594,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="mensajes">
-            <EntityTypeMapping TypeName="MyDigModel.mensaje">
+            <EntityTypeMapping TypeName="MyRoomDigModel.mensaje">
               <MappingFragment StoreEntitySet="mensajes">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_mesas" ColumnName="id_mesas" />
@@ -15607,7 +15607,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="mesas">
-            <EntityTypeMapping TypeName="MyDigModel.mesa">
+            <EntityTypeMapping TypeName="MyRoomDigModel.mesa">
               <MappingFragment StoreEntitySet="mesas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15691,7 +15691,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="mesas_dotacion">
-            <EntityTypeMapping TypeName="MyDigModel.mesas_dotacion">
+            <EntityTypeMapping TypeName="MyRoomDigModel.mesas_dotacion">
               <MappingFragment StoreEntitySet="mesas_dotacion">
                 <ScalarProperty Name="idMesas" ColumnName="idMesas" />
                 <ScalarProperty Name="idDotacion" ColumnName="idDotacion" />
@@ -15701,7 +15701,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="meseros">
-            <EntityTypeMapping TypeName="MyDigModel.mesero">
+            <EntityTypeMapping TypeName="MyRoomDigModel.mesero">
               <MappingFragment StoreEntitySet="meseros">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15720,7 +15720,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MonitorPedidos">
-            <EntityTypeMapping TypeName="MyDigModel.MonitorPedido">
+            <EntityTypeMapping TypeName="MyRoomDigModel.MonitorPedido">
               <MappingFragment StoreEntitySet="MonitorPedidos">
                 <ScalarProperty Name="Seccion" ColumnName="Seccion" />
                 <ScalarProperty Name="CoorX" ColumnName="CoorX" />
@@ -15740,7 +15740,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="motidevs">
-            <EntityTypeMapping TypeName="MyDigModel.motidev">
+            <EntityTypeMapping TypeName="MyRoomDigModel.motidev">
               <MappingFragment StoreEntitySet="motidev">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15748,7 +15748,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="motivos">
-            <EntityTypeMapping TypeName="MyDigModel.motivo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.motivo">
               <MappingFragment StoreEntitySet="motivos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15757,7 +15757,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="movhabs">
-            <EntityTypeMapping TypeName="MyDigModel.movhab">
+            <EntityTypeMapping TypeName="MyRoomDigModel.movhab">
               <MappingFragment StoreEntitySet="movhab">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="habini" ColumnName="habini" />
@@ -15775,7 +15775,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="movinvens">
-            <EntityTypeMapping TypeName="MyDigModel.movinven">
+            <EntityTypeMapping TypeName="MyRoomDigModel.movinven">
               <MappingFragment StoreEntitySet="movinven">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_temps" ColumnName="id_temps" />
@@ -15807,7 +15807,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="movinventarios">
-            <EntityTypeMapping TypeName="MyDigModel.movinventario">
+            <EntityTypeMapping TypeName="MyRoomDigModel.movinventario">
               <MappingFragment StoreEntitySet="movinventario">
                 <ScalarProperty Name="tipo" ColumnName="tipo" />
                 <ScalarProperty Name="identif" ColumnName="identif" />
@@ -15835,7 +15835,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="movturnos">
-            <EntityTypeMapping TypeName="MyDigModel.movturno">
+            <EntityTypeMapping TypeName="MyRoomDigModel.movturno">
               <MappingFragment StoreEntitySet="movturnos">
                 <ScalarProperty Name="id_cierre" ColumnName="id_cierre" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -15891,7 +15891,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="msg_institut">
-            <EntityTypeMapping TypeName="MyDigModel.msg_institut">
+            <EntityTypeMapping TypeName="MyRoomDigModel.msg_institut">
               <MappingFragment StoreEntitySet="msg_institut">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15903,7 +15903,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="mto_prv">
-            <EntityTypeMapping TypeName="MyDigModel.mto_prv">
+            <EntityTypeMapping TypeName="MyRoomDigModel.mto_prv">
               <MappingFragment StoreEntitySet="mto_prv">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="hist" ColumnName="hist" />
@@ -15925,7 +15925,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="mtohabs">
-            <EntityTypeMapping TypeName="MyDigModel.mtohab">
+            <EntityTypeMapping TypeName="MyRoomDigModel.mtohab">
               <MappingFragment StoreEntitySet="mtohab">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="hist" ColumnName="hist" />
@@ -15949,7 +15949,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MyCashAuthorizes">
-            <EntityTypeMapping TypeName="MyDigModel.MyCashAuthorize">
+            <EntityTypeMapping TypeName="MyRoomDigModel.MyCashAuthorize">
               <MappingFragment StoreEntitySet="MyCashAuthorize">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idTarjeta" ColumnName="idTarjeta" />
@@ -15961,7 +15961,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MyCashHistories">
-            <EntityTypeMapping TypeName="MyDigModel.MyCashHistory">
+            <EntityTypeMapping TypeName="MyRoomDigModel.MyCashHistory">
               <MappingFragment StoreEntitySet="MyCashHistory">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="comandoRecibido" ColumnName="comandoRecibido" />
@@ -15972,7 +15972,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MyTecnoes">
-            <EntityTypeMapping TypeName="MyDigModel.MyTecno">
+            <EntityTypeMapping TypeName="MyRoomDigModel.MyTecno">
               <MappingFragment StoreEntitySet="MyTecno">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="clave" ColumnName="clave" />
@@ -15988,7 +15988,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="nacionalidads">
-            <EntityTypeMapping TypeName="MyDigModel.nacionalidad">
+            <EntityTypeMapping TypeName="MyRoomDigModel.nacionalidad">
               <MappingFragment StoreEntitySet="nacionalidad">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -15997,7 +15997,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="nets">
-            <EntityTypeMapping TypeName="MyDigModel.net">
+            <EntityTypeMapping TypeName="MyRoomDigModel.net">
               <MappingFragment StoreEntitySet="net">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="niva" ColumnName="niva" />
@@ -16041,7 +16041,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="nivels">
-            <EntityTypeMapping TypeName="MyDigModel.nivel">
+            <EntityTypeMapping TypeName="MyRoomDigModel.nivel">
               <MappingFragment StoreEntitySet="nivels">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16049,7 +16049,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="novedads">
-            <EntityTypeMapping TypeName="MyDigModel.novedad">
+            <EntityTypeMapping TypeName="MyRoomDigModel.novedad">
               <MappingFragment StoreEntitySet="novedad">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16057,7 +16057,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="novedadDetalles">
-            <EntityTypeMapping TypeName="MyDigModel.novedadDetalle">
+            <EntityTypeMapping TypeName="MyRoomDigModel.novedadDetalle">
               <MappingFragment StoreEntitySet="novedadDetalle">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16066,7 +16066,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ocupaciones">
-            <EntityTypeMapping TypeName="MyDigModel.ocupacione">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ocupacione">
               <MappingFragment StoreEntitySet="ocupaciones">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nivel" ColumnName="nivel" />
@@ -16076,7 +16076,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="olvidos">
-            <EntityTypeMapping TypeName="MyDigModel.olvido">
+            <EntityTypeMapping TypeName="MyRoomDigModel.olvido">
               <MappingFragment StoreEntitySet="olvidos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_tip_olvido" ColumnName="id_tip_olvido" />
@@ -16089,7 +16089,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="OPCclients">
-            <EntityTypeMapping TypeName="MyDigModel.OPCclient">
+            <EntityTypeMapping TypeName="MyRoomDigModel.OPCclient">
               <MappingFragment StoreEntitySet="OPCclient">
                 <ScalarProperty Name="NumInterno" ColumnName="NumInterno" />
                 <ScalarProperty Name="id_habita" ColumnName="id_habita" />
@@ -16105,7 +16105,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="OPCconexions">
-            <EntityTypeMapping TypeName="MyDigModel.OPCconexion">
+            <EntityTypeMapping TypeName="MyRoomDigModel.OPCconexion">
               <MappingFragment StoreEntitySet="OPCconexion">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16113,7 +16113,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="OPCdevices">
-            <EntityTypeMapping TypeName="MyDigModel.OPCdevice">
+            <EntityTypeMapping TypeName="MyRoomDigModel.OPCdevice">
               <MappingFragment StoreEntitySet="OPCdevices">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16125,7 +16125,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="OrdenMesas">
-            <EntityTypeMapping TypeName="MyDigModel.OrdenMesa">
+            <EntityTypeMapping TypeName="MyRoomDigModel.OrdenMesa">
               <MappingFragment StoreEntitySet="OrdenMesas">
                 <ScalarProperty Name="maquina" ColumnName="maquina" />
                 <ScalarProperty Name="id_mesas" ColumnName="id_mesas" />
@@ -16141,7 +16141,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="origens">
-            <EntityTypeMapping TypeName="MyDigModel.origen">
+            <EntityTypeMapping TypeName="MyRoomDigModel.origen">
               <MappingFragment StoreEntitySet="origen">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16154,7 +16154,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="pagoRegistroes">
-            <EntityTypeMapping TypeName="MyDigModel.pagoRegistro">
+            <EntityTypeMapping TypeName="MyRoomDigModel.pagoRegistro">
               <MappingFragment StoreEntitySet="pagoRegistro">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16163,7 +16163,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="paises">
-            <EntityTypeMapping TypeName="MyDigModel.pais">
+            <EntityTypeMapping TypeName="MyRoomDigModel.pais">
               <MappingFragment StoreEntitySet="paises">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16171,7 +16171,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="parametros">
-            <EntityTypeMapping TypeName="MyDigModel.parametro">
+            <EntityTypeMapping TypeName="MyRoomDigModel.parametro">
               <MappingFragment StoreEntitySet="parametros">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="UsrRazon" ColumnName="UsrRazon" />
@@ -16291,7 +16291,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="parametros2">
-            <EntityTypeMapping TypeName="MyDigModel.parametros2">
+            <EntityTypeMapping TypeName="MyRoomDigModel.parametros2">
               <MappingFragment StoreEntitySet="parametros2">
                 <ScalarProperty Name="billete" ColumnName="billete" />
                 <ScalarProperty Name="ceros" ColumnName="ceros" />
@@ -16378,7 +16378,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="parametros3">
-            <EntityTypeMapping TypeName="MyDigModel.parametros3">
+            <EntityTypeMapping TypeName="MyRoomDigModel.parametros3">
               <MappingFragment StoreEntitySet="parametros3">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="codeAlimentacion" ColumnName="codeAlimentacion" />
@@ -16474,7 +16474,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="pedidos">
-            <EntityTypeMapping TypeName="MyDigModel.pedido">
+            <EntityTypeMapping TypeName="MyRoomDigModel.pedido">
               <MappingFragment StoreEntitySet="pedidos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_mesas" ColumnName="id_mesas" />
@@ -16534,7 +16534,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="pedidos_auditoria">
-            <EntityTypeMapping TypeName="MyDigModel.pedidos_auditoria">
+            <EntityTypeMapping TypeName="MyRoomDigModel.pedidos_auditoria">
               <MappingFragment StoreEntitySet="pedidos_auditoria">
                 <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
                 <ScalarProperty Name="consec" ColumnName="consec" />
@@ -16557,7 +16557,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PEDIDOS_COBROS">
-            <EntityTypeMapping TypeName="MyDigModel.PEDIDOS_COBROS">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PEDIDOS_COBROS">
               <MappingFragment StoreEntitySet="PEDIDOS_COBROS">
                 <ScalarProperty Name="ID_PEDIDOS" ColumnName="ID_PEDIDOS" />
                 <ScalarProperty Name="ITEM" ColumnName="ITEM" />
@@ -16571,7 +16571,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="pedidos_detalle">
-            <EntityTypeMapping TypeName="MyDigModel.pedidos_detalle">
+            <EntityTypeMapping TypeName="MyRoomDigModel.pedidos_detalle">
               <MappingFragment StoreEntitySet="pedidos_detalle">
                 <ScalarProperty Name="id_pedidos" ColumnName="id_pedidos" />
                 <ScalarProperty Name="item" ColumnName="item" />
@@ -16592,7 +16592,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PedidosPendDets">
-            <EntityTypeMapping TypeName="MyDigModel.PedidosPendDet">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PedidosPendDet">
               <MappingFragment StoreEntitySet="PedidosPendDet">
                 <ScalarProperty Name="id_PedidosPendDetMst" ColumnName="id_PedidosPendDetMst" />
                 <ScalarProperty Name="item" ColumnName="item" />
@@ -16608,7 +16608,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PedidosPendMsts">
-            <EntityTypeMapping TypeName="MyDigModel.PedidosPendMst">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PedidosPendMst">
               <MappingFragment StoreEntitySet="PedidosPendMst">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -16622,7 +16622,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="pendientes">
-            <EntityTypeMapping TypeName="MyDigModel.pendiente">
+            <EntityTypeMapping TypeName="MyRoomDigModel.pendiente">
               <MappingFragment StoreEntitySet="pendientes">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
@@ -16646,7 +16646,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="periodos">
-            <EntityTypeMapping TypeName="MyDigModel.periodo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.periodo">
               <MappingFragment StoreEntitySet="periodos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16666,7 +16666,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="periodos_informes">
-            <EntityTypeMapping TypeName="MyDigModel.periodos_informes">
+            <EntityTypeMapping TypeName="MyRoomDigModel.periodos_informes">
               <MappingFragment StoreEntitySet="periodos_informes">
                 <ScalarProperty Name="id_periodos" ColumnName="id_periodos" />
                 <ScalarProperty Name="orden" ColumnName="orden" />
@@ -16677,7 +16677,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="permisos">
-            <EntityTypeMapping TypeName="MyDigModel.permiso">
+            <EntityTypeMapping TypeName="MyRoomDigModel.permiso">
               <MappingFragment StoreEntitySet="permisos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="usuario" ColumnName="usuario" />
@@ -16688,7 +16688,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="pistas">
-            <EntityTypeMapping TypeName="MyDigModel.pista">
+            <EntityTypeMapping TypeName="MyRoomDigModel.pista">
               <MappingFragment StoreEntitySet="pistas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -16705,7 +16705,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="placas">
-            <EntityTypeMapping TypeName="MyDigModel.placa">
+            <EntityTypeMapping TypeName="MyRoomDigModel.placa">
               <MappingFragment StoreEntitySet="placas">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Empresa" ColumnName="Empresa" />
@@ -16714,7 +16714,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PLANES">
-            <EntityTypeMapping TypeName="MyDigModel.PLANE">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PLANE">
               <MappingFragment StoreEntitySet="PLANES">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -16724,7 +16724,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PLANTILLA_DETRI">
-            <EntityTypeMapping TypeName="MyDigModel.PLANTILLA_DETRI">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PLANTILLA_DETRI">
               <MappingFragment StoreEntitySet="PLANTILLA_DETRI">
                 <ScalarProperty Name="ID_PLANTILLA_RI" ColumnName="ID_PLANTILLA_RI" />
                 <ScalarProperty Name="ITEM" ColumnName="ITEM" />
@@ -16734,7 +16734,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="plantilla_inven">
-            <EntityTypeMapping TypeName="MyDigModel.plantilla_inven">
+            <EntityTypeMapping TypeName="MyRoomDigModel.plantilla_inven">
               <MappingFragment StoreEntitySet="plantilla_inven">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16749,7 +16749,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="plantilla_prods">
-            <EntityTypeMapping TypeName="MyDigModel.plantilla_prods">
+            <EntityTypeMapping TypeName="MyRoomDigModel.plantilla_prods">
               <MappingFragment StoreEntitySet="plantilla_prods">
                 <ScalarProperty Name="id_plantilla" ColumnName="id_plantilla" />
                 <ScalarProperty Name="id_productos" ColumnName="id_productos" />
@@ -16760,7 +16760,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PLANTILLA_RI">
-            <EntityTypeMapping TypeName="MyDigModel.PLANTILLA_RI">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PLANTILLA_RI">
               <MappingFragment StoreEntitySet="PLANTILLA_RI">
                 <ScalarProperty Name="ID_PLANTILLA_RI" ColumnName="ID_PLANTILLA_RI" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -16772,7 +16772,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="plantPLanoes">
-            <EntityTypeMapping TypeName="MyDigModel.plantPLano">
+            <EntityTypeMapping TypeName="MyRoomDigModel.plantPLano">
               <MappingFragment StoreEntitySet="plantPLano">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16797,7 +16797,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="plantPlanoDets">
-            <EntityTypeMapping TypeName="MyDigModel.plantPlanoDet">
+            <EntityTypeMapping TypeName="MyRoomDigModel.plantPlanoDet">
               <MappingFragment StoreEntitySet="plantPlanoDet">
                 <ScalarProperty Name="id_plantPlano" ColumnName="id_plantPlano" />
                 <ScalarProperty Name="id_etapa" ColumnName="id_etapa" />
@@ -16813,7 +16813,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="plantPlanoEtapas">
-            <EntityTypeMapping TypeName="MyDigModel.plantPlanoEtapa">
+            <EntityTypeMapping TypeName="MyRoomDigModel.plantPlanoEtapa">
               <MappingFragment StoreEntitySet="plantPlanoEtapas">
                 <ScalarProperty Name="id_plantPlano" ColumnName="id_plantPlano" />
                 <ScalarProperty Name="id_etapa" ColumnName="id_etapa" />
@@ -16825,7 +16825,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="plantPlanoLogs">
-            <EntityTypeMapping TypeName="MyDigModel.plantPlanoLog">
+            <EntityTypeMapping TypeName="MyRoomDigModel.plantPlanoLog">
               <MappingFragment StoreEntitySet="plantPlanoLog">
                 <ScalarProperty Name="consec" ColumnName="consec" />
                 <ScalarProperty Name="id_plantPlano" ColumnName="id_plantPlano" />
@@ -16841,7 +16841,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="plaporterias">
-            <EntityTypeMapping TypeName="MyDigModel.plaporteria">
+            <EntityTypeMapping TypeName="MyRoomDigModel.plaporteria">
               <MappingFragment StoreEntitySet="plaporteria">
                 <ScalarProperty Name="numconsec" ColumnName="numconsec" />
                 <ScalarProperty Name="placa" ColumnName="placa" />
@@ -16858,7 +16858,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="preguntas">
-            <EntityTypeMapping TypeName="MyDigModel.pregunta">
+            <EntityTypeMapping TypeName="MyRoomDigModel.pregunta">
               <MappingFragment StoreEntitySet="pregunta">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16868,7 +16868,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="preguntas_new">
-            <EntityTypeMapping TypeName="MyDigModel.preguntas_new">
+            <EntityTypeMapping TypeName="MyRoomDigModel.preguntas_new">
               <MappingFragment StoreEntitySet="preguntas_new">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="pregunta" ColumnName="pregunta" />
@@ -16878,7 +16878,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="premios">
-            <EntityTypeMapping TypeName="MyDigModel.premio">
+            <EntityTypeMapping TypeName="MyRoomDigModel.premio">
               <MappingFragment StoreEntitySet="premios">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="descripcion" ColumnName="descripcion" />
@@ -16893,7 +16893,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PRIORIDAD_RI">
-            <EntityTypeMapping TypeName="MyDigModel.PRIORIDAD_RI">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PRIORIDAD_RI">
               <MappingFragment StoreEntitySet="PRIORIDAD_RI">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -16901,7 +16901,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PRODUC_ELEMEN">
-            <EntityTypeMapping TypeName="MyDigModel.PRODUC_ELEMEN">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PRODUC_ELEMEN">
               <MappingFragment StoreEntitySet="PRODUC_ELEMEN">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_produccion" ColumnName="id_produccion" />
@@ -16912,7 +16912,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PRODUC_FORMULAS">
-            <EntityTypeMapping TypeName="MyDigModel.PRODUC_FORMULAS">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PRODUC_FORMULAS">
               <MappingFragment StoreEntitySet="PRODUC_FORMULAS">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16923,7 +16923,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PRODUCCIONs">
-            <EntityTypeMapping TypeName="MyDigModel.PRODUCCION">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PRODUCCION">
               <MappingFragment StoreEntitySet="PRODUCCION">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -16935,7 +16935,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="productos">
-            <EntityTypeMapping TypeName="MyDigModel.producto">
+            <EntityTypeMapping TypeName="MyRoomDigModel.producto">
               <MappingFragment StoreEntitySet="productos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -16992,7 +16992,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROMOCIONALs">
-            <EntityTypeMapping TypeName="MyDigModel.PROMOCIONAL">
+            <EntityTypeMapping TypeName="MyRoomDigModel.PROMOCIONAL">
               <MappingFragment StoreEntitySet="PROMOCIONAL">
                 <ScalarProperty Name="ID_ORIGEN" ColumnName="ID_ORIGEN" />
                 <ScalarProperty Name="ID_PROMOCIONAL" ColumnName="ID_PROMOCIONAL" />
@@ -17008,7 +17008,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Promociones">
-            <EntityTypeMapping TypeName="MyDigModel.Promocione">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Promocione">
               <MappingFragment StoreEntitySet="Promociones">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17021,7 +17021,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="proms">
-            <EntityTypeMapping TypeName="MyDigModel.prom">
+            <EntityTypeMapping TypeName="MyRoomDigModel.prom">
               <MappingFragment StoreEntitySet="proms">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17044,7 +17044,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="promsclases">
-            <EntityTypeMapping TypeName="MyDigModel.promsclase">
+            <EntityTypeMapping TypeName="MyRoomDigModel.promsclase">
               <MappingFragment StoreEntitySet="promsclase">
                 <ScalarProperty Name="id_proms" ColumnName="id_proms" />
                 <ScalarProperty Name="id_clases" ColumnName="id_clases" />
@@ -17053,7 +17053,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="promsfrees">
-            <EntityTypeMapping TypeName="MyDigModel.promsfree">
+            <EntityTypeMapping TypeName="MyRoomDigModel.promsfree">
               <MappingFragment StoreEntitySet="promsfree">
                 <ScalarProperty Name="id_proms" ColumnName="id_proms" />
                 <ScalarProperty Name="item" ColumnName="item" />
@@ -17073,7 +17073,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="promsgrupoes">
-            <EntityTypeMapping TypeName="MyDigModel.promsgrupo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.promsgrupo">
               <MappingFragment StoreEntitySet="promsgrupo">
                 <ScalarProperty Name="id_proms" ColumnName="id_proms" />
                 <ScalarProperty Name="id_grupos" ColumnName="id_grupos" />
@@ -17082,7 +17082,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="promsprods">
-            <EntityTypeMapping TypeName="MyDigModel.promsprod">
+            <EntityTypeMapping TypeName="MyRoomDigModel.promsprod">
               <MappingFragment StoreEntitySet="promsprod">
                 <ScalarProperty Name="id_proms" ColumnName="id_proms" />
                 <ScalarProperty Name="id_productos" ColumnName="id_productos" />
@@ -17092,7 +17092,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="promsseccs">
-            <EntityTypeMapping TypeName="MyDigModel.promssecc">
+            <EntityTypeMapping TypeName="MyRoomDigModel.promssecc">
               <MappingFragment StoreEntitySet="promssecc">
                 <ScalarProperty Name="id_proms" ColumnName="id_proms" />
                 <ScalarProperty Name="id_secciones" ColumnName="id_secciones" />
@@ -17101,7 +17101,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="promsservs">
-            <EntityTypeMapping TypeName="MyDigModel.promsserv">
+            <EntityTypeMapping TypeName="MyRoomDigModel.promsserv">
               <MappingFragment StoreEntitySet="promsserv">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17119,7 +17119,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="promstimes">
-            <EntityTypeMapping TypeName="MyDigModel.promstime">
+            <EntityTypeMapping TypeName="MyRoomDigModel.promstime">
               <MappingFragment StoreEntitySet="promstime">
                 <ScalarProperty Name="id_proms" ColumnName="id_proms" />
                 <ScalarProperty Name="id_dia" ColumnName="id_dia" />
@@ -17129,7 +17129,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="proveedors">
-            <EntityTypeMapping TypeName="MyDigModel.proveedor">
+            <EntityTypeMapping TypeName="MyRoomDigModel.proveedor">
               <MappingFragment StoreEntitySet="proveedor">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17152,7 +17152,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="recupera_cartera">
-            <EntityTypeMapping TypeName="MyDigModel.recupera_cartera">
+            <EntityTypeMapping TypeName="MyRoomDigModel.recupera_cartera">
               <MappingFragment StoreEntitySet="recupera_cartera">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="prefijo" ColumnName="prefijo" />
@@ -17166,7 +17166,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="refers">
-            <EntityTypeMapping TypeName="MyDigModel.refer">
+            <EntityTypeMapping TypeName="MyRoomDigModel.refer">
               <MappingFragment StoreEntitySet="refer">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17174,7 +17174,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Regimen">
-            <EntityTypeMapping TypeName="MyDigModel.Regiman">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Regiman">
               <MappingFragment StoreEntitySet="Regimen">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17182,7 +17182,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="REGIMENES">
-            <EntityTypeMapping TypeName="MyDigModel.REGIMENE">
+            <EntityTypeMapping TypeName="MyRoomDigModel.REGIMENE">
               <MappingFragment StoreEntitySet="REGIMENES">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -17191,7 +17191,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="RepCamarerias">
-            <EntityTypeMapping TypeName="MyDigModel.RepCamareria">
+            <EntityTypeMapping TypeName="MyRoomDigModel.RepCamareria">
               <MappingFragment StoreEntitySet="RepCamareria">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_mesas" ColumnName="id_mesas" />
@@ -17207,7 +17207,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="reservas">
-            <EntityTypeMapping TypeName="MyDigModel.reserva">
+            <EntityTypeMapping TypeName="MyRoomDigModel.reserva">
               <MappingFragment StoreEntitySet="reservas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_estreserva" ColumnName="id_estreserva" />
@@ -17264,7 +17264,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="reservas_abonos">
-            <EntityTypeMapping TypeName="MyDigModel.reservas_abonos">
+            <EntityTypeMapping TypeName="MyRoomDigModel.reservas_abonos">
               <MappingFragment StoreEntitySet="reservas_abonos">
                 <ScalarProperty Name="id_reservas" ColumnName="id_reservas" />
                 <ScalarProperty Name="id_facturas" ColumnName="id_facturas" />
@@ -17272,7 +17272,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="reservas_huesped">
-            <EntityTypeMapping TypeName="MyDigModel.reservas_huesped">
+            <EntityTypeMapping TypeName="MyRoomDigModel.reservas_huesped">
               <MappingFragment StoreEntitySet="reservas_huesped">
                 <ScalarProperty Name="Id_reservas" ColumnName="Id_reservas" />
                 <ScalarProperty Name="Id_empresas" ColumnName="Id_empresas" />
@@ -17287,7 +17287,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="reservas_soporte">
-            <EntityTypeMapping TypeName="MyDigModel.reservas_soporte">
+            <EntityTypeMapping TypeName="MyRoomDigModel.reservas_soporte">
               <MappingFragment StoreEntitySet="reservas_soporte">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="id_reserva" ColumnName="id_reserva" />
@@ -17298,7 +17298,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="reservas_Traza">
-            <EntityTypeMapping TypeName="MyDigModel.reservas_Traza">
+            <EntityTypeMapping TypeName="MyRoomDigModel.reservas_Traza">
               <MappingFragment StoreEntitySet="reservas_Traza">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idReserva" ColumnName="idReserva" />
@@ -17310,7 +17310,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="respuestas">
-            <EntityTypeMapping TypeName="MyDigModel.respuesta">
+            <EntityTypeMapping TypeName="MyRoomDigModel.respuesta">
               <MappingFragment StoreEntitySet="respuesta">
                 <ScalarProperty Name="id_pregunta" ColumnName="id_pregunta" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -17319,7 +17319,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SavePeriodoes">
-            <EntityTypeMapping TypeName="MyDigModel.SavePeriodo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.SavePeriodo">
               <MappingFragment StoreEntitySet="SavePeriodo">
                 <ScalarProperty Name="autonum" ColumnName="autonum" />
                 <ScalarProperty Name="id_periodo" ColumnName="id_periodo" />
@@ -17337,7 +17337,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="secciones">
-            <EntityTypeMapping TypeName="MyDigModel.seccione">
+            <EntityTypeMapping TypeName="MyRoomDigModel.seccione">
               <MappingFragment StoreEntitySet="secciones">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17346,7 +17346,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sectores">
-            <EntityTypeMapping TypeName="MyDigModel.sectore">
+            <EntityTypeMapping TypeName="MyRoomDigModel.sectore">
               <MappingFragment StoreEntitySet="sectores">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17355,7 +17355,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="secureSys">
-            <EntityTypeMapping TypeName="MyDigModel.secureSy">
+            <EntityTypeMapping TypeName="MyRoomDigModel.secureSy">
               <MappingFragment StoreEntitySet="secureSys">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="code" ColumnName="code" />
@@ -17371,7 +17371,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="secureSysMenus">
-            <EntityTypeMapping TypeName="MyDigModel.secureSysMenu">
+            <EntityTypeMapping TypeName="MyRoomDigModel.secureSysMenu">
               <MappingFragment StoreEntitySet="secureSysMenu">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17379,7 +17379,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="secureSysOpcions">
-            <EntityTypeMapping TypeName="MyDigModel.secureSysOpcion">
+            <EntityTypeMapping TypeName="MyRoomDigModel.secureSysOpcion">
               <MappingFragment StoreEntitySet="secureSysOpcion">
                 <ScalarProperty Name="idMenu" ColumnName="idMenu" />
                 <ScalarProperty Name="idSubMenu" ColumnName="idSubMenu" />
@@ -17389,7 +17389,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="secureSysSubMenus">
-            <EntityTypeMapping TypeName="MyDigModel.secureSysSubMenu">
+            <EntityTypeMapping TypeName="MyRoomDigModel.secureSysSubMenu">
               <MappingFragment StoreEntitySet="secureSysSubMenu">
                 <ScalarProperty Name="idMenu" ColumnName="idMenu" />
                 <ScalarProperty Name="idSubMenu" ColumnName="idSubMenu" />
@@ -17398,7 +17398,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="segmentoes">
-            <EntityTypeMapping TypeName="MyDigModel.segmento">
+            <EntityTypeMapping TypeName="MyRoomDigModel.segmento">
               <MappingFragment StoreEntitySet="segmento">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17407,7 +17407,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SENSORs">
-            <EntityTypeMapping TypeName="MyDigModel.SENSOR">
+            <EntityTypeMapping TypeName="MyRoomDigModel.SENSOR">
               <MappingFragment StoreEntitySet="SENSOR">
                 <ScalarProperty Name="AUT" ColumnName="AUT" />
                 <ScalarProperty Name="hab" ColumnName="hab" />
@@ -17423,7 +17423,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="setup_taxis">
-            <EntityTypeMapping TypeName="MyDigModel.setup_taxis">
+            <EntityTypeMapping TypeName="MyRoomDigModel.setup_taxis">
               <MappingFragment StoreEntitySet="setup_taxis">
                 <ScalarProperty Name="Monto" ColumnName="Monto" />
                 <ScalarProperty Name="Modificar" ColumnName="Modificar" />
@@ -17442,7 +17442,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SetupApps">
-            <EntityTypeMapping TypeName="MyDigModel.SetupApp">
+            <EntityTypeMapping TypeName="MyRoomDigModel.SetupApp">
               <MappingFragment StoreEntitySet="SetupApp">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17450,7 +17450,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="setupMonitorPedidos">
-            <EntityTypeMapping TypeName="MyDigModel.setupMonitorPedido">
+            <EntityTypeMapping TypeName="MyRoomDigModel.setupMonitorPedido">
               <MappingFragment StoreEntitySet="setupMonitorPedidos">
                 <ScalarProperty Name="idTempo" ColumnName="idTempo" />
                 <ScalarProperty Name="idMaquina" ColumnName="idMaquina" />
@@ -17460,7 +17460,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="setUpPos">
-            <EntityTypeMapping TypeName="MyDigModel.setUpPos">
+            <EntityTypeMapping TypeName="MyRoomDigModel.setUpPos">
               <MappingFragment StoreEntitySet="setUpPos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="posCantMinOrdenC" ColumnName="posCantMinOrdenC" />
@@ -17469,7 +17469,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sexoes">
-            <EntityTypeMapping TypeName="MyDigModel.sexo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.sexo">
               <MappingFragment StoreEntitySet="sexo">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17477,7 +17477,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="showconsecs">
-            <EntityTypeMapping TypeName="MyDigModel.showconsec">
+            <EntityTypeMapping TypeName="MyRoomDigModel.showconsec">
               <MappingFragment StoreEntitySet="showconsec">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="consec" ColumnName="consec" />
@@ -17488,7 +17488,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sinconvers">
-            <EntityTypeMapping TypeName="MyDigModel.sinconver">
+            <EntityTypeMapping TypeName="MyRoomDigModel.sinconver">
               <MappingFragment StoreEntitySet="sinconver">
                 <ScalarProperty Name="id_productos" ColumnName="id_productos" />
                 <ScalarProperty Name="id_detmedidas" ColumnName="id_detmedidas" />
@@ -17496,7 +17496,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SOPTECNICOes">
-            <EntityTypeMapping TypeName="MyDigModel.SOPTECNICO">
+            <EntityTypeMapping TypeName="MyRoomDigModel.SOPTECNICO">
               <MappingFragment StoreEntitySet="SOPTECNICO">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17506,7 +17506,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sostenibilidads">
-            <EntityTypeMapping TypeName="MyDigModel.sostenibilidad">
+            <EntityTypeMapping TypeName="MyRoomDigModel.sostenibilidad">
               <MappingFragment StoreEntitySet="sostenibilidad">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="empresa" ColumnName="empresa" />
@@ -17523,7 +17523,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="stockMinimoes">
-            <EntityTypeMapping TypeName="MyDigModel.stockMinimo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.stockMinimo">
               <MappingFragment StoreEntitySet="stockMinimo">
                 <ScalarProperty Name="idProducto" ColumnName="idProducto" />
                 <ScalarProperty Name="idBodega" ColumnName="idBodega" />
@@ -17534,7 +17534,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="stocks">
-            <EntityTypeMapping TypeName="MyDigModel.stock">
+            <EntityTypeMapping TypeName="MyRoomDigModel.stock">
               <MappingFragment StoreEntitySet="stocks">
                 <ScalarProperty Name="id_bodegas" ColumnName="id_bodegas" />
                 <ScalarProperty Name="id_productos" ColumnName="id_productos" />
@@ -17546,7 +17546,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sugerencias">
-            <EntityTypeMapping TypeName="MyDigModel.sugerencia">
+            <EntityTypeMapping TypeName="MyRoomDigModel.sugerencia">
               <MappingFragment StoreEntitySet="sugerencias">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_refer" ColumnName="id_refer" />
@@ -17557,7 +17557,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="suites">
-            <EntityTypeMapping TypeName="MyDigModel.suite">
+            <EntityTypeMapping TypeName="MyRoomDigModel.suite">
               <MappingFragment StoreEntitySet="suites">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17579,7 +17579,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="suites_add">
-            <EntityTypeMapping TypeName="MyDigModel.suites_add">
+            <EntityTypeMapping TypeName="MyRoomDigModel.suites_add">
               <MappingFragment StoreEntitySet="suites_add">
                 <ScalarProperty Name="id_suites" ColumnName="id_suites" />
                 <ScalarProperty Name="id_mesas" ColumnName="id_mesas" />
@@ -17588,7 +17588,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="suites_fotos">
-            <EntityTypeMapping TypeName="MyDigModel.suites_fotos">
+            <EntityTypeMapping TypeName="MyRoomDigModel.suites_fotos">
               <MappingFragment StoreEntitySet="suites_fotos">
                 <ScalarProperty Name="consec" ColumnName="consec" />
                 <ScalarProperty Name="idSuite" ColumnName="idSuite" />
@@ -17597,7 +17597,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="suites_mecas">
-            <EntityTypeMapping TypeName="MyDigModel.suites_mecas">
+            <EntityTypeMapping TypeName="MyRoomDigModel.suites_mecas">
               <MappingFragment StoreEntitySet="suites_mecas">
                 <ScalarProperty Name="id_suites" ColumnName="id_suites" />
                 <ScalarProperty Name="id_mecanismos" ColumnName="id_mecanismos" />
@@ -17610,7 +17610,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="supervisions">
-            <EntityTypeMapping TypeName="MyDigModel.supervision">
+            <EntityTypeMapping TypeName="MyRoomDigModel.supervision">
               <MappingFragment StoreEntitySet="supervision">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_Mesa" ColumnName="id_Mesa" />
@@ -17622,7 +17622,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="supervision_detalle">
-            <EntityTypeMapping TypeName="MyDigModel.supervision_detalle">
+            <EntityTypeMapping TypeName="MyRoomDigModel.supervision_detalle">
               <MappingFragment StoreEntitySet="supervision_detalle">
                 <ScalarProperty Name="id_supervision" ColumnName="id_supervision" />
                 <ScalarProperty Name="id_pregunta" ColumnName="id_pregunta" />
@@ -17631,7 +17631,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tablatemporadas">
-            <EntityTypeMapping TypeName="MyDigModel.tablatemporada">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tablatemporada">
               <MappingFragment StoreEntitySet="tablatemporada">
                 <ScalarProperty Name="consec" ColumnName="consec" />
                 <ScalarProperty Name="hora" ColumnName="hora" />
@@ -17643,7 +17643,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TANQAGUAs">
-            <EntityTypeMapping TypeName="MyDigModel.TANQAGUA">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TANQAGUA">
               <MappingFragment StoreEntitySet="TANQAGUA">
                 <ScalarProperty Name="AUTOM" ColumnName="AUTOM" />
                 <ScalarProperty Name="FECHAINI" ColumnName="FECHAINI" />
@@ -17653,7 +17653,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TANQAGUAINFOes">
-            <EntityTypeMapping TypeName="MyDigModel.TANQAGUAINFO">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TANQAGUAINFO">
               <MappingFragment StoreEntitySet="TANQAGUAINFO">
                 <ScalarProperty Name="AUTOM" ColumnName="AUTOM" />
                 <ScalarProperty Name="FECHA" ColumnName="FECHA" />
@@ -17678,7 +17678,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tarjetasDispoes">
-            <EntityTypeMapping TypeName="MyDigModel.tarjetasDispo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tarjetasDispo">
               <MappingFragment StoreEntitySet="tarjetasDispo">
                 <ScalarProperty Name="consec" ColumnName="consec" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -17689,7 +17689,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="taxis">
-            <EntityTypeMapping TypeName="MyDigModel.taxi">
+            <EntityTypeMapping TypeName="MyRoomDigModel.taxi">
               <MappingFragment StoreEntitySet="taxis">
                 <ScalarProperty Name="Id_taxi" ColumnName="Id_taxi" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -17715,7 +17715,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="taxis_horario">
-            <EntityTypeMapping TypeName="MyDigModel.taxis_horario">
+            <EntityTypeMapping TypeName="MyRoomDigModel.taxis_horario">
               <MappingFragment StoreEntitySet="taxis_horario">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="suite" ColumnName="suite" />
@@ -17727,7 +17727,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="taxis_visitas">
-            <EntityTypeMapping TypeName="MyDigModel.taxis_visitas">
+            <EntityTypeMapping TypeName="MyRoomDigModel.taxis_visitas">
               <MappingFragment StoreEntitySet="taxis_visitas">
                 <ScalarProperty Name="idVisita" ColumnName="idVisita" />
                 <ScalarProperty Name="valorPago" ColumnName="valorPago" />
@@ -17735,7 +17735,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TbCIIUs">
-            <EntityTypeMapping TypeName="MyDigModel.TbCIIU">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TbCIIU">
               <MappingFragment StoreEntitySet="TbCIIU">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -17745,7 +17745,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TbCptoRetes">
-            <EntityTypeMapping TypeName="MyDigModel.TbCptoRete">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TbCptoRete">
               <MappingFragment StoreEntitySet="TbCptoRete">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17753,7 +17753,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TbRetencions">
-            <EntityTypeMapping TypeName="MyDigModel.TbRetencion">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TbRetencion">
               <MappingFragment StoreEntitySet="TbRetencion">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17764,7 +17764,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tbTaxis">
-            <EntityTypeMapping TypeName="MyDigModel.tbTaxi">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tbTaxi">
               <MappingFragment StoreEntitySet="tbTaxi">
                 <ScalarProperty Name="nTaxi" ColumnName="nTaxi" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -17772,7 +17772,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="temps">
-            <EntityTypeMapping TypeName="MyDigModel.temp">
+            <EntityTypeMapping TypeName="MyRoomDigModel.temp">
               <MappingFragment StoreEntitySet="temps">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17781,7 +17781,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="test_OnOff">
-            <EntityTypeMapping TypeName="MyDigModel.test_OnOff">
+            <EntityTypeMapping TypeName="MyRoomDigModel.test_OnOff">
               <MappingFragment StoreEntitySet="test_OnOff">
                 <ScalarProperty Name="consec" ColumnName="consec" />
                 <ScalarProperty Name="id_Habita" ColumnName="id_Habita" />
@@ -17794,7 +17794,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="THFORECs">
-            <EntityTypeMapping TypeName="MyDigModel.THFOREC">
+            <EntityTypeMapping TypeName="MyRoomDigModel.THFOREC">
               <MappingFragment StoreEntitySet="THFOREC">
                 <ScalarProperty Name="DIA" ColumnName="DIA" />
                 <ScalarProperty Name="HABSOCUPA" ColumnName="HABSOCUPA" />
@@ -17807,7 +17807,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TIEMPO_RI">
-            <EntityTypeMapping TypeName="MyDigModel.TIEMPO_RI">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TIEMPO_RI">
               <MappingFragment StoreEntitySet="TIEMPO_RI">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -17815,7 +17815,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tip_Huesped">
-            <EntityTypeMapping TypeName="MyDigModel.tip_Huesped">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tip_Huesped">
               <MappingFragment StoreEntitySet="tip_Huesped">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17823,7 +17823,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipdocs">
-            <EntityTypeMapping TypeName="MyDigModel.tipdoc">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipdoc">
               <MappingFragment StoreEntitySet="tipdocs">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17832,7 +17832,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipivas">
-            <EntityTypeMapping TypeName="MyDigModel.tipiva">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipiva">
               <MappingFragment StoreEntitySet="tipiva">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17850,7 +17850,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipIvaHotels">
-            <EntityTypeMapping TypeName="MyDigModel.tipIvaHotel">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipIvaHotel">
               <MappingFragment StoreEntitySet="tipIvaHotel">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17858,7 +17858,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipoActivoes">
-            <EntityTypeMapping TypeName="MyDigModel.tipoActivo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipoActivo">
               <MappingFragment StoreEntitySet="tipoActivo">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17866,7 +17866,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TIPOCARs">
-            <EntityTypeMapping TypeName="MyDigModel.TIPOCAR">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TIPOCAR">
               <MappingFragment StoreEntitySet="TIPOCAR">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17875,7 +17875,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipoEvids">
-            <EntityTypeMapping TypeName="MyDigModel.tipoEvid">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipoEvid">
               <MappingFragment StoreEntitySet="tipoEvid">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="codeTiopEvid" ColumnName="codeTiopEvid" />
@@ -17884,7 +17884,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipoFacturas">
-            <EntityTypeMapping TypeName="MyDigModel.tipoFactura">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipoFactura">
               <MappingFragment StoreEntitySet="tipoFactura">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17892,7 +17892,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipoGlosarios">
-            <EntityTypeMapping TypeName="MyDigModel.tipoGlosario">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipoGlosario">
               <MappingFragment StoreEntitySet="tipoGlosario">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="descripcion" ColumnName="descripcion" />
@@ -17900,7 +17900,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TipoLabors">
-            <EntityTypeMapping TypeName="MyDigModel.TipoLabor">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TipoLabor">
               <MappingFragment StoreEntitySet="TipoLabor">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -17910,7 +17910,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TipOlvidoes">
-            <EntityTypeMapping TypeName="MyDigModel.TipOlvido">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TipOlvido">
               <MappingFragment StoreEntitySet="TipOlvido">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17918,7 +17918,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipoMenuDiarios">
-            <EntityTypeMapping TypeName="MyDigModel.tipoMenuDiario">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipoMenuDiario">
               <MappingFragment StoreEntitySet="tipoMenuDiario">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="descripcion" ColumnName="descripcion" />
@@ -17926,7 +17926,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipoProdDsctos">
-            <EntityTypeMapping TypeName="MyDigModel.tipoProdDscto">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipoProdDscto">
               <MappingFragment StoreEntitySet="tipoProdDsctos">
                 <ScalarProperty Name="OrdenReg" ColumnName="OrdenReg" />
                 <ScalarProperty Name="tipoProd" ColumnName="tipoProd" />
@@ -17938,7 +17938,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipoReservas">
-            <EntityTypeMapping TypeName="MyDigModel.tipoReserva">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipoReserva">
               <MappingFragment StoreEntitySet="tipoReserva">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17946,7 +17946,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tippagos">
-            <EntityTypeMapping TypeName="MyDigModel.tippago">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tippago">
               <MappingFragment StoreEntitySet="tippagos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17956,7 +17956,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TipRegistroes">
-            <EntityTypeMapping TypeName="MyDigModel.TipRegistro">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TipRegistro">
               <MappingFragment StoreEntitySet="TipRegistro">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17965,7 +17965,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipsexes">
-            <EntityTypeMapping TypeName="MyDigModel.tipsex">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tipsex">
               <MappingFragment StoreEntitySet="tipsex">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -17973,7 +17973,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tmp_informe2">
-            <EntityTypeMapping TypeName="MyDigModel.tmp_informe2">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tmp_informe2">
               <MappingFragment StoreEntitySet="tmp_informe2">
                 <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
                 <ScalarProperty Name="id_tiposer" ColumnName="id_tiposer" />
@@ -17984,7 +17984,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tmpCargues">
-            <EntityTypeMapping TypeName="MyDigModel.tmpCargue">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tmpCargue">
               <MappingFragment StoreEntitySet="tmpCargue">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idMaquina" ColumnName="idMaquina" />
@@ -17998,7 +17998,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tmpconsumos">
-            <EntityTypeMapping TypeName="MyDigModel.tmpconsumo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tmpconsumo">
               <MappingFragment StoreEntitySet="tmpconsumos">
                 <ScalarProperty Name="maquina" ColumnName="maquina" />
                 <ScalarProperty Name="habitacion" ColumnName="habitacion" />
@@ -18025,7 +18025,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tmpdispons">
-            <EntityTypeMapping TypeName="MyDigModel.tmpdispon">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tmpdispon">
               <MappingFragment StoreEntitySet="tmpdispon">
                 <ScalarProperty Name="dia" ColumnName="dia" />
                 <ScalarProperty Name="hors" ColumnName="hors" />
@@ -18046,7 +18046,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tmpfactdiscs">
-            <EntityTypeMapping TypeName="MyDigModel.tmpfactdisc">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tmpfactdisc">
               <MappingFragment StoreEntitySet="tmpfactdisc">
                 <ScalarProperty Name="maquina" ColumnName="maquina" />
                 <ScalarProperty Name="factura" ColumnName="factura" />
@@ -18076,7 +18076,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tmpinvens">
-            <EntityTypeMapping TypeName="MyDigModel.tmpinven">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tmpinven">
               <MappingFragment StoreEntitySet="tmpinven">
                 <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
                 <ScalarProperty Name="usuario" ColumnName="usuario" />
@@ -18094,7 +18094,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tmppagos">
-            <EntityTypeMapping TypeName="MyDigModel.tmppago">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tmppago">
               <MappingFragment StoreEntitySet="tmppagos">
                 <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
                 <ScalarProperty Name="usuario" ColumnName="usuario" />
@@ -18109,7 +18109,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tmpProximoes">
-            <EntityTypeMapping TypeName="MyDigModel.tmpProximo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tmpProximo">
               <MappingFragment StoreEntitySet="tmpProximo">
                 <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
                 <ScalarProperty Name="id_mesa" ColumnName="id_mesa" />
@@ -18121,7 +18121,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tmpresumen">
-            <EntityTypeMapping TypeName="MyDigModel.tmpresuman">
+            <EntityTypeMapping TypeName="MyRoomDigModel.tmpresuman">
               <MappingFragment StoreEntitySet="tmpresumen">
                 <ScalarProperty Name="autonum" ColumnName="autonum" />
                 <ScalarProperty Name="id_periodo" ColumnName="id_periodo" />
@@ -18137,7 +18137,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TmpResumGrals">
-            <EntityTypeMapping TypeName="MyDigModel.TmpResumGral">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TmpResumGral">
               <MappingFragment StoreEntitySet="TmpResumGral">
                 <ScalarProperty Name="maquina" ColumnName="maquina" />
                 <ScalarProperty Name="mes" ColumnName="mes" />
@@ -18173,7 +18173,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TmpResumVtas">
-            <EntityTypeMapping TypeName="MyDigModel.TmpResumVta">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TmpResumVta">
               <MappingFragment StoreEntitySet="TmpResumVtas">
                 <ScalarProperty Name="maquina" ColumnName="maquina" />
                 <ScalarProperty Name="id_producto" ColumnName="id_producto" />
@@ -18192,7 +18192,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="toolbs">
-            <EntityTypeMapping TypeName="MyDigModel.toolb">
+            <EntityTypeMapping TypeName="MyRoomDigModel.toolb">
               <MappingFragment StoreEntitySet="toolb">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -18201,7 +18201,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="toolFrmPagos">
-            <EntityTypeMapping TypeName="MyDigModel.toolFrmPago">
+            <EntityTypeMapping TypeName="MyRoomDigModel.toolFrmPago">
               <MappingFragment StoreEntitySet="toolFrmPagos">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idFrmPago" ColumnName="idFrmPago" />
@@ -18212,7 +18212,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TRANSFORMAs">
-            <EntityTypeMapping TypeName="MyDigModel.TRANSFORMA">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TRANSFORMA">
               <MappingFragment StoreEntitySet="TRANSFORMA">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -18228,7 +18228,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TRANSFORMA_ELEMEN">
-            <EntityTypeMapping TypeName="MyDigModel.TRANSFORMA_ELEMEN">
+            <EntityTypeMapping TypeName="MyRoomDigModel.TRANSFORMA_ELEMEN">
               <MappingFragment StoreEntitySet="TRANSFORMA_ELEMEN">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_transforma" ColumnName="id_transforma" />
@@ -18240,7 +18240,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="transportes">
-            <EntityTypeMapping TypeName="MyDigModel.transporte">
+            <EntityTypeMapping TypeName="MyRoomDigModel.transporte">
               <MappingFragment StoreEntitySet="transportes">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -18248,7 +18248,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="trfacontrols">
-            <EntityTypeMapping TypeName="MyDigModel.trfacontrol">
+            <EntityTypeMapping TypeName="MyRoomDigModel.trfacontrol">
               <MappingFragment StoreEntitySet="trfacontrol">
                 <ScalarProperty Name="id_tempo" ColumnName="id_tempo" />
                 <ScalarProperty Name="id_controles" ColumnName="id_controles" />
@@ -18262,7 +18262,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="trfanews">
-            <EntityTypeMapping TypeName="MyDigModel.trfanew">
+            <EntityTypeMapping TypeName="MyRoomDigModel.trfanew">
               <MappingFragment StoreEntitySet="trfanews">
                 <ScalarProperty Name="id_productos" ColumnName="id_productos" />
                 <ScalarProperty Name="id_detmedidas" ColumnName="id_detmedidas" />
@@ -18273,7 +18273,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="trfaprods">
-            <EntityTypeMapping TypeName="MyDigModel.trfaprod">
+            <EntityTypeMapping TypeName="MyRoomDigModel.trfaprod">
               <MappingFragment StoreEntitySet="trfaprods">
                 <ScalarProperty Name="id_tempo" ColumnName="id_tempo" />
                 <ScalarProperty Name="id_lugar" ColumnName="id_lugar" />
@@ -18296,7 +18296,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="trfaprodsListas">
-            <EntityTypeMapping TypeName="MyDigModel.trfaprodsLista">
+            <EntityTypeMapping TypeName="MyRoomDigModel.trfaprodsLista">
               <MappingFragment StoreEntitySet="trfaprodsListas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_productos" ColumnName="id_productos" />
@@ -18312,7 +18312,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="trfaprodsListasBaks">
-            <EntityTypeMapping TypeName="MyDigModel.trfaprodsListasBak">
+            <EntityTypeMapping TypeName="MyRoomDigModel.trfaprodsListasBak">
               <MappingFragment StoreEntitySet="trfaprodsListasBak">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="id_maquina" ColumnName="id_maquina" />
@@ -18329,7 +18329,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="trfaservs">
-            <EntityTypeMapping TypeName="MyDigModel.trfaserv">
+            <EntityTypeMapping TypeName="MyRoomDigModel.trfaserv">
               <MappingFragment StoreEntitySet="trfaservs">
                 <ScalarProperty Name="id_temps" ColumnName="id_temps" />
                 <ScalarProperty Name="id_suites" ColumnName="id_suites" />
@@ -18342,7 +18342,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="trfatempoes">
-            <EntityTypeMapping TypeName="MyDigModel.trfatempo">
+            <EntityTypeMapping TypeName="MyRoomDigModel.trfatempo">
               <MappingFragment StoreEntitySet="trfatempo">
                 <ScalarProperty Name="id_tempo" ColumnName="id_tempo" />
                 <ScalarProperty Name="tipo" ColumnName="tipo" />
@@ -18351,7 +18351,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="turnacts">
-            <EntityTypeMapping TypeName="MyDigModel.turnact">
+            <EntityTypeMapping TypeName="MyRoomDigModel.turnact">
               <MappingFragment StoreEntitySet="turnact">
                 <ScalarProperty Name="id_cierre" ColumnName="id_cierre" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -18383,7 +18383,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="turninvs">
-            <EntityTypeMapping TypeName="MyDigModel.turninv">
+            <EntityTypeMapping TypeName="MyRoomDigModel.turninv">
               <MappingFragment StoreEntitySet="turninv">
                 <ScalarProperty Name="id_periodos" ColumnName="id_periodos" />
                 <ScalarProperty Name="id_turno" ColumnName="id_turno" />
@@ -18397,7 +18397,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Ubicaciones">
-            <EntityTypeMapping TypeName="MyDigModel.Ubicacione">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Ubicacione">
               <MappingFragment StoreEntitySet="Ubicaciones">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -18406,7 +18406,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="veces">
-            <EntityTypeMapping TypeName="MyDigModel.vece">
+            <EntityTypeMapping TypeName="MyRoomDigModel.vece">
               <MappingFragment StoreEntitySet="veces">
                 <ScalarProperty Name="identif" ColumnName="identif" />
                 <ScalarProperty Name="consec" ColumnName="consec" />
@@ -18417,7 +18417,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Vouchers">
-            <EntityTypeMapping TypeName="MyDigModel.Voucher">
+            <EntityTypeMapping TypeName="MyRoomDigModel.Voucher">
               <MappingFragment StoreEntitySet="Voucher">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="consec" ColumnName="consec" />
@@ -18425,7 +18425,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="W">
-            <EntityTypeMapping TypeName="MyDigModel.W">
+            <EntityTypeMapping TypeName="MyRoomDigModel.W">
               <MappingFragment StoreEntitySet="W">
                 <ScalarProperty Name="E" ColumnName="E" />
                 <ScalarProperty Name="M" ColumnName="M" />
@@ -18434,7 +18434,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ZMOTMPs">
-            <EntityTypeMapping TypeName="MyDigModel.ZMOTMP">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ZMOTMP">
               <MappingFragment StoreEntitySet="ZMOTMP">
                 <ScalarProperty Name="id_cierre" ColumnName="id_cierre" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -18489,7 +18489,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="zonas">
-            <EntityTypeMapping TypeName="MyDigModel.zona">
+            <EntityTypeMapping TypeName="MyRoomDigModel.zona">
               <MappingFragment StoreEntitySet="zonas">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -18504,7 +18504,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="zzTempoProds">
-            <EntityTypeMapping TypeName="MyDigModel.zzTempoProd">
+            <EntityTypeMapping TypeName="MyRoomDigModel.zzTempoProd">
               <MappingFragment StoreEntitySet="zzTempoProds">
                 <ScalarProperty Name="code" ColumnName="code" />
                 <ScalarProperty Name="minimo" ColumnName="minimo" />
@@ -18514,7 +18514,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alquilerPres">
-            <EntityTypeMapping TypeName="MyDigModel.alquilerPre">
+            <EntityTypeMapping TypeName="MyRoomDigModel.alquilerPre">
               <MappingFragment StoreEntitySet="alquilerPre">
                 <ScalarProperty Name="id_temps" ColumnName="id_temps" />
                 <ScalarProperty Name="id_servicios" ColumnName="id_servicios" />
@@ -18564,7 +18564,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ConfPuntosSuites">
-            <EntityTypeMapping TypeName="MyDigModel.ConfPuntosSuite">
+            <EntityTypeMapping TypeName="MyRoomDigModel.ConfPuntosSuite">
               <MappingFragment StoreEntitySet="ConfPuntosSuite">
                 <ScalarProperty Name="idTipSuite" ColumnName="idTipSuite" />
                 <ScalarProperty Name="puntos" ColumnName="puntos" />
@@ -18573,7 +18573,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cotizacion_detalle">
-            <EntityTypeMapping TypeName="MyDigModel.cotizacion_detalle">
+            <EntityTypeMapping TypeName="MyRoomDigModel.cotizacion_detalle">
               <MappingFragment StoreEntitySet="cotizacion_detalle">
                 <ScalarProperty Name="id_cotizacion" ColumnName="id_cotizacion" />
                 <ScalarProperty Name="id_suites" ColumnName="id_suites" />
@@ -18588,7 +18588,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="menuDiarios">
-            <EntityTypeMapping TypeName="MyDigModel.menuDiario">
+            <EntityTypeMapping TypeName="MyRoomDigModel.menuDiario">
               <MappingFragment StoreEntitySet="menuDiario">
                 <ScalarProperty Name="idTipo" ColumnName="idTipo" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -18598,7 +18598,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="plantillaDets">
-            <EntityTypeMapping TypeName="MyDigModel.plantillaDet">
+            <EntityTypeMapping TypeName="MyRoomDigModel.plantillaDet">
               <MappingFragment StoreEntitySet="plantillaDet">
                 <ScalarProperty Name="id_PedidosPendDetMst" ColumnName="id_PedidosPendDetMst" />
                 <ScalarProperty Name="item" ColumnName="item" />
@@ -18614,7 +18614,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="plantillaMsts">
-            <EntityTypeMapping TypeName="MyDigModel.plantillaMst">
+            <EntityTypeMapping TypeName="MyRoomDigModel.plantillaMst">
               <MappingFragment StoreEntitySet="plantillaMst">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -18628,7 +18628,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="promMyTecnoes">
-            <EntityTypeMapping TypeName="MyDigModel.promMyTecno">
+            <EntityTypeMapping TypeName="MyRoomDigModel.promMyTecno">
               <MappingFragment StoreEntitySet="promMyTecno">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="descripcion" ColumnName="descripcion" />
@@ -18645,7 +18645,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="promMyTecnoDetalles">
-            <EntityTypeMapping TypeName="MyDigModel.promMyTecnoDetalle">
+            <EntityTypeMapping TypeName="MyRoomDigModel.promMyTecnoDetalle">
               <MappingFragment StoreEntitySet="promMyTecnoDetalle">
                 <ScalarProperty Name="idProm" ColumnName="idProm" />
                 <ScalarProperty Name="idSuites" ColumnName="idSuites" />
@@ -18654,7 +18654,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="seguros">
-            <EntityTypeMapping TypeName="MyDigModel.seguro">
+            <EntityTypeMapping TypeName="MyRoomDigModel.seguro">
               <MappingFragment StoreEntitySet="seguros">
                 <ScalarProperty Name="TopeA" ColumnName="TopeA" />
                 <ScalarProperty Name="TopeB" ColumnName="TopeB" />
@@ -18663,7 +18663,7 @@ advertencia 6002: La tabla o vista 'AIXO.dbo.usuarios' no tiene definida ninguna
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="usuarios">
-            <EntityTypeMapping TypeName="MyDigModel.usuario">
+            <EntityTypeMapping TypeName="MyRoomDigModel.usuario">
               <MappingFragment StoreEntitySet="usuarios">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nivel" ColumnName="nivel" />

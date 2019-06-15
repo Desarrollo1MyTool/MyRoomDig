@@ -7,8 +7,15 @@
         <ResourceDictionary>
             <!-- Parameters -->
             <infra:InstanceLocator x:Key="Locator"/>
-            <x:String x:Key="APISecurity">192.168.0.137:50800</x:String>
+            <x:String x:Key="APISecurity">http://192.168.0.137:50800</x:String>
             <!-- Parameters -->
+
+            <Color x:Key="myTool">#009CB1</Color>
+            <Color x:Key="colFondo">#d9d9d9</Color>
+            <Color x:Key="AzulOsc">#284b63</Color>
+            <Color x:Key="Azul">#0092ac</Color>
+            <Color x:Key="GrisOsc">#34393a</Color>
+            <Color x:Key="Blanco">#ffffff</Color>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
