@@ -139,13 +139,8 @@
                 }
 
                 var result = await response.Content.ReadAsStringAsync();
-
-                return new Response
-                {
-                    IsSuccess = true,
-                    Message = "se agregó correctamente",
-                    Result = result,
-                };
+                Response temp = JsonConvert.DeserializeObject<Response>(result);
+                return temp;
             }
             catch (Exception ex)
             {

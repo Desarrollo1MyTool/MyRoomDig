@@ -4,6 +4,7 @@
     using GalaSoft.MvvmLight.Command;
     using MyRoomDig.Domain;
     using MyRoomDig.Services;
+    using MyRoomDig.Views;
     using Newtonsoft.Json;
     using Plugin.Media;
     using Plugin.Media.Abstractions;
@@ -18,6 +19,7 @@
     {
         #region Attribues
         private bool isProcessing;
+        private bool withData;
         private int _idIdentifica;
         private string _Identificacion;
         private string _nameClient;
@@ -86,7 +88,8 @@
         #region Commands
         public ICommand TakePictureCommand { get { return new RelayCommand(TakePicture); } }
         public ICommand SavePictureCommand { get { return new RelayCommand(SavePicture); } }
-        public ICommand SearchPictureCommand { get { return new RelayCommand(SearchData); } }
+        public ICommand SearchClientCommand { get { return new RelayCommand(SearchData); } }
+        public ICommand ClearCommand { get { return new RelayCommand(ClearData); } }
         #endregion
         
         #region Constructors
@@ -108,6 +111,7 @@
                 this.imgByte = null;
                 this.Descripcion = "";
                 this.Identificacion = "";
+                this.withData = false;
                 TypesDoc = new ObservableCollection<KeyValue>();
                 GetTypeDoc();
                 Evidences = new ObservableCollection<EvidenciasModel>();
@@ -120,7 +124,7 @@
         }
         public async void GetTypeDoc()
         {
-            await Task.Delay(2000);
+            await Task.Delay(1000);
             var apiRoom = Application.Current.Resources["APISecurity"].ToString();
             var response = await this.apiService.GetList<KeyValue>(apiRoom, "api/GetTypeDoc", "");
             if (!response.IsSuccess)
@@ -145,9 +149,21 @@
         {
             try
             {
-
+                int idTypeDoc = TypeDocSelected.id;
+                if(TypeDocSelected == null)
+                {
+                    await Application.Current.MainPage.DisplayAlert("", "Seleccione un tipo de documento", "Ok");
+                    isProcessing = false;
+                    return;
+                }
+                if (Identificacion == null)
+                {
+                    await Application.Current.MainPage.DisplayAlert("", "Ingrese la identificación del cliente", "Ok");
+                    isProcessing = false;
+                    return;
+                }
                 var apiRoom = Application.Current.Resources["APISecurity"].ToString();
-                var response = await this.apiService.GetList<EvidenciasModel>(apiRoom, "api/GetClients?identification=" + Identificacion + TypeDocSelected.id, "");
+                var response = await this.apiService.GetList<EvidenciasModel>(apiRoom, "api/GetClients?identification=" + Identificacion + "&idTypeDoc=" + idTypeDoc, "");
                 if (!response.IsSuccess)
                 {
                     await Application.Current.MainPage.DisplayAlert(
@@ -156,6 +172,7 @@
                         "Ok");
                     return;
                 }
+                List<EvidenciasModel> lsTemp = (List<EvidenciasModel>)response.Result;
                 foreach (var item in (List<EvidenciasModel>)response.Result)
                 {
                     Evidences.Add(new EvidenciasModel
@@ -166,6 +183,14 @@
                     });
                     this.IdIdentifica = item.numIdenti??0;
                     this.NameClient = item.nameClient;
+                    withData = true;
+                    isProcessing = false;
+                }
+                if (lsTemp.Count == 0)
+                {
+                    this.NameClient = "No se encuentra ningun cliente con los datos ingresados.";
+                    isProcessing = true;
+                    withData = false;
                 }
             }
             catch (Exception ex)
@@ -211,28 +236,42 @@
         {
             try
             {
-                if(!isProcessing)
+                if (this.TypeDocSelected == null)
                 {
-                    var resultado = await Application.Current.MainPage.DisplayAlert("Guardar", "Desea guradar la evidencia: " + this.Identificacion + ".jpg" + " ?", "Si", "No");
+                    await Application.Current.MainPage.DisplayAlert("", "Seleccione un tipo de documento", "Ok");
+                    isProcessing = true;
+                    return;
+                }
+                if (this.Identificacion == null || this.Identificacion == string.Empty)
+                {
+                    await Application.Current.MainPage.DisplayAlert("", "Ingrese la identificación del cliente", "Ok");
+                    isProcessing = true;
+                    return;
+                }
+                if (!withData)
+                {
+                    await Application.Current.MainPage.DisplayAlert("", "Los datos ingresados son incorrectos", "Ok");
+                    isProcessing = true;
+                    return;
+                }
+                if (this.imgByte == null)
+                {
+                    await Application.Current.MainPage.DisplayAlert("", "No hay ninguna imágen para guardar", "Ok");
+                    isProcessing = true;
+                    return;
+                }
+                if (!isProcessing && withData)
+                {
+                    var resultado = await Application.Current.MainPage.DisplayAlert("Guardar", "Desea guardar la evidencia: " + this.Identificacion + ".jpg" + " ?", "Si", "No");
                     if(resultado)
                     {
                         isProcessing = true;
-                        if(this.Identificacion == null || this.Identificacion == string.Empty)
-                        {
-                            await Application.Current.MainPage.DisplayAlert("", "Ingrese la identificación del cliente", "Ok");
-                            isProcessing = false;
-                            return;
-                        }
-                        if (this.TypeDocSelected == null)
-                        {
-                            await Application.Current.MainPage.DisplayAlert("", "Seleccione un tipo de documento", "Ok");
-                            isProcessing = false;
-                            return;
-                        }
+                        
                         EvidenceSave.numIdenti = this.IdIdentifica;  
                         EvidenceSave.evidencia1 = this.imgByte;
                         EvidenceSave.descripcion = this.Descripcion;
                         EvidenceSave.fileName = this.Identificacion + ".jpg";
+                        EvidenceSave.usuario = MainViewModel.GetInstance().LoginViewModel.User;
 
                         var apiS = Application.Current.Resources["APISecurity"].ToString();
 
@@ -257,12 +296,28 @@
                         }
                     }
                 }
+                
             }
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("TakePicture SavePicture", ex.Message, "Ok");
             }
             isProcessing = false;
+        }
+        public async void ClearData()
+        {
+            try
+            {
+                var resultado = await Application.Current.MainPage.DisplayAlert("Cancelar", "Desea limpiar los datos registrados ?", "Si", "No");
+                if (resultado)
+                {
+                    Instance();
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("LlenaPedido cancelOrder", ex.ToString(), "Ok");
+            }
         }
         public static byte[] ConvertPictureBytes(string imagen)
         {

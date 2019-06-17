@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             x:Class="MyRoomDig.Views.ConfigPage">
+    <ContentPage.Content>
+        <Grid BindingContext="{Binding ConfigViewModel}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="CenterAndExpand" 
+                           Text="Host"/>
+                    <Entry Text="{Binding Host, Mode=TwoWay}"/>
+                    <Label HorizontalOptions="CenterAndExpand" 
+                           Text="Port"/>
+                    <Entry Text="{Binding Port, Mode=TwoWay}"/>
+                    <Label HorizontalOptions="CenterAndExpand" 
+                           Text="Máquina"/>
+                    <Entry Text="{Binding Maquina, Mode=TwoWay}"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Button BackgroundColor="Purple"
+                        BorderRadius="23"
+                        Command="{Binding SaveCommand}"
+                        HeightRequest="46"
+                        HorizontalOptions="FillAndExpand"
+                        Text="GUARDAR"
+                        TextColor="{StaticResource Blanco}"
+                        VerticalOptions="StartAndExpand"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

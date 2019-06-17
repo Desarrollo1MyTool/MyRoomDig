@@ -95,6 +95,19 @@
           "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
         }
       },
+      "SQLiteNetExtensions/1.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.8",
+          "SQLite.Net-PCL": "3.0.5"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/SQLiteNetExtensions.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.11": {
         "type": "package",
         "dependencies": {
@@ -542,6 +555,38 @@
         "sqlite.net.core-pcl.nuspec"
       ]
     },
+    "SQLiteNetExtensions/1.3.0": {
+      "sha512": "3KSbdCwYZbxt6gW4LQk81f7TsiO3MyzdHx13gjfng79Qza3m+cKJm72sXbU8ZcGZpzx2QLShksXI3C3CKDLYUw==",
+      "type": "package",
+      "path": "sqlitenetextensions/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/SQLiteNetExtensions.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/SQLiteNetExtensions.dll.mdb",
+        "sqlitenetextensions.1.3.0.nupkg.sha512",
+        "sqlitenetextensions.nuspec",
+        "src/Attributes/CascadeOperation.cs",
+        "src/Attributes/ForeignKeyAttribute.cs",
+        "src/Attributes/ManyToManyAttribute.cs",
+        "src/Attributes/ManyToOneAttribute.cs",
+        "src/Attributes/OneToManyAttribute.cs",
+        "src/Attributes/OneToOneAttribute.cs",
+        "src/Attributes/RelationshipAttribute.cs",
+        "src/Attributes/TextBlobAttribute.cs",
+        "src/Exceptions/IncorrectRelationshipException.cs",
+        "src/Extensions/ReadOperations.cs",
+        "src/Extensions/ReflectionExtensions.cs",
+        "src/Extensions/TextBlob/ITextBlobSerializer.cs",
+        "src/Extensions/TextBlob/Serializers/JsonBlobSerializer.cs",
+        "src/Extensions/TextBlob/TextBlobOperations.cs",
+        "src/Extensions/WriteOperations.cs",
+        "src/Properties/AssemblyInfo.cs",
+        "src/obj/Debug/.NETPortable,Version=v4.0,Profile=Profile136.AssemblyAttribute.cs",
+        "src/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile259.AssemblyAttribute.cs",
+        "src/obj/Release/.NETPortable,Version=v4.5,Profile=Profile259.AssemblyAttribute.cs"
+      ]
+    },
     "SQLitePCLRaw.bundle_green/1.1.11": {
       "sha512": "HOD1/Jg9VZtrOyPUCD9reQOXHq4r+fNe24qw5nghuiUcKch+9jePeRpt6MqGGUFhg2KW89KvE/RFlhpbfF8pKA==",
       "type": "package",
@@ -868,6 +913,7 @@
       "Newtonsoft.Json >= 12.0.2",
       "Plugin.Permissions >= 3.0.0.12",
       "SQLite.Net-PCL >= 3.1.1",
+      "SQLiteNetExtensions >= 1.3.0",
       "Xam.Plugin.Connectivity >= 3.2.0",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Forms >= 3.4.0.1008975",
@@ -941,6 +987,10 @@
             "target": "Package",
             "version": "[3.1.1, )"
           },
+          "SQLiteNetExtensions": {
+            "target": "Package",
+            "version": "[1.3.0, )"
+          },
           "Xam.Plugin.Connectivity": {
             "target": "Package",
             "version": "[3.2.0, )"
@@ -993,6 +1043,16 @@
       "warningLevel": 1,
       "message": "El paquete \"SQLite.Net.Core-PCL 3.1.1\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "SQLite.Net.Core-PCL",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"SQLiteNetExtensions 1.3.0\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "SQLiteNetExtensions",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
       ]

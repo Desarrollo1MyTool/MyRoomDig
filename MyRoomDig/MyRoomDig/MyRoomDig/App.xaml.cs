@@ -12,7 +12,7 @@ namespace MyRoomDig
         {
             InitializeComponent();
 
-            MainPage = new TakePicturePage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

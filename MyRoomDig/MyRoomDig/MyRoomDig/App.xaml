@@ -12,6 +12,7 @@
 
             <Color x:Key="myTool">#009CB1</Color>
             <Color x:Key="colFondo">#d9d9d9</Color>
+            <Color x:Key="colLetras">#284b63</Color>
             <Color x:Key="AzulOsc">#284b63</Color>
             <Color x:Key="Azul">#0092ac</Color>
             <Color x:Key="GrisOsc">#34393a</Color>

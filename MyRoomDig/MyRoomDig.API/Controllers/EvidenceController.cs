@@ -16,7 +16,7 @@
         #endregion
         #region GET´s
         [Route("api/GetClients")]
-        public IQueryable<EvidenciasModel> GetClients(string identification, KeyValue idTypeDoc)
+        public IQueryable<EvidenciasModel> GetClients(string identification, int idTypeDoc)
         {
            List<EvidenciasModel> CsReturn = new List<EvidenciasModel>();
             try
@@ -24,7 +24,7 @@
                 using (MyRoomDigEntities dbContext = new MyRoomDigEntities())
                 {
                     var lsTemp = (from C in db.clientes
-                                  where C.id == identification && C.tipodoc == idTypeDoc.id
+                                  where C.id == identification && C.tipodoc == idTypeDoc
                                   select new
                                   {
                                       NumIdenti = C.idtercero,
@@ -78,13 +78,14 @@
         #region POST´s
         [ResponseType(typeof(EvidenciasModel))]
         [Route("api/PostEvidences")]
-        public async Task<bool> PostEvidences(EvidenciasModel evidenciasModel)
+        public async Task<Response> PostEvidences(EvidenciasModel evidenciasModel)
         {
+           Response response = new Response();
             try
             {
                 if (!ModelState.IsValid || evidenciasModel == null)
                 {
-                    return false;
+                    return response;
                 }
                 using (var dbContextTransaction = db.Database.BeginTransaction())
                 {
@@ -129,19 +130,24 @@
                                 });
                                 db.SaveChanges();
                                 dbContextTransaction.Commit();
+                                response.IsSuccess = true;
+                                response.Message = "Agregado correctamente";
                         }
                     }
                     catch (Exception ex)
                     {
                         dbContextTransaction.Rollback();
-                        return false;
+                        response.Message = ex.ToString();
+                        return response;
                     }
                 }
-                return true;
+                
+                return response;
             }
             catch (Exception ex)
             {
-                return false;
+                response.Message = ex.ToString();
+                return response;
             }
 
         }
