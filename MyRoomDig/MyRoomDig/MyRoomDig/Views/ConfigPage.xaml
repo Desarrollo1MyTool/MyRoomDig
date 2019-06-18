@@ -13,13 +13,17 @@
                 <StackLayout VerticalOptions="CenterAndExpand">
                     <Label HorizontalOptions="CenterAndExpand" 
                            Text="Host"/>
-                    <Entry Text="{Binding Host, Mode=TwoWay}"/>
+                    <Entry Text="{Binding Host, Mode=TwoWay}"
+                           Keyboard="Numeric"/>
                     <Label HorizontalOptions="CenterAndExpand" 
                            Text="Port"/>
-                    <Entry Text="{Binding Port, Mode=TwoWay}"/>
+                    <Entry Text="{Binding Port, Mode=TwoWay}"
+                           Keyboard="Numeric"/>
                     <Label HorizontalOptions="CenterAndExpand" 
                            Text="Máquina"/>
-                    <Entry Text="{Binding Maquina, Mode=TwoWay}"/>
+                    <Entry Text="{Binding Maquina, Mode=TwoWay}"
+                           Keyboard="Numeric"
+                           ReturnCommand="{Binding SaveCommand}"/>
                 </StackLayout>
             </Grid>
             <Grid Grid.Row="1">

@@ -262,7 +262,7 @@
                 }
                 if (!isProcessing && withData)
                 {
-                    var resultado = await Application.Current.MainPage.DisplayAlert("Guardar", "Desea guardar la evidencia: " + this.Identificacion + ".jpg" + " ?", "Si", "No");
+                    var resultado = await Application.Current.MainPage.DisplayAlert("Guardar", "Desea guardar la evidencia asociada a: " + this.NameClient + " ?", "Si", "No");
                     if(resultado)
                     {
                         isProcessing = true;
@@ -270,7 +270,7 @@
                         EvidenceSave.numIdenti = this.IdIdentifica;  
                         EvidenceSave.evidencia1 = this.imgByte;
                         EvidenceSave.descripcion = this.Descripcion;
-                        EvidenceSave.fileName = this.Identificacion + ".jpg";
+                        EvidenceSave.fileName = this.Identificacion;
                         EvidenceSave.usuario = MainViewModel.GetInstance().LoginViewModel.User;
 
                         var apiS = Application.Current.Resources["APISecurity"].ToString();

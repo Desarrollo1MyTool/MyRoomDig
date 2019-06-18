@@ -54,8 +54,8 @@
                            Text="{Binding NameClient}"
                            IsEnabled="False"/>
                     <Entry Grid.Row="2" Grid.ColumnSpan="3"
-                               Placeholder="Descripción"
-                               Text="{Binding Descripcion}"/>
+                           Placeholder="Descripción"
+                           Text="{Binding Descripcion}"/>
                 </Grid>
 
             </Grid>
@@ -103,9 +103,6 @@
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-                <!--<Entry Grid.ColumnSpan="2"
-                               Placeholder="Nombre del archivo"
-                               Text="{Binding FileName}"/>-->
                 <Button BackgroundColor="{StaticResource Azul}"
                         BorderRadius="23"
                         Command="{Binding SavePictureCommand}"

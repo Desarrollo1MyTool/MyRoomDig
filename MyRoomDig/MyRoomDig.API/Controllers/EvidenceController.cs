@@ -105,12 +105,14 @@
                                 idIdentifica = evidenciasModel.numIdenti ?? 0,
                                 evidencia1 = evidenciasModel.evidencia1,
                                 descripcion = evidenciasModel.descripcion ?? "",
-                                fileName = evidenciasModel.fileName ?? "",
+                                fileName = evidenciasModel.fileName + "_" + 1 + ".jpg" ?? "",
                                 fecha = DateTime.Now,
                                 usuario = evidenciasModel.usuario ?? ""
                             });
                             db.SaveChanges();
                             dbContextTransaction.Commit();
+                            response.IsSuccess = true;
+                            response.Message = "Agregado correctamente";
                         }
                         else
                         {
@@ -124,7 +126,7 @@
                                     idIdentifica = evidenciasModel.numIdenti ?? 0,
                                     evidencia1 = evidenciasModel.evidencia1,
                                     descripcion = evidenciasModel.descripcion ?? "",
-                                    fileName = evidenciasModel.fileName ?? "",
+                                    fileName = evidenciasModel.fileName + "_" + (evidence.idSerialNum + 1) + ".jpg" ?? "",
                                     fecha = DateTime.Now,
                                     usuario = evidenciasModel.usuario ?? ""
                                 });

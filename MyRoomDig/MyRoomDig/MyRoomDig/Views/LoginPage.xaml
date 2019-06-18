@@ -13,18 +13,24 @@
             <Grid Margin="10,0"
                   VerticalOptions="CenterAndExpand">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="0.5*"/>
                 </Grid.ColumnDefinitions>
-                <Label Text="Usuario"
+                <Label Grid.Column="1"
+                       FontSize="Medium"
+                       Text="Usuario"
                        VerticalOptions="Center"/>
-                <Entry Grid.Column="1"
+                <Entry Grid.Column="2"
                        Keyboard="Email"
                        Text="{Binding User, Mode=TwoWay}"
                        Placeholder="Ingrese Usuario ..."/>
-                <Label Grid.Row="1" Text="Contaseña"
+                <Label Grid.Column="1" Grid.Row="1" 
+                       FontSize="Medium"
+                       Text="Contaseña"
                        VerticalOptions="Center"/>
-                <Entry Grid.Column="1" Grid.Row="1"
+                <Entry Grid.Column="2" Grid.Row="1"
                        IsPassword="true"
                        Text="{Binding Password, Mode=TwoWay}"
                        Placeholder="Ingrese Contraseña ..."
