@@ -67,6 +67,9 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\Sys
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\System.Web.WebPages.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\System.Web.WebPages.Razor.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\WebGrease.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\Xamarin.Forms.Core.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\netstandard.dll
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\Xamarin.Forms.Platform.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\MyRoomDig.Domain.pdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\EntityFramework.xml
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\EntityFramework.SqlServer.xml
@@ -85,6 +88,8 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\Ant
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\Xamarin.Forms.Core.pdb
+C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\Xamarin.Forms.Core.xml
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\es\System.Net.Http.Formatting.resources.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\es\System.Web.Helpers.resources.dll
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.API\bin\es\System.Web.Http.resources.dll

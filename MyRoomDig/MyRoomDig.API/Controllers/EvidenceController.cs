@@ -4,6 +4,7 @@
     using Models;
     using System;
     using System.Collections.Generic;
+    using System.Collections.ObjectModel;
     using System.Data.Entity;
     using System.Linq;
     using System.Threading.Tasks;
@@ -27,9 +28,13 @@
                                   where C.id == identification && C.tipodoc == idTypeDoc
                                   select new
                                   {
-                                      NumIdenti = C.idtercero,
-                                      IdClient = C.id,
-                                      Name = C.name,
+                                      IdTercero = C.idtercero ?? 0,
+                                      IdentifClient = C.id,
+                                      NameClient = C.name,
+                                      FirstName = C.primname,
+                                      SecondName = C.segname,
+                                      FirstLastName = C.primapel,
+                                      SeconLastName = C.segapel
 
                                   }).ToList();
 
@@ -37,9 +42,13 @@
                     {
                         CsReturn.Add(new EvidenciasModel
                         {
-                            numIdenti = item.NumIdenti,
-                            idClient = item.IdClient,
-                            nameClient = item.Name,
+                            idTercero = item.IdTercero,
+                            identifClient = item.IdentifClient,
+                            nameClient = item.NameClient,
+                            firstName = item.FirstName,
+                            secondName = item.SecondName,
+                            firstLastName = item.FirstLastName,
+                            secondLastName = item.SeconLastName
                         });
                     }
                 }
@@ -64,7 +73,8 @@
                         CsReturn.Add(new KeyValue
                         {
                             id = item.id,
-                            name = item.name
+                            name = item.name,
+                            nameAux = item.sigla
                         });
                     }
                 }
@@ -78,7 +88,7 @@
         #region POST´s
         [ResponseType(typeof(EvidenciasModel))]
         [Route("api/PostEvidences")]
-        public async Task<Response> PostEvidences(EvidenciasModel evidenciasModel)
+        public async Task<Response> PostEvidences(ObservableCollection<EvidenciasModel> evidenciasModel)
         {
            Response response = new Response();
             try
@@ -91,50 +101,96 @@
                 {
                     try
                     {
-                        evidenciasModel.codeTipoEvid = "DOCUMENTO";
-                        evidenciasModel.codeCarpeta = "Soporte";
-                        List<evidencia> lsTemp = db.evidencias.Where(x => x.idIdentifica == evidenciasModel.numIdenti).ToList();
-                        if (lsTemp.Count == 0)
+                        string codeTipoEvid = "DOCUMENTO";
+                        string codeCarpeta = "Soporte";
+                        foreach(var item in evidenciasModel)
                         {
-                            db.evidencias.Add(new API.Models.evidencia
+                            List<evidencia> lsTemp = db.evidencias.Where(x => x.idIdentifica == item.idTercero).ToList();
+                            if(lsTemp.Count == 0)
                             {
-                                id = Guid.NewGuid(),
-                                codeTipoEvid = evidenciasModel.codeTipoEvid,
-                                codeCarpeta = evidenciasModel.codeCarpeta,
-                                idSerialNum = 1,
-                                idIdentifica = evidenciasModel.numIdenti ?? 0,
-                                evidencia1 = evidenciasModel.evidencia1,
-                                descripcion = evidenciasModel.descripcion ?? "",
-                                fileName = evidenciasModel.fileName + "_" + 1 + ".jpg" ?? "",
-                                fecha = DateTime.Now,
-                                usuario = evidenciasModel.usuario ?? ""
-                            });
-                            db.SaveChanges();
-                            dbContextTransaction.Commit();
-                            response.IsSuccess = true;
-                            response.Message = "Agregado correctamente";
-                        }
-                        else
-                        {
-                            evidencia evidence = lsTemp.Last();
                                 db.evidencias.Add(new API.Models.evidencia
                                 {
                                     id = Guid.NewGuid(),
-                                    codeTipoEvid = evidenciasModel.codeTipoEvid,
-                                    codeCarpeta = evidenciasModel.codeCarpeta,
-                                    idSerialNum = evidence.idSerialNum + 1,
-                                    idIdentifica = evidenciasModel.numIdenti ?? 0,
-                                    evidencia1 = evidenciasModel.evidencia1,
-                                    descripcion = evidenciasModel.descripcion ?? "",
-                                    fileName = evidenciasModel.fileName + "_" + (evidence.idSerialNum + 1) + ".jpg" ?? "",
+                                    codeTipoEvid = codeTipoEvid,
+                                    codeCarpeta = codeCarpeta,
+                                    idSerialNum = 1,
+                                    idIdentifica = item.idTercero,
+                                    evidencia1 = item.evidencia1,
+                                    descripcion = item.descripcion ?? "",
+                                    fileName = item.fileName + "_" + 1 + ".jpg" ?? "",
                                     fecha = DateTime.Now,
-                                    usuario = evidenciasModel.usuario ?? ""
+                                    usuario = item.usuario ?? ""
                                 });
-                                db.SaveChanges();
-                                dbContextTransaction.Commit();
-                                response.IsSuccess = true;
-                                response.Message = "Agregado correctamente";
+                                //db.SaveChanges();
+                                //dbContextTransaction.Commit();
+                            }
+                            else
+                            {
+                                evidencia evidence = lsTemp.Last();
+                                db.evidencias.Add(new API.Models.evidencia
+                                {
+                                    id = Guid.NewGuid(),
+                                    codeTipoEvid = codeTipoEvid,
+                                    codeCarpeta = codeCarpeta,
+                                    idSerialNum = evidence.idSerialNum + 1,
+                                    idIdentifica = item.idTercero,
+                                    evidencia1 = item.evidencia1,
+                                    descripcion = item.descripcion ?? "",
+                                    fileName = item.fileName + "_" + (evidence.idSerialNum + 1) + ".jpg" ?? "",
+                                    fecha = DateTime.Now,
+                                    usuario = item.usuario ?? ""
+                                });
+                            }
                         }
+                        db.SaveChanges();
+                        dbContextTransaction.Commit();
+                        //evidenciasModel.codeTipoEvid = "DOCUMENTO";
+                        //evidenciasModel.codeCarpeta = "Soporte";
+                        //List<evidencia> lsTemp = db.evidencias.Where(x => x.idIdentifica == evidenciasModel.idTercero).ToList();
+                        //if (lsTemp.Count == 0)
+                        //{
+                        //    db.evidencias.Add(new API.Models.evidencia
+                        //    {
+                        //        id = Guid.NewGuid(),
+                        //        codeTipoEvid = evidenciasModel.codeTipoEvid,
+                        //        codeCarpeta = evidenciasModel.codeCarpeta,
+                        //        idSerialNum = 1,
+                        //        idIdentifica = evidenciasModel.idTercero,
+                        //        evidencia1 = evidenciasModel.evidencia1,
+                        //        descripcion = evidenciasModel.descripcion ?? "",
+                        //        fileName = evidenciasModel.fileName + "_" + 1 + ".jpg" ?? "",
+                        //        fecha = DateTime.Now,
+                        //        usuario = evidenciasModel.usuario ?? ""
+                        //    });
+                        //    db.SaveChanges();
+                        //    dbContextTransaction.Commit();
+                        //    response.IsSuccess = true;
+                        //    response.Message = "Agregado correctamente";
+                        //}
+                        //else
+                        //{
+                        //    evidencia evidence = lsTemp.Last();
+                        //        db.evidencias.Add(new API.Models.evidencia
+                        //        {
+                        //            id = Guid.NewGuid(),
+                        //            codeTipoEvid = evidenciasModel.codeTipoEvid,
+                        //            codeCarpeta = evidenciasModel.codeCarpeta,
+                        //            idSerialNum = evidence.idSerialNum + 1,
+                        //            idIdentifica = evidenciasModel.idTercero,
+                        //            evidencia1 = evidenciasModel.evidencia1,
+                        //            descripcion = evidenciasModel.descripcion ?? "",
+                        //            fileName = evidenciasModel.fileName + "_" + (evidence.idSerialNum + 1) + ".jpg" ?? "",
+                        //            fecha = DateTime.Now,
+                        //            usuario = evidenciasModel.usuario ?? ""
+                        //        });
+                        //        db.SaveChanges();
+                        //        dbContextTransaction.Commit();
+                        //        response.IsSuccess = true;
+                        //        response.Message = "Agregado correctamente";
+                        //}
+
+                        response.IsSuccess = true;
+                        response.Message = "Agregado correctamente";
                     }
                     catch (Exception ex)
                     {

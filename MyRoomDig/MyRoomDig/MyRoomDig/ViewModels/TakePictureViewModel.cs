@@ -15,33 +15,51 @@
     using System.Threading.Tasks;
     using System.Windows.Input;
     using Xamarin.Forms;
-    public class TakePictureViewModel: BaseViewModel
+    using System.Linq;
+    public class TakePictureViewModel : BaseViewModel
     {
+        #region Services
+        private ApiServices apiService;
+        #endregion
+
         #region Attribues
         private bool isProcessing;
         private bool withData;
+        private bool _withClientSelected;
         private int _idIdentifica;
-        private string _Identificacion;
+        private string _Identification;
         private string _nameClient;
         private string _descripcion;
+        private string _siglatypeDoc;
         private KeyValue _typeDocSelected;
-        private EvidenciasModel _Evidencia;
-        private ObservableCollection<EvidenciasModel> _Evidences;
-        private ObservableCollection<KeyValue> _TypesDoc;
+        private EvidenciasModel _clientSelected;
+        private EvidenciasModel _itemListSelected;
+        private ObservableCollection<EvidenciasModel> _evidenceSave;
+        private EvidenciasModel _evidences;
+        private ObservableCollection<KeyValue> _typesDoc;
+        private ObservableCollection<EvidenciasModel> _lstEvidClients;
         private ImageSource _Imagen;
         MediaFile file;
         #endregion
 
         #region Properties
+
+        public bool newClient { get; set; }
+        public bool WithClientSelected
+        {
+            get { return this._withClientSelected; }
+            set { SetValue(ref this._withClientSelected, value); }
+        }
+        
         public int IdIdentifica
         {
             get { return this._idIdentifica; }
             set { SetValue(ref this._idIdentifica, value); }
         }
-        public string Identificacion
+        public string Identification
         {
-            get { return this._Identificacion; }
-            set { SetValue(ref this._Identificacion, value); }
+            get { return this._Identification; }
+            set { SetValue(ref this._Identification, value); }
         }
         public string NameClient
         {
@@ -53,52 +71,74 @@
             get { return this._descripcion; }
             set { SetValue(ref this._descripcion, value); }
         }
+        public string SiglaTypeDoc
+        {
+            get { return this._siglatypeDoc; }
+            set { SetValue(ref this._siglatypeDoc, value); }
+        }
+        public byte[] imgByte { get; set; }
         public KeyValue TypeDocSelected
         {
             get { return this._typeDocSelected; }
             set { SetValue(ref this._typeDocSelected, value); }
         }
-        public byte[] imgByte { get; set; }
-        public EvidenciasModel EvidenceSave
+        public EvidenciasModel ClientSelected
         {
-            get { return this._Evidencia; }
-            set { SetValue(ref this._Evidencia, value); }
+            get { return this._clientSelected; }
+            set
+            {
+                SetValue(ref this._clientSelected, value);
+                if (this._clientSelected != null && this._clientSelected.idTercero > 0) this.WithClientSelected = true;
+            }
         }
-        public ObservableCollection<EvidenciasModel> Evidences 
+        public ObservableCollection<EvidenciasModel> EvidenceSave
         {
-            get { return this._Evidences; }
-            set { SetValue(ref this._Evidences, value); }
+            get { return this._evidenceSave; }
+            set { SetValue(ref this._evidenceSave, value); }
+        }
+        public EvidenciasModel Evidences
+        {
+            get { return this._evidences; }
+            set { SetValue(ref this._evidences, value); }
         }
         public ObservableCollection<KeyValue> TypesDoc
         {
-            get { return this._TypesDoc; }
-            set { SetValue(ref this._TypesDoc, value); }
+            get { return this._typesDoc; }
+            set { SetValue(ref this._typesDoc, value); }
+        }
+        public ObservableCollection<EvidenciasModel> LstEvidClients
+        {
+            get { return this._lstEvidClients; }
+            set { SetValue(ref this._lstEvidClients, value); }
         }
         public ImageSource Imagen
         {
             get { return this._Imagen; }
             set { SetValue(ref this._Imagen, value); }
         }
+        public EvidenciasModel ItemListSelected
+        {
+            get { return this._itemListSelected; }
+            set { SetValue(ref this._itemListSelected, value); }
+        }
+
         #endregion
-        
-        #region Services
-        private ApiServices apiService;
-        #endregion
-        
+
         #region Commands
         public ICommand TakePictureCommand { get { return new RelayCommand(TakePicture); } }
         public ICommand SavePictureCommand { get { return new RelayCommand(SavePicture); } }
-        public ICommand SearchClientCommand { get { return new RelayCommand(SearchData); } }
+        public ICommand SearchClientCommand { get { return new RelayCommand(CallSearchData); } }
         public ICommand ClearCommand { get { return new RelayCommand(ClearData); } }
+        public ICommand AddClientCommand { get { return new RelayCommand(AddClient); } }
         #endregion
-        
+
         #region Constructors
         public TakePictureViewModel()
         {
             Instance();
         }
         #endregion
-        
+
         #region Methods
         public async void Instance()
         {
@@ -107,181 +147,189 @@
                 apiService = new ApiServices();
                 this.Imagen = "ic_nodispon";
                 this.IdIdentifica = 0;
-                this.NameClient = "";
+                this.NameClient = string.Empty;
                 this.imgByte = null;
-                this.Descripcion = "";
-                this.Identificacion = "";
+                this.Descripcion = string.Empty;
+                this.Identification = string.Empty;
                 this.withData = false;
-                TypesDoc = new ObservableCollection<KeyValue>();
-                GetTypeDoc();
-                Evidences = new ObservableCollection<EvidenciasModel>();
-                EvidenceSave = new EvidenciasModel();
+                this.WithClientSelected = false;
+                this.newClient = false;
+                this.SiglaTypeDoc = string.Empty;
+                this.file = null;
+                SearchServices searchService = new SearchServices();
+                ItemListSelected = new EvidenciasModel();
+                LstEvidClients = null;
+                LstEvidClients = new ObservableCollection<EvidenciasModel>();
+                Evidences = new EvidenciasModel();
+                EvidenceSave = new ObservableCollection<EvidenciasModel>();
+                ClientSelected = new EvidenciasModel();
+                TypesDoc = await searchService.GetTypeDoc();
             }
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("TakePicture Instance", ex.ToString(), "Ok");
             }
         }
-        public async void GetTypeDoc()
+        public async void CallSearchData()
         {
-            await Task.Delay(1000);
-            var apiRoom = Application.Current.Resources["APISecurity"].ToString();
-            var response = await this.apiService.GetList<KeyValue>(apiRoom, "api/GetTypeDoc", "");
-            if (!response.IsSuccess)
-            {
-                await Application.Current.MainPage.DisplayAlert(
-                    "Error A-TypeDoc",
-                    response.Message,
-                    "Ok");
-                return;
-            }
-            foreach(var item in (List<KeyValue>)response.Result)
-            {
-                TypesDoc.Add(new KeyValue
-                {
-                    id = item.id,
-                    name = item.name
-                });
-            }
-            
-        }
-        public async void SearchData()
-        {
+            LstEvidClients.Clear();
+            EvidenciasModel SearchEvidences = new EvidenciasModel();
+            SearchServices searchService = new SearchServices();
             try
             {
-                int idTypeDoc = TypeDocSelected.id;
-                if(TypeDocSelected == null)
+                if (TypeDocSelected == null && TypeDocSelected.id < 0)
                 {
                     await Application.Current.MainPage.DisplayAlert("", "Seleccione un tipo de documento", "Ok");
                     isProcessing = false;
                     return;
                 }
-                if (Identificacion == null)
+
+                if (string.IsNullOrEmpty(Identification))
                 {
                     await Application.Current.MainPage.DisplayAlert("", "Ingrese la identificación del cliente", "Ok");
                     isProcessing = false;
                     return;
                 }
-                var apiRoom = Application.Current.Resources["APISecurity"].ToString();
-                var response = await this.apiService.GetList<EvidenciasModel>(apiRoom, "api/GetClients?identification=" + Identificacion + "&idTypeDoc=" + idTypeDoc, "");
-                if (!response.IsSuccess)
+
+                SearchEvidences.typeDoc = TypeDocSelected.id;
+                SearchEvidences.identifClient = this.Identification;
+
+                Evidences = await searchService.SearchData(SearchEvidences);
+                this.NameClient = Evidences.nameClient;
+                if (Evidences.idTercero > 0)
                 {
-                    await Application.Current.MainPage.DisplayAlert(
-                        "Error A-Clients",
-                        response.Message,
-                        "Ok");
-                    return;
-                }
-                List<EvidenciasModel> lsTemp = (List<EvidenciasModel>)response.Result;
-                foreach (var item in (List<EvidenciasModel>)response.Result)
-                {
-                    Evidences.Add(new EvidenciasModel
+                    LstEvidClients.Add(new EvidenciasModel
                     {
-                        idClient = item.idClient,
-                        numIdenti = item.numIdenti,
-                        nameClient = item.nameClient                        
+                        nameClient = Evidences.nameClient,
+                        identifClient = Evidences.identifClient,
+                        idTercero = Evidences.idTercero,
+                        sigla = TypeDocSelected.nameAux,
+                        holder = true
                     });
-                    this.IdIdentifica = item.numIdenti??0;
-                    this.NameClient = item.nameClient;
-                    withData = true;
-                    isProcessing = false;
                 }
-                if (lsTemp.Count == 0)
+                else
                 {
-                    this.NameClient = "No se encuentra ningun cliente con los datos ingresados.";
-                    isProcessing = true;
-                    withData = false;
+                    MainViewModel.GetInstance().AddClientViewModel = new AddClientViewModel();
+                    MainViewModel.GetInstance().AddClientViewModel.IdTypeDoc = TypeDocSelected.id;
+                    MainViewModel.GetInstance().AddClientViewModel.Identification = this.Identification;
+                    MainViewModel.GetInstance().AddClientViewModel.DataNewClient = true;
+                    await Application.Current.MainPage.Navigation.PushModalAsync(new AddClientPage());
                 }
+                withData = true;
+                isProcessing = false;
             }
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("TakePicture SearchData", ex.Message, "Ok");
             }
         }
+        public async void AddClient()
+        {
+            try
+            {
+                MainViewModel.GetInstance().AddClientViewModel = new AddClientViewModel();
+                await Application.Current.MainPage.Navigation.PushModalAsync(new AddClientPage());
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("TakePicture AddClient", ex.ToString(), "Ok");
+            }
+        }
+
         public async void TakePicture()
         {
             try
             {
-                await CrossMedia.Current.Initialize();
-                if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+                if (ClientSelected != null && ClientSelected.idTercero > 0)
                 {
-                    await App.Current.MainPage.DisplayAlert("Error Cámara", "La cámara del dispositivo no esta disponible.", "Aceptar");
-                }
-                this.file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
-                {
-                    Directory = "Sample",
-                    Name = this.Identificacion + ".jpg",
-                    PhotoSize = Plugin.Media.Abstractions.PhotoSize.Small
-                });
-
-                if (this.file != null)
-                {
-                    Imagen = ImageSource.FromStream(() =>
+                    imgByte = null;
+                    await CrossMedia.Current.Initialize();
+                    if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                     {
-                        MemoryStream stream = (MemoryStream)file.GetStream();
-                        return stream;
+                        await App.Current.MainPage.DisplayAlert("Error Cámara", "La cámara del dispositivo no esta disponible.", "Aceptar");
+                    }
+                    this.file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+                    {
+                        Directory = "Sample",
+                        Name = this.Identification + ".jpg",
+                        PhotoSize = Plugin.Media.Abstractions.PhotoSize.Small
                     });
-                    imgByte = ConvertPictureBytes(file.Path);
-                    Imagen = file.Path;
+                    if (this.file != null)
+                    {
+                        Imagen = ImageSource.FromStream(() =>
+                        {
+                            MemoryStream stream = (MemoryStream)file.GetStreamWithImageRotatedForExternalStorage();
+                            return stream;
+                        });
+                        imgByte = ConvertPictureBytes(file.Path);
+                        Imagen = file.Path;
+                    }
+                    if (file == null) Imagen = "ic_nodispon";
+                    ObservableCollection<EvidenciasModel> lsTemp = new ObservableCollection<EvidenciasModel>();
+                    ItemListSelected = LstEvidClients.FirstOrDefault(x => x.idTercero == ClientSelected.idTercero);
+                    ItemListSelected.image = this.Imagen;
+                    ItemListSelected.evidencia1 = this.imgByte;
+                    foreach (var item in LstEvidClients)
+                    {
+                        if (item.idTercero == ItemListSelected.idTercero)
+                        {
+                            lsTemp.Add(ItemListSelected);
+                        }
+                        else
+                        {
+                            lsTemp.Add(item);
+                        }
+                    }
+                    LstEvidClients.Clear();
+                    foreach (var item in lsTemp)
+                    {
+                        LstEvidClients.Add(item);
+                    }
+                    ClientSelected = null;
+                    return;
                 }
-                if (file == null) Imagen = "ic_nodispon";
+                await Application.Current.MainPage.DisplayAlert("", "Debe seleccionar un cliente", "Ok");
             }
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("TakePicture TakePicture", ex.Message, "Ok");
             }
-
         }
         public async void SavePicture()
         {
             try
             {
-                if (this.TypeDocSelected == null)
+                if (LstEvidClients.Count > 0)
                 {
-                    await Application.Current.MainPage.DisplayAlert("", "Seleccione un tipo de documento", "Ok");
-                    isProcessing = true;
-                    return;
-                }
-                if (this.Identificacion == null || this.Identificacion == string.Empty)
-                {
-                    await Application.Current.MainPage.DisplayAlert("", "Ingrese la identificación del cliente", "Ok");
-                    isProcessing = true;
-                    return;
-                }
-                if (!withData)
-                {
-                    await Application.Current.MainPage.DisplayAlert("", "Los datos ingresados son incorrectos", "Ok");
-                    isProcessing = true;
-                    return;
-                }
-                if (this.imgByte == null)
-                {
-                    await Application.Current.MainPage.DisplayAlert("", "No hay ninguna imágen para guardar", "Ok");
-                    isProcessing = true;
-                    return;
-                }
-                if (!isProcessing && withData)
-                {
-                    var resultado = await Application.Current.MainPage.DisplayAlert("Guardar", "Desea guardar la evidencia asociada a: " + this.NameClient + " ?", "Si", "No");
-                    if(resultado)
+                    EvidenceSave.Clear();
+                    foreach (var item in LstEvidClients)
                     {
-                        isProcessing = true;
-                        
-                        EvidenceSave.numIdenti = this.IdIdentifica;  
-                        EvidenceSave.evidencia1 = this.imgByte;
-                        EvidenceSave.descripcion = this.Descripcion;
-                        EvidenceSave.fileName = this.Identificacion;
-                        EvidenceSave.usuario = MainViewModel.GetInstance().LoginViewModel.User;
-
+                        if (item.evidencia1 == null || item.idTercero == 0)
+                        {
+                            await Application.Current.MainPage.DisplayAlert("", "El cliente " + item.nameClient + " no tiene evidencia registrada", "Ok");
+                            return;
+                        }
+                        EvidenceSave.Add(new EvidenciasModel
+                        {
+                            idTercero = item.idTercero,
+                            evidencia1 = item.evidencia1,
+                            descripcion = item.descripcion,
+                            fileName = item.identifClient,
+                            usuario = MainViewModel.GetInstance().LoginViewModel.User
+                        });
+                    }
+                    var resultado = await Application.Current.MainPage.DisplayAlert("Guardar", "¿Desea guardar la(s) evidencia(s) ?", "Si", "No");
+                    if (resultado)
+                    {
                         var apiS = Application.Current.Resources["APISecurity"].ToString();
 
                         var response = await this.apiService.PostBool(
-                                              apiS, 
-                                              "/api", 
-                                              "/PostEvidences", 
+                                              apiS,
+                                              "/api",
+                                              "/PostEvidences",
                                               EvidenceSave);
 
-                        if(!response.IsSuccess)
+                        if (!response.IsSuccess)
                         {
                             await Application.Current.MainPage.DisplayAlert(
                                "Error AP-Evidence",
@@ -291,12 +339,21 @@
                         }
                         else
                         {
-                            await Application.Current.MainPage.DisplayAlert("Guardado", "Guardado correctamente", "Ok");
+                            foreach (EvidenciasModel item in LstEvidClients)
+                            {
+                                if (File.Exists(item.image.ToString().Replace("File: ", ""))) File.Delete(item.image.ToString().Replace("File: ", ""));
+                                item.image = null;
+                            }
+
+                            await Application.Current.MainPage.DisplayAlert("Guardado", "Evidencia(s) guardada(s) correctamente", "Ok");
                             Instance();
                         }
                     }
                 }
-                
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("","Debe agregar cliente(s)","Ok");
+                }
             }
             catch (Exception ex)
             {
@@ -316,7 +373,7 @@
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("LlenaPedido cancelOrder", ex.ToString(), "Ok");
+                await Application.Current.MainPage.DisplayAlert("TakePicture ClearData", ex.ToString(), "Ok");
             }
         }
         public static byte[] ConvertPictureBytes(string imagen)

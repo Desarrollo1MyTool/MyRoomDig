@@ -1,4 +1,5 @@
 ﻿using MyRoomDig.Models;
+using System.Collections.Generic;
 
 namespace MyRoomDig.ViewModels
 {
@@ -9,11 +10,9 @@ namespace MyRoomDig.ViewModels
         #endregion
 
         #region Properties
-        public UsersModel User
-        {
-            get { return this._user; }
-            set { SetValue(ref this._user, value); }
-        }
+        public UsersModel User {get { return this._user; } set { SetValue(ref this._user, value); }}
+        //public SetupApp mySetupApp { get; set; }
+        //public List<SetupMain> mySetupMain { get; set; }
         #endregion
 
         #region Constructors
@@ -21,7 +20,6 @@ namespace MyRoomDig.ViewModels
         {
             instance = this;
             this.LoginViewModel = new LoginViewModel();
-            //this.TakePictureViewModel = new TakePictureViewModel();
         }
         #endregion
 
@@ -42,6 +40,7 @@ namespace MyRoomDig.ViewModels
         public TakePictureViewModel TakePictureViewModel { get; set; }
         public LoginViewModel LoginViewModel { get; set; }
         public ConfigViewModel ConfigViewModel { get; set; }
+        public AddClientViewModel AddClientViewModel { get; set; }
         #endregion
     }
 }
