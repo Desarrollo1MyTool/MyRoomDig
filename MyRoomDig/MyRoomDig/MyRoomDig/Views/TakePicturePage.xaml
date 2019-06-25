@@ -126,10 +126,11 @@
             <Grid Grid.Row="2">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="4*"/>
-                        <ColumnDefinition Width="4*"/>
-                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="0.5*"/>
                     </Grid.ColumnDefinitions>
                     <Button BackgroundColor="{StaticResource Azul}"
                             BorderRadius="23"
@@ -145,6 +146,13 @@
                             Grid.Column="2"
                             HeightRequest="46"
                             Text="Agregar Cliente"
+                            VerticalOptions="Center"/>
+                    <Button BackgroundColor="{StaticResource Azul}"
+                            BorderRadius="23"
+                            Command="{Binding DeleteClientCommand}"
+                            Grid.Column="3"
+                            HeightRequest="46"
+                            Text="Eliminar Cliente"
                             VerticalOptions="Center"/>
                 </Grid>
             </Grid>

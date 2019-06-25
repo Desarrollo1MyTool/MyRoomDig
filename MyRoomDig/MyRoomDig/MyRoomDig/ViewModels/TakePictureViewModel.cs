@@ -50,7 +50,6 @@
             get { return this._withClientSelected; }
             set { SetValue(ref this._withClientSelected, value); }
         }
-        
         public int IdIdentifica
         {
             get { return this._idIdentifica; }
@@ -130,6 +129,7 @@
         public ICommand SearchClientCommand { get { return new RelayCommand(CallSearchData); } }
         public ICommand ClearCommand { get { return new RelayCommand(ClearData); } }
         public ICommand AddClientCommand { get { return new RelayCommand(AddClient); } }
+        public ICommand DeleteClientCommand { get { return new RelayCommand(DeleteClient); } }
         #endregion
 
         #region Constructors
@@ -235,7 +235,6 @@
                 await Application.Current.MainPage.DisplayAlert("TakePicture AddClient", ex.ToString(), "Ok");
             }
         }
-
         public async void TakePicture()
         {
             try
@@ -365,7 +364,7 @@
         {
             try
             {
-                var resultado = await Application.Current.MainPage.DisplayAlert("Cancelar", "Desea limpiar los datos registrados ?", "Si", "No");
+                var resultado = await Application.Current.MainPage.DisplayAlert("Cancelar", "¿Desea limpiar los datos registrados ?", "Si", "No");
                 if (resultado)
                 {
                     Instance();
@@ -374,6 +373,40 @@
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("TakePicture ClearData", ex.ToString(), "Ok");
+            }
+        }
+        public async void DeleteClient()
+        {
+            try
+            {
+                var resultado = await Application.Current.MainPage.DisplayAlert("Eliminar","¿Desea eliminar de la lista al cliente " + ClientSelected.nameClient + " ?","Si","No");
+                if(resultado)
+                {
+                    if (LstEvidClients.Count > 1 && ClientSelected.holder)
+                    {
+                        await Application.Current.MainPage.DisplayAlert("Eliminar Titular", "No puede eliminar el titular", "Ok");
+                        return;
+                    }
+                    if (LstEvidClients.Count == 1)
+                    {
+                        LstEvidClients.Remove(ClientSelected);
+                        await Application.Current.MainPage.DisplayAlert("Cliente Eliminado","El cliente " + ClientSelected.nameClient + " ha sido eliminado corredtamente.","Ok");
+                        this.TypeDocSelected = null;
+                        this.Identification = null;
+                        this.NameClient = null;
+                        return;
+                    }
+                    else if(LstEvidClients.Count > 1 && !ClientSelected.holder)
+                    {
+                        LstEvidClients.Remove(ClientSelected);
+                        await Application.Current.MainPage.DisplayAlert("Cliente Eliminado", "El cliente " + ClientSelected.nameClient + " ha sido eliminado corredtamente.", "Ok");
+                        return;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("TakePicture DeleteClient", ex.ToString(),"Ok");
             }
         }
         public static byte[] ConvertPictureBytes(string imagen)

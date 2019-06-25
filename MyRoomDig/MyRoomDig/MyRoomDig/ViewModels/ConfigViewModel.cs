@@ -54,9 +54,9 @@ namespace MyRoomDig.ViewModels
         #region Methods
         public async void Instance()
         {
-            this.Host = "";
-            this.Port = 49800;
-            this.Maquina = "1";
+            this.Host = "192.168.0.137";
+            this.Port = 50800;
+            this.Maquina = "2";
             DataService = new DataService();
             ConfigM = new ConfigModel();
         }

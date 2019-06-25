@@ -103,7 +103,6 @@ C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\bin\
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\obj\Debug\MyRoomDig.Domain.csprojAssemblyReference.cache
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\obj\Debug\MyRoomDig.Domain.csproj.CoreCompileInputs.cache
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\obj\Debug\XamlC.stamp
 C:\Users\lauraGiraldo\Documents\GitHub\MyRoomDig\MyRoomDig\MyRoomDig.Domain\obj\Debug\MyRoomDig.Domain.csproj.CopyComplete
