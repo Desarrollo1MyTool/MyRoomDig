@@ -15,7 +15,6 @@ namespace MyRoomDig.Services
         #endregion
 
         #region Attributes
-        private ObservableCollection<KeyValue> _TypesDoc;
         #endregion
 
         #region Properties

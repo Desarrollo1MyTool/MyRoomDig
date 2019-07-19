@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.Android\\MyRoomDig.Android.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig.Domain\\MyRoomDig.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig.Domain\\MyRoomDig.Domain.csproj",
+        "projectName": "MyRoomDig.Domain",
+        "projectPath": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig.Domain\\MyRoomDig.Domain.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.Android\\MyRoomDig.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.Android\\MyRoomDig.Android.csproj",
+        "projectName": "MyRoomDig.Android",
+        "projectPath": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.Android\\MyRoomDig.Android.csproj",
+        "packagesPath": "C:\\Users\\lauraGiraldo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\lauraGiraldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid81"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid81": {
+            "projectReferences": {
+              "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.csproj": {
+                "projectPath": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid81": {
+          "dependencies": {
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[3.0.0.12, )"
+            },
+            "SQLite.Net-PCL": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[27.0.2.1, )"
+            },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[27.0.2.1, )"
+            },
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[27.0.2.1, )"
+            },
+            "Xamarin.Android.Support.v7.CardView": {
+              "target": "Package",
+              "version": "[27.0.2.1, )"
+            },
+            "Xamarin.Android.Support.v7.MediaRouter": {
+              "target": "Package",
+              "version": "[27.0.2.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.4.0.1008975, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.5.231, )"
+            }
+          }
+        }
+      }
+    },
+    "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.csproj",
+        "projectName": "MyRoomDig",
+        "projectPath": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.csproj",
+        "packagesPath": "C:\\Users\\lauraGiraldo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\lauraGiraldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig.Domain\\MyRoomDig.Domain.csproj": {
+                "projectPath": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig.Domain\\MyRoomDig.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[3.0.0.12, )"
+            },
+            "SQLite.Net-PCL": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "SQLiteNetExtensions": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[4.0.1.5, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.4.0.1008975, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.5.231, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

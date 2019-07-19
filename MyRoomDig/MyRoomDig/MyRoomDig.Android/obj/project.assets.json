@@ -1480,7 +1480,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lauraGiraldo\\.nuget\\packages\\": {}
+    "C:\\Users\\lauraGiraldo\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1492,9 +1493,13 @@
       "outputPath": "C:\\Users\\lauraGiraldo\\Documents\\GitHub\\MyRoomDig\\MyRoomDig\\MyRoomDig\\MyRoomDig.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\lauraGiraldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"
