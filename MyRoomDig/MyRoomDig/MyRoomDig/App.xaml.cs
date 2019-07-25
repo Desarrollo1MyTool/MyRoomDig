@@ -1,14 +1,17 @@
-﻿using MyRoomDig.Views;
-using MyRoomDig.ViewModels;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace MyRoomDig
 {
+    using MyRoomDig.Data;
+    using System.IO;
+    using Views;
     public partial class App : Application
     {
+        public static Xamarin.Forms.MasterDetailPage MasterDetailPage { get; set; }
+        static setupDatabase databaseSetUp;
         public App()
         {
             InitializeComponent();
@@ -29,6 +32,17 @@ namespace MyRoomDig
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+        public static setupDatabase DatabaseSetUp
+        {
+            get
+            {
+                if (databaseSetUp == null)
+                {
+                    databaseSetUp = new setupDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "myRoomDigSetUp.db3"));
+                }
+                return databaseSetUp;
+            }
         }
     }
 }

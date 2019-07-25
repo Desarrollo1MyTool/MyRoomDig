@@ -17,6 +17,26 @@
             <Color x:Key="Azul">#0092ac</Color>
             <Color x:Key="GrisOsc">#34393a</Color>
             <Color x:Key="Blanco">#ffffff</Color>
+
+            <!--Tipografía-->
+            <OnPlatform x:TypeArguments="x:String" x:Key="SairaM">
+                <On Platform="Android" Value="Saira_Medium.ttf#Saira Medium" />
+            </OnPlatform>
+            <!--Tipografía-->
+            
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="FontFamily" Value="{StaticResource SairaM}"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="TextColor" Value="{StaticResource Blanco}"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+            <Style x:Key="ItemsMenu" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource SairaM}"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="TextColor" Value="{StaticResource Negro}"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

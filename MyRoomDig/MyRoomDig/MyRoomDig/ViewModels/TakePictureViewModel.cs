@@ -209,10 +209,10 @@
                 }
                 else
                 {
-                    MainViewModel.GetInstance().AddClientViewModel = new AddClientViewModel();
-                    MainViewModel.GetInstance().AddClientViewModel.IdTypeDoc = TypeDocSelected.id;
-                    MainViewModel.GetInstance().AddClientViewModel.Identification = this.Identification;
-                    MainViewModel.GetInstance().AddClientViewModel.DataNewClient = true;
+                    MainViewModel.GetInstance().AddClient = new AddClientViewModel();
+                    MainViewModel.GetInstance().AddClient.IdTypeDoc = TypeDocSelected.id;
+                    MainViewModel.GetInstance().AddClient.Identification = this.Identification;
+                    MainViewModel.GetInstance().AddClient.DataNewClient = true;
                     await Application.Current.MainPage.Navigation.PushModalAsync(new AddClientPage());
                 }
                 withData = true;
@@ -227,7 +227,7 @@
         {
             try
             {
-                MainViewModel.GetInstance().AddClientViewModel = new AddClientViewModel();
+                MainViewModel.GetInstance().AddClient = new AddClientViewModel();
                 await Application.Current.MainPage.Navigation.PushModalAsync(new AddClientPage());
             }
             catch (Exception ex)
@@ -314,7 +314,7 @@
                             evidencia1 = item.evidencia1,
                             descripcion = item.descripcion,
                             fileName = item.identifClient,
-                            usuario = MainViewModel.GetInstance().LoginViewModel.User
+                            usuario = MainViewModel.GetInstance().Login.User
                         });
                     }
                     var resultado = await Application.Current.MainPage.DisplayAlert("Guardar", "¿Desea guardar la(s) evidencia(s) ?", "Si", "No");

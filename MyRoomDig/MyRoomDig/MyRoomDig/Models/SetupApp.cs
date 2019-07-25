@@ -8,6 +8,8 @@
         public int IdMaquina { get; set; }
         public int IdApp { get; set; }
         public int IdLugar { get; set; }
-        public string IntranetOrder { get; set; }
+        public int IdPort { get; set; }
+        public string IdHost { get; set; }
+        public string IntranetRoomDig { get; set; }
     }
 }

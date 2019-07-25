@@ -227,7 +227,7 @@ namespace MyRoomDig.ViewModels
                     return;
                 }
 
-                countList = MainViewModel.GetInstance().TakePictureViewModel.LstEvidClients.Count();
+                countList = MainViewModel.GetInstance().Documentation.LstEvidClients.Count();
                 objLstEvidClients.nameClient = this.NameClient;
                 objLstEvidClients.identifClient = this.Identification;
                 objLstEvidClients.idTercero = this.IdIdentifica;
@@ -248,7 +248,7 @@ namespace MyRoomDig.ViewModels
                         ClientSave.NameComplete = this.FirstName + " " + this.SecondName + " " + this.FirstLastName + " " + this.SecondLastName;
                         ClientSave.Gustos = this.Gustos;
                         ClientSave.fec_Graba = DateTime.Now;
-                        ClientSave.Usuario = MainViewModel.GetInstance().LoginViewModel.User;
+                        ClientSave.Usuario = MainViewModel.GetInstance().Login.User;
 
                         var apiS = Application.Current.Resources["APISecurity"].ToString();
                         var response = await this.apiService.PostBool(
@@ -273,7 +273,7 @@ namespace MyRoomDig.ViewModels
                         objLstEvidClients.nameClient = this.NameClient;
                     }
                 }
-                EvidenciasModel evidenciasAdd = MainViewModel.GetInstance().TakePictureViewModel.LstEvidClients.FirstOrDefault(x => x.idTercero == this.IdIdentifica);
+                EvidenciasModel evidenciasAdd = MainViewModel.GetInstance().Documentation.LstEvidClients.FirstOrDefault(x => x.idTercero == this.IdIdentifica);
                 if (evidenciasAdd == null)
                 {
                     var resultado2 = ask ? true : await Application.Current.MainPage.DisplayAlert("Agregar Cliente", "¿Desea agregar cliente : " + this.NameClient + " ?", "Si", "No");
@@ -281,11 +281,11 @@ namespace MyRoomDig.ViewModels
                     {
                         if(objLstEvidClients.holder)
                         {
-                            MainViewModel.GetInstance().TakePictureViewModel.NameClient = this.NameClient;
-                            MainViewModel.GetInstance().TakePictureViewModel.Identification = this.Identification;
-                            MainViewModel.GetInstance().TakePictureViewModel.TypeDocSelected = MainViewModel.GetInstance().TakePictureViewModel.TypesDoc.FirstOrDefault(x => x.id == TypeDocSelected.id);
+                            MainViewModel.GetInstance().Documentation.NameClient = this.NameClient;
+                            MainViewModel.GetInstance().Documentation.Identification = this.Identification;
+                            MainViewModel.GetInstance().Documentation.TypeDocSelected = MainViewModel.GetInstance().Documentation.TypesDoc.FirstOrDefault(x => x.id == TypeDocSelected.id);
                         }
-                        MainViewModel.GetInstance().TakePictureViewModel.LstEvidClients.Add(objLstEvidClients);
+                        MainViewModel.GetInstance().Documentation.LstEvidClients.Add(objLstEvidClients);
                         await Application.Current.MainPage.DisplayAlert("Agregado", "Agregado correctamente", "Ok");
                         Instance();
                         await Application.Current.MainPage.Navigation.PopModalAsync();

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pop:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Pop="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="myMarketStock.Tools.PopUp"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             CloseWhenBackgroundIsClicked="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Frame WidthRequest="500" HeightRequest="250" CornerRadius="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="0.8*"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Grid.ColumnSpan="3"
+                           Source="NameApp2"/>
+                    <Label Text="{Binding TextPopUp}"
+                           Grid.Row="1" Grid.ColumnSpan="3"
+                           Style="{StaticResource PopUpText}"/>
+                    <Button Command="{Binding ClosePopUpCommand}"
+                            Grid.Row="2" Grid.ColumnSpan="3"
+                            Style="{StaticResource PopUpBoton}"
+                            Text="Ok"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</Pop:PopupPage>

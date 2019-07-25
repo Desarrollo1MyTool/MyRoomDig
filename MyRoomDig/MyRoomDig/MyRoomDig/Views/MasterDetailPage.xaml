@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:Binding="clr-namespace:MyRoomDig.ViewModels"
+                  x:Class="MyRoomDig.Views.MasterDetailPage"
+                  BackgroundColor="Transparent"
+                  NavigationPage.HasNavigationBar="False"
+                  IsPresented="{Binding IsPresented, Mode=TwoWay}" 
+                  Icon="Ic_menu.png">
+    <MasterDetailPage.BindingContext>
+        <Binding:MasterDetailViewModel/>
+    </MasterDetailPage.BindingContext>
+    <MasterDetailPage.Master>
+        <ContentPage Title="ContentPage" BackgroundColor="Transparent">
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <!--<RowDefinition Height="0.25*"/>-->
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid BackgroundColor="{StaticResource Blanco}" Grid.Row="0">
+                        <Image Source="logo_menu"
+                               VerticalOptions="FillAndExpand"
+                               HorizontalOptions="FillAndExpand"/>
+                    </Grid>
+                </Grid>
+                <!--<Grid BackgroundColor="{StaticResource Negro}"
+                      Grid.Row="1">
+                    <Label FontAttributes="Bold"
+                           FontSize="Large"
+                           HorizontalOptions="Center"
+                           Margin="0,8,0,0"
+                           Text="MENÚ"
+                           TextColor="{StaticResource Anaranjado}"
+                           VerticalOptions="Center"/>
+                </Grid>-->
+                <ListView x:Name="ListViewItems"
+                          Grid.Row="1"
+                          ItemsSource="{Binding CsItems}"
+                          RowHeight="60"
+                          SeparatorVisibility="Default"
+                          SeparatorColor="Transparent"
+                          BackgroundColor="Transparent"
+                          SelectedItem="{Binding ItemSelected, Mode=TwoWay}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout BackgroundColor="{StaticResource Blanco}" 
+                                             Orientation="Horizontal" 
+                                             Padding="5,5,5,5">
+                                    <Image Source="{Binding Icon}"
+                                           HeightRequest="40"
+                                           WidthRequest="40"/>
+                                    <Label Text="{Binding ItemMenu}"
+                                           Style="{StaticResource ItemsMenu}"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

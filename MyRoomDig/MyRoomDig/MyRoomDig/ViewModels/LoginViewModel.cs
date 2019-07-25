@@ -80,13 +80,13 @@ namespace MyRoomDig.ViewModels
             }
             if (this.User == "SJUAVEG" && this.Password == "564439")
             {
-                MainViewModel.GetInstance().ConfigViewModel = new ConfigViewModel();
+                MainViewModel.GetInstance().Config = new ConfigViewModel();
                 this.Password = string.Empty;
                 await Application.Current.MainPage.Navigation.PushAsync(new ConfigPage());
             }
             else
             {
-                MainViewModel.GetInstance().TakePictureViewModel = new TakePictureViewModel();
+                MainViewModel.GetInstance().Documentation = new TakePictureViewModel();
                 this.Password = string.Empty;
                 await Application.Current.MainPage.Navigation.PushAsync(new TakePicturePage());
             }

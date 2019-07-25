@@ -2,40 +2,98 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
-             x:Class="MyRoomDig.Views.ConfigPage">
+             x:Class="MyRoomDig.Views.ConfigPage"
+             Title="CONFIGURACIÓN">
     <ContentPage.Content>
-        <Grid BindingContext="{Binding ConfigViewModel}">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="6*"/>
-                <RowDefinition Height="4*"/>
-            </Grid.RowDefinitions>
+        <StackLayout BindingContext="{Binding Config}"
+                     Padding="3">
             <Grid>
-                <StackLayout VerticalOptions="CenterAndExpand">
-                    <Label HorizontalOptions="CenterAndExpand" 
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2.5*"/>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="5.5*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0"
                            Text="Host"/>
-                    <Entry Text="{Binding Host, Mode=TwoWay}"
-                           Keyboard="Numeric"/>
-                    <Label HorizontalOptions="CenterAndExpand" 
+                    <Entry Grid.Column="1" Grid.Row="0"
+                           Text="{Binding Host, Mode=TwoWay}"/>
+                    <Label Grid.Column="0" Grid.Row="1"
                            Text="Port"/>
-                    <Entry Text="{Binding Port, Mode=TwoWay}"
-                           Keyboard="Numeric"/>
-                    <Label HorizontalOptions="CenterAndExpand" 
-                           Text="Máquina"/>
-                    <Entry Text="{Binding Maquina, Mode=TwoWay}"
-                           Keyboard="Numeric"
-                           ReturnCommand="{Binding SaveCommand}"/>
-                </StackLayout>
+                    <Entry Grid.Column="1" Grid.Row="1"
+                           Text="{Binding Port, Mode=TwoWay}"/>
+                    <Label Grid.Column="0" Grid.Row="2"
+                           Text="Maquina"/>
+                    <Entry Grid.Column="1" Grid.Row="2"
+                           Text="{Binding Maquina, Mode=TwoWay}"/>
+                    <Label Grid.Column="0" Grid.Row="3"
+                           Text="Opción"/>
+                    <Picker Grid.Column="1" Grid.Row="3"
+                            ItemsSource="{Binding CsOptions, Mode=TwoWay}"
+                            ItemDisplayBinding="{Binding NameOption, Mode=TwoWay}"
+                            SelectedItem="{Binding OptionSelected, Mode=TwoWay}"
+                            Style="{StaticResource Picker}"/>
+
+                </Grid>
+                <!--<ActivityIndicator IsRunning="{Binding IsRunning, Mode=TwoWay}"
+                                   HorizontalOptions="Center"/>-->
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label FontAttributes="Bold"
+                           Grid.Row="0"
+                           HorizontalOptions="Center"
+                           Text="Principal"
+                           VerticalOptions="Center"/>
+                    <Switch Grid.Row="1"
+                            OnColor="{StaticResource Negro}"
+                            HorizontalOptions="Center"
+                            Grid.Column="0"
+                            IsToggled="{Binding IsMain, Mode=TwoWay}"
+                            VerticalOptions="Center"/>
+                    <Label FontAttributes="Bold"
+                           Grid.Row="0" Grid.Column="1"
+                           HorizontalOptions="Center"
+                           Text="Visible"
+                           VerticalOptions="Center"/>
+                    <Switch Grid.Row="1"
+                            Grid.Column="1"
+                            IsToggled="{Binding IsVisible, Mode=TwoWay}"
+                            HorizontalOptions="Center"
+                            OnColor="{StaticResource Negro}"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button BackgroundColor="{StaticResource Anaranjado}"
+                                Command="{Binding SaveCommand}"
+                                Grid.Column="0"
+                                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                                Style="{StaticResource buttonStyle}"
+                                Text="Grabar">
+                    </Button>
+                    <Button BackgroundColor="{StaticResource Negro}"
+                                Command="{Binding ExitCommand}"
+                                Grid.Column="1"
+                                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                                Style="{StaticResource buttonStyle}"
+                                Text="Salir">
+                    </Button>
+                </Grid>
             </Grid>
-            <Grid Grid.Row="1">
-                <Button BackgroundColor="Purple"
-                        BorderRadius="23"
-                        Command="{Binding SaveCommand}"
-                        HeightRequest="46"
-                        HorizontalOptions="FillAndExpand"
-                        Text="GUARDAR"
-                        TextColor="{StaticResource Blanco}"
-                        VerticalOptions="StartAndExpand"/>
-            </Grid>
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
